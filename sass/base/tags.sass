@@ -1,0 +1,98 @@
+html
+  background-color: $color-background
+  font-size: $font-size-dafault
+  overflow-x: hidden
+  overflow-y: scroll
+  text-size-adjust: 100%
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section
+  display: block
+
+body,
+button,
+input,
+select,
+textarea
+  font-family: $font-family-default
+
+code,
+pre
+  font-family: $font-family-code
+
+body
+  color: $color-text
+  font-size: $font-size-dafault
+  font-weight: $font-weight-default
+  line-height: $line-height-default
+
+a
+  color: $color-link
+  cursor: pointer
+  text-decoration: none
+  &:hover
+    color: $color-link-hover
+
+code
+  background-color: $color-background-dark
+  color: $color-text-light
+  font-size: $font-size-dafault
+  font-weight: $font-weight-default
+  padding: $spacing-in
+
+hr
+  background-color: $color-background-dark
+  border: none
+  display: block
+  height: 2px
+  margin: $spacing-out 0
+
+img
+  height: auto
+  max-width: 100%
+
+input[type="checkbox"],
+input[type="radio"]
+  vertical-align: baseline
+
+small
+  font-size: $font-size-small
+
+span
+  font-style: inherit
+  font-weight: inherit
+
+strong
+  color: $color-text-dark
+  font-weight: $font-weight-bold
+
+fieldset
+  border: none
+
+pre
+  background-color: $color-background
+  color: $color-text
+  font-size: $font-size-small
+  overflow-x: auto
+  padding: $spacing-in
+  white-space: pre
+  word-wrap: normal
+  code
+    background-color: transparent
+    color: currentColor
+    font-size: $font-size-dafault
+    padding: 0
+
+table
+  td,
+  th
+    vertical-align: top
+    &:not([align])
+      text-align: left
+  th
+    color: $color-text-dark
