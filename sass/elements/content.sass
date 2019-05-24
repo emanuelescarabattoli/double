@@ -9,8 +9,7 @@
   blockquote,
   pre,
   table
-    &:not(:last-child)
-      margin-bottom: 1em
+    @extend %block-text
   h1,
   h2,
   h3,
@@ -47,7 +46,7 @@
   blockquote
     background-color: $color-background
     border-left: solid 5px $color-primary
-    padding: $font-size-dafault $font-size-large
+    padding: $font-spacing-vertical $font-spacing-horizontal
   ol
     list-style-position: outside
     margin-left: 2em
@@ -94,7 +93,7 @@
     th
       border: solid 1px $color-border
       border-width:  0 0 1px
-      padding: $font-size-dafault $font-size-large
+      padding: $font-spacing-vertical $font-spacing-horizontal
       vertical-align: top
     th
       color: $color-text-dark
