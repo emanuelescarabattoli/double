@@ -108,7 +108,7 @@ body {
   line-height: 1; }
 
 a {
-  color: #00aaff;
+  color: #0077ff;
   cursor: pointer;
   text-decoration: none; }
   a:hover {
@@ -186,6 +186,34 @@ table th {
 .content table:not(:last-child) {
   margin-bottom: 1rem; }
 
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: solid 0 transparent;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1em;
+  height: 2.2rem;
+  justify-content: flex-start;
+  line-height: 1;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  vertical-align: top; }
+  .button:focus, .is-focused.button, .button:active, .is-active.button {
+    outline: none; }
+  .button[disabled],
+  fieldset[disabled] .button {
+    cursor: not-allowed; }
+
+.button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .content li + li {
   margin-top: 0.25em; }
 
@@ -231,7 +259,7 @@ table th {
 
 .content blockquote {
   background-color: #f0f0f0;
-  border-left: solid 5px #00aaff;
+  border-left: solid 5px #0077ff;
   padding: 0.75em 1em; }
 
 .content ol {
@@ -314,6 +342,17 @@ table th {
 
 .content.is-extra {
   font-size: 1.5em; }
+
+.button {
+  background-color: #0077ff;
+  border-color: #f0f0f0;
+  border: solid 1px #0077ff;
+  color: #f0f0f0;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 4px; }
 
 .grid-fluid,
 .grid {

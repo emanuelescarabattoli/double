@@ -5,3 +5,34 @@
 %block-text
   &:not(:last-child)
     margin-bottom: $spacing-in
+
+%button
+  -moz-appearance: none
+  -webkit-appearance: none
+  align-items: center
+  border: solid 0 transparent
+  border-radius: 0
+  box-shadow: none
+  display: inline-flex
+  font-size: $font-size-dafault
+  height: 2.2rem
+  justify-content: flex-start
+  line-height: $line-height-default
+  padding: $button-padding
+  position: relative
+  vertical-align: top
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active
+    outline: none
+  &[disabled],
+  fieldset[disabled] &
+    cursor: not-allowed
+
+%unselectable
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
