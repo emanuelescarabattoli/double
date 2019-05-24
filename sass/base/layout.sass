@@ -13,3 +13,27 @@
       margin-left: $spacing-in-half
     & > *:last-child
       margin-left: 0
+
+.container
+  margin: 0 auto
+  width: auto
+  &.is-fluid
+    margin: 0 $gap
+  @media screen and (min-width: $tablet)
+    max-width: $tablet
+    &.is-fluid
+      max-width: none
+      margin: 0 $gap
+  @media screen and (min-width: $desktop)
+    max-width: $desktop
+    &.is-fluid
+      max-width: none
+      margin: 0 $gap * 2
+  @media screen and (min-width: $hd)
+    wmax-width: $hd
+    &.is-fluid
+      max-width: none
+      margin: 0 $gap * 4
+  &.is-fullwidth
+    max-width: none
+    width: 100%

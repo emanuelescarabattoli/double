@@ -1,6 +1,5 @@
 
 $gutter-width: 1rem
-$outer-margin: 2rem
 $gutter-compensation: $gutter-width * 0.5 * -1
 $half-gutter-width: $gutter-width * 0.5
 $xs-min: 30
@@ -15,16 +14,7 @@ $container-sm: $sm-min + $gutter-width
 $container-md: $md-min + $gutter-width
 $container-lg: $lg-min + $gutter-width
 
-.grid-fluid,
-.grid
-  margin-right: auto
-  margin-left: auto
-
-.grid-fluid
-  padding-right: $outer-margin
-  padding-left: $outer-margin
-
-.row
+.columns
   box-sizing: border-box
   display: flex
   flex: 0 1 auto
@@ -192,8 +182,6 @@ $container-lg: $lg-min + $gutter-width
   order: 1
 
 @media only screen and (min-width: 48em)
-  .container
-    width: $container-sm
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -313,8 +301,6 @@ $container-lg: $lg-min + $gutter-width
     order: 1
 
 @media only screen and (min-width: 64em)
-  .container
-    width: $container-md
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -434,8 +420,6 @@ $container-lg: $lg-min + $gutter-width
     order: 1
 
 @media only screen and (min-width: 75em)
-  .container
-    width: $container-lg
   .col-lg,
   .col-lg-1,
   .col-lg-2,

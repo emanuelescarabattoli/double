@@ -92,6 +92,33 @@ th {
 .group.align-right > *:last-child {
   margin-left: 0; }
 
+.container {
+  margin: 0 auto;
+  width: auto; }
+  .container.is-fluid {
+    margin: 0 20px; }
+  @media screen and (min-width: 800px) {
+    .container {
+      max-width: 800px; }
+      .container.is-fluid {
+        max-width: none;
+        margin: 0 20px; } }
+  @media screen and (min-width: 1000px) {
+    .container {
+      max-width: 1000px; }
+      .container.is-fluid {
+        max-width: none;
+        margin: 0 40px; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      wmax-width: 1200px; }
+      .container.is-fluid {
+        max-width: none;
+        margin: 0 80px; } }
+  .container.is-fullwidth {
+    max-width: none;
+    width: 100%; }
+
 html {
   background-color: #f0f0f0;
   font-size: 1em;
@@ -474,16 +501,7 @@ table th {
   .button[disabled] {
     opacity: 0.7; }
 
-.grid-fluid,
-.grid {
-  margin-right: auto;
-  margin-left: auto; }
-
-.grid-fluid {
-  padding-right: 2rem;
-  padding-left: 2rem; }
-
-.row {
+.columns {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
@@ -491,7 +509,7 @@ table th {
   flex-wrap: wrap;
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
-  .row.reverse {
+  .columns.reverse {
     flex-direction: row-reverse; }
 
 .col.reverse {
@@ -651,8 +669,6 @@ table th {
   order: 1; }
 
 @media only screen and (min-width: 48em) {
-  .container {
-    width: 49rem; }
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -772,8 +788,6 @@ table th {
     order: 1; } }
 
 @media only screen and (min-width: 64em) {
-  .container {
-    width: 65rem; }
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -893,8 +907,6 @@ table th {
     order: 1; } }
 
 @media only screen and (min-width: 75em) {
-  .container {
-    width: 76rem; }
   .col-lg,
   .col-lg-1,
   .col-lg-2,
