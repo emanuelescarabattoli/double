@@ -1,26 +1,258 @@
+
+// Fonts
+
+$button-font-family: "Roboto"
+
+// Sizes
+
+$button-border-radius: 4px
+$button-padding: 0.4em 0.8em
+$button-height: 2.2rem
+$button-font-size: 1em
+
+$button-small-border-radius: 2px
+$button-small-padding: 0.3em 0.6em
+$button-small-height: 1.2rem
+$button-small-font-size: 0.6em
+
+$button-large-border-radius: 6px
+$button-large-padding: 0.6em 1.2em
+$button-large-height: 2.6rem
+$button-large-font-size: 1.4em
+
+// Rounded
+
+$button-rounded-border-radius: 1em
+
+// Default colors
+
+$button-backgorund-color: #efefef
+$button-border: solid 1px #bababa
+$button-color: #222222
+$button-box-shadow: 0 2px 2px -2px #00000055
+
+$button-hover-backgorund-color: #f0f0f0
+$button-hover-border: solid 1px #a0a0a0
+$button-hover-color: #333333
+
+$button-focus-backgorund-color: #efefef
+$button-focus-border: solid 1px #65a0d9
+$button-focus-box-shadow: 0 2px 2px -2px #00000055, 0 0 0 2px #65a0d955
+$button-focus-color: #333333
+
+$button-active-backgorund-color: #efefef
+$button-active-border: solid 1px #707070
+$button-active-color: #333333
+
+// Primary colors
+
+$button-primary-backgorund-color: #0088ff
+$button-primary-border: solid 1px #004499
+$button-primary-color: #f0f0f0
+$button-primary-box-shadow: 0 2px 2px -2px #00000055
+
+$button-primary-hover-backgorund-color: #0099ff
+$button-primary-hover-border: solid 1px #003aa0
+$button-primary-hover-color: #f0f0f0
+
+$button-primary-focus-backgorund-color: #009aff
+$button-primary-focus-border: solid 1px #003aa0
+$button-primary-focus-box-shadow: 0 2px 2px -2px #00000055, 0 0 0 2px #003aa055
+$button-primary-focus-color: #f0f0f0
+
+$button-primary-active-backgorund-color: #009fff
+$button-primary-active-border: solid 1px #003090
+$button-primary-active-color: #f0f0f0
+
+// Success colors
+
+$button-success-backgorund-color: #00cc00
+$button-success-border: solid 1px #006600
+$button-success-color: #f0f0f0
+$button-success-box-shadow: 0 2px 2px -2px #00000055
+
+$button-success-hover-backgorund-color: #00dd00
+$button-success-hover-border: solid 1px #005500
+$button-success-hover-color: #f0f0f0
+
+$button-success-focus-backgorund-color: #00df00
+$button-success-focus-border: solid 1px #004400
+$button-success-focus-box-shadow: 0 2px 2px -2px #00000055, 0 0 0 2px #00440055
+$button-success-focus-color: #f0f0f0
+
+$button-success-active-backgorund-color: #00ef00
+$button-success-active-border: solid 1px #003090
+$button-success-active-color: #f0f0f0
+
+// Warning colors
+
+$button-warning-backgorund-color: #ff9900
+$button-warning-border: solid 1px #ff5500
+$button-warning-color: #7a4900
+$button-warning-box-shadow: 0 2px 2px -2px #00000055
+
+$button-warning-hover-backgorund-color: #ffaa00
+$button-warning-hover-border: solid 1px #ff4400
+$button-warning-hover-color: #7a4900
+
+$button-warning-focus-backgorund-color: #ffbb00
+$button-warning-focus-border: solid 1px #ff3300
+$button-warning-focus-box-shadow: 0 2px 2px -2px #00000055, 0 0 0 2px #ff330055
+$button-warning-focus-color: #7a4900
+
+$button-warning-active-backgorund-color: #ffcc00
+$button-warning-active-border: solid 1px #ff2200
+$button-warning-active-color: #7a4900
+
+// Danger colors
+
+$button-danger-backgorund-color: #cc0000
+$button-danger-border: solid 1px #990000
+$button-danger-color: #f0f0f0
+$button-danger-box-shadow: 0 2px 2px -2px #00000055
+
+$button-danger-hover-backgorund-color: #cf0000
+$button-danger-hover-border: solid 1px #770000
+$button-danger-hover-color: #f0f0f0
+
+$button-danger-focus-backgorund-color: #cf0000
+$button-danger-focus-border: solid 1px #990000
+$button-danger-focus-box-shadow: 0 2px 2px -2px #00000055, 0 0 0 2px #99000055
+$button-danger-focus-color: #f0f0f0
+
+$button-danger-active-backgorund-color: #dd0000
+$button-danger-active-border: solid 1px #770000
+$button-danger-active-color: #f0f0f0
+
 .button
   @extend %button
   @extend %unselectable
-  background-color: $button-backgorund-color
-  border-color: $button-color
-  border: $button-border
-  color: $button-color
+  border-radius: $button-border-radius
+  padding: $button-padding
+  height: $button-height
+  font-size: $button-font-size
   cursor: pointer
   justify-content: center
   text-align: center
   white-space: nowrap
-  border-radius: $button-border-radius
+  font-family: $button-font-family
+  background-color: $button-backgorund-color
+  border: $button-border
+  box-shadow: $button-box-shadow
+  color: $button-color
   &:hover,
   &.is-hovered
-    border-color: $button-hover-border-color
+    border: $button-hover-border
     color: $button-hover-color
   &:focus,
   &.is-focused
-    border-color: $button-focus-border-color
+    border: $button-focus-border
     color: $button-focus-color
     &:not(:active)
-      box-shadow: $button-focus-box-shadow-size $button-focus-box-shadow-color
+      box-shadow: $button-focus-box-shadow
   &:active,
   &.is-active
-    border-color: $button-active-border-color
+    border: $button-active-border
     color: $button-active-color
+  &.is-primary
+    background-color: $button-primary-backgorund-color
+    border: $button-primary-border
+    box-shadow: $button-primary-box-shadow
+    color: $button-primary-color
+    &:hover,
+    &.is-hovered
+      background-color: $button-primary-hover-backgorund-color
+      border: $button-primary-hover-border
+      color: $button-primary-hover-color
+    &:focus,
+    &.is-focused
+      background-color: $button-primary-focus-backgorund-color
+      border: $button-primary-focus-border
+      color: $button-primary-focus-color
+      &:not(:active)
+        box-shadow: $button-primary-focus-box-shadow
+    &:active,
+    &.is-active
+      background-color: $button-primary-active-backgorund-color
+      border: $button-primary-active-border
+      color: $button-primary-active-color
+  &.is-success
+    background-color: $button-success-backgorund-color
+    border: $button-success-border
+    box-shadow: $button-success-box-shadow
+    color: $button-success-color
+    &:hover,
+    &.is-hovered
+      background-color: $button-success-hover-backgorund-color
+      border: $button-success-hover-border
+      color: $button-success-hover-color
+    &:focus,
+    &.is-focused
+      background-color: $button-success-focus-backgorund-color
+      border: $button-success-focus-border
+      color: $button-success-focus-color
+      &:not(:active)
+        box-shadow: $button-success-focus-box-shadow
+    &:active,
+    &.is-active
+      background-color: $button-success-active-backgorund-color
+      border: $button-success-active-border
+      color: $button-success-active-color
+  &.is-warning
+    background-color: $button-warning-backgorund-color
+    border: $button-warning-border
+    box-shadow: $button-warning-box-shadow
+    color: $button-warning-color
+    &:hover,
+    &.is-hovered
+      background-color: $button-warning-hover-backgorund-color
+      border: $button-warning-hover-border
+      color: $button-warning-hover-color
+    &:focus,
+    &.is-focused
+      background-color: $button-warning-focus-backgorund-color
+      border: $button-warning-focus-border
+      color: $button-warning-focus-color
+      &:not(:active)
+        box-shadow: $button-warning-focus-box-shadow
+    &:active,
+    &.is-active
+      background-color: $button-warning-active-backgorund-color
+      border: $button-warning-active-border
+      color: $button-warning-active-color
+  &.is-danger
+    background-color: $button-danger-backgorund-color
+    border: $button-danger-border
+    box-shadow: $button-danger-box-shadow
+    color: $button-danger-color
+    &:hover,
+    &.is-hovered
+      background-color: $button-danger-hover-backgorund-color
+      border: $button-danger-hover-border
+      color: $button-danger-hover-color
+    &:focus,
+    &.is-focused
+      background-color: $button-danger-focus-backgorund-color
+      border: $button-danger-focus-border
+      color: $button-danger-focus-color
+      &:not(:active)
+        box-shadow: $button-danger-focus-box-shadow
+    &:active,
+    &.is-active
+      background-color: $button-danger-active-backgorund-color
+      border: $button-danger-active-border
+      color: $button-danger-active-color
+  &.is-small
+    border-radius: $button-small-border-radius
+    padding: $button-small-padding
+    height: $button-small-height
+    font-size: $button-small-font-size
+  &.is-large
+    border-radius: $button-large-border-radius
+    padding: $button-large-padding
+    height: $button-large-height
+    font-size: $button-large-font-size
+  &.is-rounded
+    border-radius: $button-rounded-border-radius
+  &[disabled]
+    opacity: 0.7
