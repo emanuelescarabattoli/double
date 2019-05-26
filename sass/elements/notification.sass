@@ -45,6 +45,7 @@ $notification-danger-border: $none-border
 $notification-danger-color: $danger-color
 
 .notification
+  @extend %block
   border-radius: $notification-border-radius
   padding: $notification-padding
   font-size: $notification-font-size
@@ -53,19 +54,44 @@ $notification-danger-color: $danger-color
   background-color: $notification-backgorund-color
   border: $notification-border
   color: $notification-color
+  a
+    color: $notification-color
+    text-decoration: underline
+  strong
+    color: $notification-color
   &.is-primary
     background-color: $notification-primary-backgorund-color
     border: $notification-primary-border
     color: $notification-primary-color
+    a
+      color: $notification-primary-color
+      text-decoration: underline
+    strong
+      color: $notification-primary-color
   &.is-success
     background-color: $notification-success-backgorund-color
     border: $notification-success-border
     color: $notification-success-color
+    a
+      color: $notification-success-color
+      text-decoration: underline
+    strong
+      color: $notification-success-color
   &.is-warning
     background-color: $notification-warning-backgorund-color
     border: $notification-warning-border
     color: $notification-warning-color
+    a
+      color: $notification-warning-color
+      text-decoration: underline
+    strong
+      color: $notification-warning-color
   &.is-danger
     background-color: $notification-danger-backgorund-color
     border: $notification-danger-border
     color: $notification-danger-color
+    a
+      color: $notification-danger-color
+      text-decoration: underline
+    strong
+      color: $notification-danger-color

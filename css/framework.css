@@ -219,7 +219,7 @@ table th {
 table th {
   color: #111111; }
 
-.content:not(:last-child) {
+.content:not(:last-child), .notification:not(:last-child), .columns:not(:last-child) {
   margin-bottom: 1.5rem; }
 
 .content p:not(:last-child),
@@ -302,7 +302,7 @@ table th {
 .content blockquote {
   background-color: #f0f0f0;
   border-left: solid 5px #0066ff;
-  padding: 0.75em 1em; }
+  padding: 1.25em 1.5em; }
 
 .content ol {
   list-style-position: outside;
@@ -355,7 +355,7 @@ table th {
   .content table th {
     border: solid 1px #dddddd;
     border-width: 0 0 1px;
-    padding: 0.75em 1em;
+    padding: 1.25em 1.5em;
     vertical-align: top; }
   .content table th {
     color: #111111; }
@@ -503,29 +503,54 @@ table th {
 
 .notification {
   border-radius: 4px;
-  padding: 0.75em 1em;
+  padding: 1.25em 1.5em;
   font-size: 1em;
   position: relative;
   font-family: "Roboto";
-  background-color: #e8e8e8;
+  background-color: #e5e5e5;
   border: none;
   color: #222222; }
+  .notification a {
+    color: #222222;
+    text-decoration: underline; }
+  .notification strong {
+    color: #222222; }
   .notification.is-primary {
     background-color: #0088ff;
     border: none;
     color: #f0f0f0; }
+    .notification.is-primary a {
+      color: #f0f0f0;
+      text-decoration: underline; }
+    .notification.is-primary strong {
+      color: #f0f0f0; }
   .notification.is-success {
     background-color: #00cc00;
     border: none;
     color: #f0f0f0; }
+    .notification.is-success a {
+      color: #f0f0f0;
+      text-decoration: underline; }
+    .notification.is-success strong {
+      color: #f0f0f0; }
   .notification.is-warning {
     background-color: #ff9900;
     border: none;
     color: #7a4900; }
+    .notification.is-warning a {
+      color: #7a4900;
+      text-decoration: underline; }
+    .notification.is-warning strong {
+      color: #7a4900; }
   .notification.is-danger {
     background-color: #cc0000;
     border: none;
     color: #f0f0f0; }
+    .notification.is-danger a {
+      color: #f0f0f0;
+      text-decoration: underline; }
+    .notification.is-danger strong {
+      color: #f0f0f0; }
 
 .columns {
   box-sizing: border-box;
