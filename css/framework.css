@@ -219,8 +219,8 @@ table th {
 table th {
   color: #111111; }
 
-.content:not(:last-child), .notification:not(:last-child), .columns:not(:last-child) {
-  margin-bottom: 1.5rem; }
+.group:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .columns:not(:last-child) {
+  margin-bottom: 0.75rem; }
 
 .content p:not(:last-child),
 .content dl:not(:last-child),
@@ -551,6 +551,79 @@ table th {
       text-decoration: underline; }
     .notification.is-danger strong {
       color: #f0f0f0; }
+
+.tags:not(:last-child) {
+  margin-bottom: 0.2rem; }
+
+.tags > * {
+  margin-left: 0;
+  margin-right: 0.2rem; }
+
+.tags > *:last-child {
+  margin-right: 0; }
+
+.tags.align-right > * {
+  margin-right: 0;
+  margin-left: 0.2rem; }
+
+.tags.align-right > *:last-child {
+  margin-left: 0; }
+
+.tag {
+  display: inline-flex;
+  border-radius: 3px;
+  font-size: 0.7em;
+  font-family: "Roboto";
+  background-color: #e5e5e5;
+  border: none;
+  color: #222222;
+  height: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.65em; }
+  .tag a {
+    color: #222222;
+    text-decoration: underline; }
+  .tag strong {
+    color: #222222; }
+  .tag.is-primary {
+    background-color: #0088ff;
+    border: none;
+    color: #f0f0f0; }
+    .tag.is-primary a {
+      color: #f0f0f0;
+      text-decoration: underline; }
+    .tag.is-primary strong {
+      color: #f0f0f0; }
+  .tag.is-success {
+    background-color: #00cc00;
+    border: none;
+    color: #f0f0f0; }
+    .tag.is-success a {
+      color: #f0f0f0;
+      text-decoration: underline; }
+    .tag.is-success strong {
+      color: #f0f0f0; }
+  .tag.is-warning {
+    background-color: #ff9900;
+    border: none;
+    color: #7a4900; }
+    .tag.is-warning a {
+      color: #7a4900;
+      text-decoration: underline; }
+    .tag.is-warning strong {
+      color: #7a4900; }
+  .tag.is-danger {
+    background-color: #cc0000;
+    border: none;
+    color: #f0f0f0; }
+    .tag.is-danger a {
+      color: #f0f0f0;
+      text-decoration: underline; }
+    .tag.is-danger strong {
+      color: #f0f0f0; }
+  .tag.is-rounded {
+    border-radius: 1em; }
 
 .columns {
   box-sizing: border-box;

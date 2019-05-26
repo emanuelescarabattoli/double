@@ -1,0 +1,114 @@
+
+// Fonts
+
+$tag-font-family: $font-family-action
+
+// Sizes
+
+$tag-border-radius: 3px
+$tag-border-radius-rounded: $border-radius-rounded
+$tag-padding: 0 0.65em
+$tag-font-size: 0.70em
+$tag-height: 1.4rem
+
+// Default colors
+
+$tag-backgorund-color: $default-backgorund-color
+$tag-border: $none-border
+$tag-color: $default-color
+
+// Primary colors
+
+$tag-primary-backgorund-color: $primary-backgorund-color
+$tag-primary-border: $none-border
+$tag-primary-color: $primary-color
+
+
+// Success colors
+
+$tag-success-backgorund-color: $success-backgorund-color
+$tag-success-border: $none-border
+$tag-success-color: $success-color
+
+// Warning colors
+
+$tag-warning-backgorund-color: $warning-backgorund-color
+$tag-warning-border: $none-border
+$tag-warning-color: $warning-color
+
+// Danger colors
+
+$tag-danger-backgorund-color: $danger-backgorund-color
+$tag-danger-border: $none-border
+$tag-danger-color: $danger-color
+
+.tags
+  &:not(:last-child)
+    margin-bottom: 0.2rem
+  & > *
+    margin-left: 0
+    margin-right: 0.2rem
+  & > *:last-child
+    margin-right: 0
+  &.align-right
+    & > *
+      margin-right: 0
+      margin-left: 0.2rem
+    & > *:last-child
+      margin-left: 0
+
+.tag
+  display: inline-flex
+  border-radius: $tag-border-radius
+  font-size: $tag-font-size
+  font-family: $tag-font-family
+  background-color: $tag-backgorund-color
+  border: $tag-border
+  color: $tag-color
+  height: $tag-height
+  align-items: center
+  justify-content: center
+  padding: $tag-padding
+  a
+    color: $tag-color
+    text-decoration: underline
+  strong
+    color: $tag-color
+  &.is-primary
+    background-color: $tag-primary-backgorund-color
+    border: $tag-primary-border
+    color: $tag-primary-color
+    a
+      color: $tag-primary-color
+      text-decoration: underline
+    strong
+      color: $tag-primary-color
+  &.is-success
+    background-color: $tag-success-backgorund-color
+    border: $tag-success-border
+    color: $tag-success-color
+    a
+      color: $tag-success-color
+      text-decoration: underline
+    strong
+      color: $tag-success-color
+  &.is-warning
+    background-color: $tag-warning-backgorund-color
+    border: $tag-warning-border
+    color: $tag-warning-color
+    a
+      color: $tag-warning-color
+      text-decoration: underline
+    strong
+      color: $tag-warning-color
+  &.is-danger
+    background-color: $tag-danger-backgorund-color
+    border: $tag-danger-border
+    color: $tag-danger-color
+    a
+      color: $tag-danger-color
+      text-decoration: underline
+    strong
+      color: $tag-danger-color
+  &.is-rounded
+    border-radius: $tag-border-radius-rounded
