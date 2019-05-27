@@ -5,11 +5,12 @@ $tag-font-family: $font-family-action
 
 // Sizes
 
-$tag-border-radius: 3px
+$tag-border-radius: 4px
 $tag-border-radius-rounded: $border-radius-rounded
 $tag-padding: 0 0.65em
 $tag-font-size: 0.70em
 $tag-height: 1.4rem
+$tag-line-height: 1em
 
 // Default colors
 
@@ -43,72 +44,71 @@ $tag-danger-border: $none-border
 $tag-danger-color: $danger-color
 
 .tags
-  &:not(:last-child)
-    margin-bottom: 0.2rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
   & > *
     margin-left: 0
-    margin-right: 0.2rem
-  & > *:last-child
-    margin-right: 0
+    margin-right: 0.3rem
+    margin-bottom: 0.3rem
   &.align-right
+    justify-content: flex-end
     & > *
       margin-right: 0
-      margin-left: 0.2rem
-    & > *:last-child
-      margin-left: 0
-
-.tag
-  display: inline-flex
-  border-radius: $tag-border-radius
-  font-size: $tag-font-size
-  font-family: $tag-font-family
-  background-color: $tag-backgorund-color
-  border: $tag-border
-  color: $tag-color
-  height: $tag-height
-  align-items: center
-  justify-content: center
-  padding: $tag-padding
-  a
+      margin-left: 0.3rem
+  .tag
+    display: inline-flex
+    border-radius: $tag-border-radius
+    font-size: $tag-font-size
+    font-family: $tag-font-family
+    background-color: $tag-backgorund-color
+    border: $tag-border
     color: $tag-color
-    text-decoration: underline
-  strong
-    color: $tag-color
-  &.is-primary
-    background-color: $tag-primary-backgorund-color
-    border: $tag-primary-border
-    color: $tag-primary-color
+    height: $tag-height
+    align-items: center
+    justify-content: center
+    padding: $tag-padding
+    line-height: $tag-line-height
     a
+      color: $tag-color
+      text-decoration: underline
+    strong
+      color: $tag-color
+    &.is-primary
+      background-color: $tag-primary-backgorund-color
+      border: $tag-primary-border
       color: $tag-primary-color
-      text-decoration: underline
-    strong
-      color: $tag-primary-color
-  &.is-success
-    background-color: $tag-success-backgorund-color
-    border: $tag-success-border
-    color: $tag-success-color
-    a
+      a
+        color: $tag-primary-color
+        text-decoration: underline
+      strong
+        color: $tag-primary-color
+    &.is-success
+      background-color: $tag-success-backgorund-color
+      border: $tag-success-border
       color: $tag-success-color
-      text-decoration: underline
-    strong
-      color: $tag-success-color
-  &.is-warning
-    background-color: $tag-warning-backgorund-color
-    border: $tag-warning-border
-    color: $tag-warning-color
-    a
+      a
+        color: $tag-success-color
+        text-decoration: underline
+      strong
+        color: $tag-success-color
+    &.is-warning
+      background-color: $tag-warning-backgorund-color
+      border: $tag-warning-border
       color: $tag-warning-color
-      text-decoration: underline
-    strong
-      color: $tag-warning-color
-  &.is-danger
-    background-color: $tag-danger-backgorund-color
-    border: $tag-danger-border
-    color: $tag-danger-color
-    a
+      a
+        color: $tag-warning-color
+        text-decoration: underline
+      strong
+        color: $tag-warning-color
+    &.is-danger
+      background-color: $tag-danger-backgorund-color
+      border: $tag-danger-border
       color: $tag-danger-color
-      text-decoration: underline
-    strong
-      color: $tag-danger-color
-  &.is-rounded
-    border-radius: $tag-border-radius-rounded
+      a
+        color: $tag-danger-color
+        text-decoration: underline
+      strong
+        color: $tag-danger-color
+    &.is-rounded
+      border-radius: $tag-border-radius-rounded

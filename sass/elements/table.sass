@@ -1,0 +1,81 @@
+
+// General variables
+
+$table-background-color: $color-background
+$table-color: $color-text
+$table-border: $none-border
+
+// Header
+
+$table-header-background-color: $color-background
+$table-header-color: $color-text-dark
+$table-header-font-weight: $font-weight-bold
+$table-header-border: $default-border
+$table-header-padding: 0.6rem 0.75rem
+$table-header-font-size: 0.9em
+
+// Row
+
+$table-row-background-color: $color-background
+$table-row-color: $color-text
+$table-row-font-weight: $font-weight-default
+$table-row-border: $default-border
+$table-row-padding: 0.6rem 0.75rem
+$table-row-font-size: 1em
+
+// Footer
+
+$table-footer-background-color: $color-background
+$table-footer-color: $color-text-dark
+$table-footer-font-weight: $font-weight-bold
+$table-footer-border: $default-border
+$table-footer-padding: 0.6rem 0.75rem
+$table-footer-font-size: 0.9em
+
+// Table stripped
+
+$table-stripped-background-color: $color-background-semi-dark
+
+// Table bordered
+
+$table-bordered-border: $default-border
+
+.table
+  @extend %block
+  background-color: $table-background-color
+  color: $table-color
+  border: $table-border
+  thead
+    tr
+      border-bottom: $table-header-border
+    th
+      background-color: $table-header-background-color
+      color: $table-header-color
+      font-weight: $table-header-font-weight
+      padding: $table-header-padding
+      font-size: $table-header-font-size
+  tbody
+    tr
+      border-bottom: $table-row-border
+    tr:last-child
+      border-bottom: none
+    td
+      background-color: $table-row-background-color
+      color: $table-row-color
+      font-weight: $table-row-font-weight
+      padding: $table-row-padding
+      font-size: $table-row-font-size
+  tfoot
+    tr
+      border-top: $table-footer-border
+    td
+      background-color: $table-footer-background-color
+      color: $table-footer-color
+      font-weight: $table-footer-font-weight
+      padding: $table-footer-padding
+      font-size: $table-footer-font-size
+  &.is-striped
+    tr:nth-child(even) td
+      background-color: $table-stripped-background-color
+  &.is-bordered
+      border: $table-bordered-border
