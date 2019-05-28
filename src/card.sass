@@ -1,0 +1,69 @@
+
+// Fonts
+
+$card-font-family: $font-family-default
+
+// Card
+
+$card-border: solid 1px #d0d0d0
+$card-border-radius: $border-radius-default
+$card-box-shadow: none
+
+// Header
+
+$card-header-padding: 0.75rem 1rem
+$card-header-background-color: #e9e9e9
+$card-header-border: solid 1px #d0d0d0
+$card-header-color: $default-color
+$card-header-line-height: $line-height-default
+$card-header-font-size: $font-size-dafault
+$card-header-font-weight: $font-weight-bold
+
+// Body
+
+$card-body-padding: 0.75rem 1rem
+$card-body-background-color: $color-background
+$card-body-color: $default-color
+$card-body-line-height: $line-height-large
+$card-body-font-size: $font-size-dafault
+$card-body-font-weight: $font-weight-default
+
+// Footer
+
+$card-footer-padding: 0.75rem 1rem
+$card-footer-background-color: #e9e9e9
+$card-footer-border: solid 1px #d0d0d0
+$card-footer-color: $default-color
+$card-footer-line-height: $line-height-default
+$card-footer-font-size: $font-size-dafault
+$card-footer-font-weight: $font-weight-bold
+
+.card
+  @extend %block
+  position: relative
+  border: $card-border
+  border-radius: $card-border-radius
+  box-shadow: $card-box-shadow
+  .card-header
+    padding: $card-header-padding
+    background-color: $card-header-background-color
+    border-bottom: $card-header-border
+    color: $card-header-color
+    line-height: $card-header-line-height
+    font-size: $card-header-font-size
+    font-weight: $card-header-font-weight
+  .card-body
+    padding: $card-body-padding
+    background-color: $card-body-background-color
+    color: $card-body-color
+    line-height: $card-body-line-height
+    font-size: $card-body-font-size
+    font-weight: $card-body-font-weight
+  .card-footer
+    padding: $card-footer-padding
+    background-color: $card-footer-background-color
+    border-top: $card-footer-border
+    color: $card-footer-color
+    line-height: $card-footer-line-height
+    font-size: $card-footer-font-size
+    font-weight: $card-footer-font-weight

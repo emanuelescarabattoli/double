@@ -4,19 +4,18 @@
 .full-width
   width: 100%
 
+.spacer
+  padding: 1rem 0 2rem 0
+
 .group
   @extend %block
   & > *
     margin-left: 0
     margin-right: $spacing-in-half
-  & > *:last-child
-    margin-right: 0
   &.align-right
     & > *
       margin-right: 0
       margin-left: $spacing-in-half
-    & > *:last-child
-      margin-left: 0
 
 .container
   margin: 0 auto

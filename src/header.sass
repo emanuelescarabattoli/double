@@ -1,0 +1,111 @@
+
+// Header
+
+$header-padding: 0.75rem 1rem
+$header-background-color: $color-primary
+$header-color: $color-white
+$header-height: 50vh
+
+// Title
+
+$header-title-line-height: 1em
+$header-title-font-size: 2.5em
+$header-title-font-weight: $font-weight-bold
+$header-title-font-family: "Ubuntu"
+
+// Subtitle
+
+$header-subtitle-margin: 0.8rem
+$header-subtitle-line-height: 1em
+$header-subtitle-font-size: 1.5em
+$header-subtitle-font-weight: $font-weight-default
+$header-subtitle-font-family: "Ubuntu"
+
+// Actions
+
+$header-actions-margin: 2rem 0.4rem 0 0.4rem
+
+// Action
+
+$action-border-radius: $border-radius-rounded
+$action-padding: $button-padding-default
+$action-height: $button-height-default
+$action-font-size: $button-font-size-default
+$action-font-family: "Ubuntu"
+$action-font-weight: $font-weight-default
+
+$action-background-color: transparent
+$action-border: solid 1px $color-white
+$action-color: $color-white
+
+$action-hover-background-color: #ffffff11
+$action-hover-border: solid 1px $color-white
+$action-hover-color: $color-white
+
+$action-focus-background-color: #ffffff11
+$action-focus-border: solid 1px $color-white
+$action-focus-color: $color-white
+
+$action-active-background-color: #ffffff11
+$action-active-border: solid 1px $color-white
+$action-active-color: $color-white
+
+.header
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: $header-padding
+  background-color: $header-background-color
+  color: $header-color
+  height: $header-height
+  &.is-fancy
+    margin-bottom: 1rem
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+  .header-content
+    text-align: center
+    .header-title
+      line-height: $header-title-line-height
+      font-size: $header-title-font-size
+      font-weight: $header-title-font-weight
+      font-family: $header-title-font-family
+    .header-subtitle
+      margin-top: $header-subtitle-margin
+      line-height: $header-subtitle-line-height
+      font-size: $header-subtitle-font-size
+      font-weight: $header-subtitle-font-weight
+      font-family: $header-subtitle-font-family
+    .header-actions
+      & > *
+        margin: $header-actions-margin
+      .header-action
+        @extend %button
+        @extend %unselectable
+        border-radius: $action-border-radius
+        padding: $action-padding
+        height: $action-height
+        font-size: $action-font-size
+        cursor: pointer
+        justify-content: center
+        text-align: center
+        white-space: nowrap
+        font-family: $action-font-family
+        font-weight: $action-font-weight
+        background-color: $action-background-color
+        border: $action-border
+        color: $action-color
+        &:hover,
+        &.is-hovered
+          background-color: $action-hover-background-color
+          border: $action-hover-border
+          color: $action-hover-color
+        &:focus,
+        &.is-focused
+          background-color: $action-focus-background-color
+          border: $action-focus-border
+          color: $action-focus-color
+        &:active,
+        &.is-active
+          background-color: $action-active-background-color
+          border: $action-active-border
+          color: $action-active-color
