@@ -26,6 +26,6 @@
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "start": "yarn run node-sass framework.sass css/framework.css --watch"
+    "start": "yarn run node-sass framework.sass dist/framework.css --watch"
   }
 }
