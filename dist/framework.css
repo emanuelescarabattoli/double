@@ -1148,3 +1148,31 @@ table th {
   padding: 3rem 1.5rem; }
   .section.is-small {
     padding: 1.5rem 1.5rem; }
+
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+  .tooltip:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1; }
+  .tooltip .tooltip-parent {
+    position: relative;
+    display: inline-block; }
+  .tooltip .tooltip-content {
+    border-radius: 4px;
+    padding: 0.5em;
+    font-size: 0.9em;
+    position: absolute;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    background-color: #222222;
+    color: #ffffff;
+    line-height: 1em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    top: -2.5em;
+    font-weight: 400; }

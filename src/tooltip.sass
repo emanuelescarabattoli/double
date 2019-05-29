@@ -1,0 +1,44 @@
+
+// Fonts
+
+$tooltip-font-family: $font-family-default
+
+// Tooltip
+
+$tooltip-top: -2.5em
+$tooltip-padding: 0.5em
+$tooltip-font-size: 0.9em
+$tooltip-line-height: 1em
+$tooltip-background-color: #222222
+$tooltip-color: #ffffff
+$tooltip-border-radius: 4px
+$tooltip-font-weight: 400
+
+.tooltip
+  position: relative
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  &:hover
+    .tooltip-content
+      visibility: visible
+      opacity: 1
+  .tooltip-parent
+    position: relative
+    display: inline-block
+  .tooltip-content
+    border-radius: $tooltip-border-radius
+    padding: $tooltip-padding
+    font-size: $tooltip-font-size
+    position: absolute
+    display: inline-block
+    font-family: $tooltip-font-family
+    background-color: $tooltip-background-color
+    color: $tooltip-color
+    line-height: $tooltip-line-height
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    white-space: nowrap
+    top: $tooltip-top
+    font-weight: $tooltip-font-weight
