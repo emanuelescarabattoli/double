@@ -264,14 +264,19 @@ table th {
     max-width: none;
     width: 100%; }
 
+.section {
+  padding: 3rem 1.5rem; }
+  .section + .section {
+    padding: 0rem 1.5rem 3rem 1.5rem; }
+
 .columns {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -0.5;
-  margin-left: -0.5; }
+  margin-right: -1rem;
+  margin-left: -1rem; }
 
 .start {
   justify-content: flex-start;
@@ -327,7 +332,7 @@ table th {
 .col-xs-offset-12 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding: 0 0.5; }
+  padding: 0 1rem; }
 
 .col-xs {
   flex-grow: 1;
@@ -443,7 +448,7 @@ table th {
   .col-sm-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 0.5; }
+    padding: 0 1rem; }
   .col-sm {
     flex-grow: 1;
     flex-basis: 0;
@@ -535,7 +540,7 @@ table th {
   .col-md-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 0.5; }
+    padding: 0 1rem; }
   .col-md {
     flex-grow: 1;
     flex-basis: 0;
@@ -627,7 +632,7 @@ table th {
   .col-lg-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 0.5; }
+    padding: 0 1rem; }
   .col-lg {
     flex-grow: 1;
     flex-basis: 0;
@@ -1144,11 +1149,6 @@ table th {
         border: solid 1px #f0f0f0;
         color: #f0f0f0; }
 
-.section {
-  padding: 3rem 1.5rem; }
-  .section.is-small {
-    padding: 1.5rem 1.5rem; }
-
 .tooltip {
   position: relative;
   display: inline-flex;
@@ -1176,3 +1176,13 @@ table th {
     white-space: nowrap;
     top: -2.5em;
     font-weight: 400; }
+
+.image {
+  display: block;
+  position: relative;
+  line-height: 0; }
+  .image.is-rounded {
+    border-radius: 100%;
+    overflow: hidden; }
+  .image img {
+    width: 100%; }
