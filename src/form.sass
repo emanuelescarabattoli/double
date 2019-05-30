@@ -1,0 +1,92 @@
+
+// Field
+
+$field-margin: 0.75rem
+
+// Label
+
+$label-font-family: $font-weight-bold
+$label-font-weight: $font-weight-bold
+$label-font-size: 0.9em
+$label-font-line-height: $line-height-large
+$label-margin: 0.5rem
+$label-font-color: $color-text-dark
+
+// Input default
+
+$input-padding: 0.5rem
+$input-font-family: $font-weight-bold
+$input-font-weight: $font-weight-bold
+$input-font-size: $font-size-dafault
+$input-font-line-height: $line-height-default
+$input-font-margin: 0.5rem
+$input-font-color: $color-text-dark
+$input-height: 2.25rem
+$input-border: $default-border
+$input-border-radius: 4px
+$input-background-color: #ffffff
+
+// Input hover
+
+$input-hover-border: solid 1px #0066ff
+$input-hover-background-color: #ffffff
+
+// Input focused
+
+$input-focused-border: solid 1px #0066ff
+$input-focused-background-color: #ffffff
+$input-focused-box-shadow: 0 0 0 2px #0066ff55
+
+// Input active
+
+$input-active-border: solid 1px #003aa0
+$input-active-background-color: #ffffff
+$input-active-box-shadow: 0 0 0 2px #0066ff55
+
+// Input disabled
+
+$input-disabled-border: $default-border
+$input-disabled-background-color: #ffffff
+
+.field
+  .label
+    display: block
+    font-family: $label-font-family
+    font-weight: $label-font-weight
+    font-size: $label-font-size
+    font-line-height: $label-font-line-height
+    margin-bottom: $label-margin
+    font-color: $label-font-color
+  &:not(:last-child)
+    margin-bottom: $field-margin
+  .input
+    width: 100%
+    padding: $input-padding
+    display: block
+    font-family: $input-font-family
+    font-weight: $input-font-weight
+    font-size: $input-font-size
+    font-line-height: $input-font-line-height
+    font-margin: $input-font-margin
+    font-color: $input-font-color
+    height: $input-height
+    border: $input-border
+    border-radius: $input-border-radius
+    background-color: $input-background-color
+    &:hover
+      &:not(:active)
+        border: $input-hover-border
+        background-color: $input-hover-background-color
+    &:focus
+      border: $input-focused-border
+      background-color: $input-focused-background-color
+      box-shadow: $input-focused-box-shadow
+    &:active
+      border: $input-active-border
+      background-color: $input-active-background-color
+      box-shadow: $input-active-box-shadow
+    &[disabled]
+      border: $input-disabled-border
+      background-color: $input-disabled-background-color
+  textarea.input
+    height: auto

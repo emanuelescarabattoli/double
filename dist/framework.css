@@ -1186,3 +1186,47 @@ table th {
     overflow: hidden; }
   .image img {
     width: 100%; }
+
+.field .label {
+  display: block;
+  font-family: 600;
+  font-weight: 600;
+  font-size: 0.9em;
+  font-line-height: 1.3;
+  margin-bottom: 0.5rem;
+  font-color: #111111; }
+
+.field:not(:last-child) {
+  margin-bottom: 0.75rem; }
+
+.field .input {
+  width: 100%;
+  padding: 0.5rem;
+  display: block;
+  font-family: 600;
+  font-weight: 600;
+  font-size: 1em;
+  font-line-height: 1;
+  font-margin: 0.5rem;
+  font-color: #111111;
+  height: 2.25rem;
+  border: solid 1px #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff; }
+  .field .input:hover:not(:active) {
+    border: solid 1px #0066ff;
+    background-color: #ffffff; }
+  .field .input:focus {
+    border: solid 1px #0066ff;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px #0066ff55; }
+  .field .input:active {
+    border: solid 1px #003aa0;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px #0066ff55; }
+  .field .input[disabled] {
+    border: solid 1px #cccccc;
+    background-color: #ffffff; }
+
+.field textarea.input {
+  height: auto; }
