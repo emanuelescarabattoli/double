@@ -1,26 +1,42 @@
 
 // Field
 
-$field-margin: 0.75rem
+$field-margin: 1.25rem
 
 // Label
 
-$label-font-family: $font-weight-bold
+$label-font-family: $font-family-default
 $label-font-weight: $font-weight-bold
 $label-font-size: 0.9em
-$label-font-line-height: $line-height-large
-$label-margin: 0.5rem
-$label-font-color: $color-text-dark
+$label-font-line-height: $line-height-default
+$label-margin: 0.4rem
+$label-color: $color-text-dark
+
+// Help
+
+$help-font-family: $font-family-default
+$help-font-weight: $font-weight-default
+$help-font-size: 0.8em
+$help-font-line-height: 0.7em
+$help-margin: 0.5rem
+$help-color: $color-text
+
+// Help success
+
+$help-success-color: $success-background-color
+
+// Help error
+
+$help-danger-color: $danger-background-color
 
 // Input default
 
 $input-padding: 0.5rem
-$input-font-family: $font-weight-bold
+$input-font-family: $font-family-default
 $input-font-weight: $font-weight-bold
 $input-font-size: $font-size-dafault
 $input-font-line-height: $line-height-default
-$input-font-margin: 0.5rem
-$input-font-color: $color-text-dark
+$input-color: $color-text-dark
 $input-height: 2.25rem
 $input-border: $default-border
 $input-border-radius: 4px
@@ -46,7 +62,7 @@ $input-active-box-shadow: 0 0 0 2px #0066ff55
 // Input disabled
 
 $input-disabled-border: $default-border
-$input-disabled-background-color: #ffffff
+$input-disabled-background-color: #cccccc
 
 .field
   .label
@@ -54,9 +70,21 @@ $input-disabled-background-color: #ffffff
     font-family: $label-font-family
     font-weight: $label-font-weight
     font-size: $label-font-size
-    font-line-height: $label-font-line-height
+    line-height: $label-font-line-height
     margin-bottom: $label-margin
-    font-color: $label-font-color
+    color: $label-color
+  .help
+    display: block
+    font-family: $help-font-family
+    font-weight: $help-font-weight
+    font-size: $help-font-size
+    line-height: $help-font-line-height
+    margin-top: $help-margin
+    color: $help-color
+    &.is-success
+      color: $help-success-color
+    &.is-danger
+      color: $help-danger-color
   &:not(:last-child)
     margin-bottom: $field-margin
   .input
@@ -66,9 +94,8 @@ $input-disabled-background-color: #ffffff
     font-family: $input-font-family
     font-weight: $input-font-weight
     font-size: $input-font-size
-    font-line-height: $input-font-line-height
-    font-margin: $input-font-margin
-    font-color: $input-font-color
+    line-height: $input-font-line-height
+    color: $input-color
     height: $input-height
     border: $input-border
     border-radius: $input-border-radius
@@ -89,4 +116,9 @@ $input-disabled-background-color: #ffffff
       border: $input-disabled-border
       background-color: $input-disabled-background-color
   textarea.input
+    min-width: 100%
+    max-width: 100%
     height: auto
+    min-height: $input-height
+  select.input
+    padding: 0 0.2rem

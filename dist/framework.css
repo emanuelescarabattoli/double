@@ -1072,7 +1072,7 @@ table th {
   border-radius: 4px;
   box-shadow: none; }
   .card .card-header {
-    padding: 0.75rem 1rem;
+    padding: 1.2rem 1.4rem;
     background-color: #e9e9e9;
     border-bottom: solid 1px #d0d0d0;
     color: #222222;
@@ -1080,14 +1080,14 @@ table th {
     font-size: 1em;
     font-weight: 600; }
   .card .card-body {
-    padding: 0.75rem 1rem;
+    padding: 1.2rem 1.4rem;
     background-color: #f0f0f0;
     color: #222222;
     line-height: 1.3;
     font-size: 1em;
     font-weight: 400; }
   .card .card-footer {
-    padding: 0.75rem 1rem;
+    padding: 1.2rem 1.4rem;
     background-color: #f0f0f0;
     border-top: none;
     color: #222222;
@@ -1189,26 +1189,38 @@ table th {
 
 .field .label {
   display: block;
-  font-family: 600;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 0.9em;
-  font-line-height: 1.3;
-  margin-bottom: 0.5rem;
-  font-color: #111111; }
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  color: #111111; }
+
+.field .help {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 0.7em;
+  margin-top: 0.5rem;
+  color: #222222; }
+  .field .help.is-success {
+    color: #00cc00; }
+  .field .help.is-danger {
+    color: #cc0000; }
 
 .field:not(:last-child) {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 1.25rem; }
 
 .field .input {
   width: 100%;
   padding: 0.5rem;
   display: block;
-  font-family: 600;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 1em;
-  font-line-height: 1;
-  font-margin: 0.5rem;
-  font-color: #111111;
+  line-height: 1;
+  color: #111111;
   height: 2.25rem;
   border: solid 1px #cccccc;
   border-radius: 4px;
@@ -1226,7 +1238,13 @@ table th {
     box-shadow: 0 0 0 2px #0066ff55; }
   .field .input[disabled] {
     border: solid 1px #cccccc;
-    background-color: #ffffff; }
+    background-color: #cccccc; }
 
 .field textarea.input {
-  height: auto; }
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 2.25rem; }
+
+.field select.input {
+  padding: 0 0.2rem; }
