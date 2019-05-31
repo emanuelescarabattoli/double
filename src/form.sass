@@ -18,7 +18,7 @@ $help-font-family: $font-family-default
 $help-font-weight: $font-weight-default
 $help-font-size: 0.8em
 $help-font-line-height: 0.7em
-$help-margin: 0.5rem
+$help-margin: 0.8rem
 $help-color: $color-text
 
 // Help success
@@ -28,6 +28,25 @@ $help-success-color: $success-background-color
 // Help error
 
 $help-danger-color: $danger-background-color
+
+// Checkbox
+
+$checkbox-font-family: $font-family-default
+$checkbox-font-weight: $font-weight-default
+$checkbox-font-size: $font-size-dafault
+$checkbox-font-line-height: $line-height-default
+$checkbox-margin: 0.2rem
+$checkbox-color: $color-text-dark
+
+// Radio
+
+$radio-font-family: $font-family-default
+$radio-font-weight: $font-weight-default
+$radio-font-size: $font-size-dafault
+$radio-font-line-height: $line-height-default
+$radio-margin: 0.2rem
+$radio-label-margin: 0.8rem
+$radio-color: $color-text-dark
 
 // Input default
 
@@ -122,3 +141,29 @@ $input-disabled-background-color: #cccccc
     min-height: $input-height
   select.input
     padding: 0 0.2rem
+  .checkbox
+    @extend %unselectable
+    display: block
+    font-family: $checkbox-font-family
+    font-weight: $checkbox-font-weight
+    font-size: $checkbox-font-size
+    line-height: $checkbox-font-line-height
+    color: $checkbox-color
+    input
+      display: inline-block
+      margin-right: $checkbox-margin
+  .radio
+    @extend %unselectable
+    display: block
+    font-family: $radio-font-family
+    font-weight: $radio-font-weight
+    font-size: $radio-font-size
+    line-height: $radio-font-line-height
+    color: $radio-color
+    label
+      display: block
+      & + label
+      margin-top: $radio-label-margin
+    input
+      display: inline-block
+      margin-right: $radio-margin

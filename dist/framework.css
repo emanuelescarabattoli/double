@@ -102,7 +102,7 @@ th {
   .header .header-content .header-actions fieldset[disabled] .header-action {
     cursor: not-allowed; }
 
-.button, .header .header-content .header-actions .header-action {
+.button, .header .header-content .header-actions .header-action, .field .checkbox, .field .radio {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1202,7 +1202,7 @@ table th {
   font-weight: 400;
   font-size: 0.8em;
   line-height: 0.7em;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   color: #222222; }
   .field .help.is-success {
     color: #00cc00; }
@@ -1248,3 +1248,28 @@ table th {
 
 .field select.input {
   padding: 0 0.2rem; }
+
+.field .checkbox {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1;
+  color: #111111; }
+  .field .checkbox input {
+    display: inline-block;
+    margin-right: 0.2rem; }
+
+.field .radio {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1;
+  color: #111111; }
+  .field .radio label {
+    display: block;
+    margin-top: 0.8rem; }
+  .field .radio input {
+    display: inline-block;
+    margin-right: 0.2rem; }
