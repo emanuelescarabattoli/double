@@ -1287,3 +1287,58 @@ table th {
     margin-right: 0.8rem; }
     .field .radio.is-inline label + label {
       margin-top: 0; }
+
+.navbar {
+  padding: 0 1rem;
+  background-color: transparent;
+  border-bottom: solid 2px #e9e9e9; }
+  @media screen and (min-width: 1000px) {
+    .navbar {
+      white-space: nowrap;
+      line-height: 0; } }
+  .navbar .navbar-left {
+    width: 100%;
+    display: block; }
+    @media screen and (min-width: 1000px) {
+      .navbar .navbar-left {
+        width: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: left; } }
+    .navbar .navbar-left .navbar-items .navbar-item {
+      display: inline-block; }
+      .navbar .navbar-left .navbar-items .navbar-item a {
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        font-size: 1em;
+        line-height: 1.3;
+        color: #222222; }
+        .navbar .navbar-left .navbar-items .navbar-item a:hover {
+          background-color: transparent;
+          color: #0066ff; }
+    .navbar .navbar-left .navbar-logo {
+      padding: 1rem 1rem 1rem 0;
+      font-size: 1em;
+      line-height: 1.3;
+      color: #222222;
+      font-weight: 600; }
+  .navbar .navbar-right {
+    width: 100%;
+    justify-content: right; }
+    @media screen and (min-width: 1000px) {
+      .navbar .navbar-right {
+        width: 50%;
+        display: inline-flex;
+        display: block;
+        align-items: center; } }
+    .navbar .navbar-right .navbar-items .navbar-item {
+      display: inline-block; }
+      .navbar .navbar-right .navbar-items .navbar-item a {
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        font-size: 1em;
+        line-height: 1.3;
+        color: #222222; }
+        .navbar .navbar-right .navbar-items .navbar-item a:hover {
+          background-color: transparent;
+          color: #0066ff; }
