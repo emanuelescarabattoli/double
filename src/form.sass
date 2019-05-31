@@ -1,7 +1,7 @@
 
 // Field
 
-$field-margin: 1.25rem
+$field-margin: 1.5rem
 
 // Label
 
@@ -9,7 +9,7 @@ $label-font-family: $font-family-default
 $label-font-weight: $font-weight-bold
 $label-font-size: 0.9em
 $label-font-line-height: $line-height-default
-$label-margin: 0.4rem
+$label-margin: 0.8rem
 $label-color: $color-text-dark
 
 // Help
@@ -36,6 +36,8 @@ $checkbox-font-weight: $font-weight-default
 $checkbox-font-size: $font-size-dafault
 $checkbox-font-line-height: $line-height-default
 $checkbox-margin: 0.2rem
+$checkbox-label-margin: 0.8rem
+$checkbox-margin-inline: 0.8rem
 $checkbox-color: $color-text-dark
 
 // Radio
@@ -46,6 +48,7 @@ $radio-font-size: $font-size-dafault
 $radio-font-line-height: $line-height-default
 $radio-margin: 0.2rem
 $radio-label-margin: 0.8rem
+$radio-margin-inline: 0.8rem
 $radio-color: $color-text-dark
 
 // Input default
@@ -142,16 +145,25 @@ $input-disabled-background-color: #cccccc
   select.input
     padding: 0 0.2rem
   .checkbox
-    @extend %unselectable
-    display: block
-    font-family: $checkbox-font-family
-    font-weight: $checkbox-font-weight
-    font-size: $checkbox-font-size
-    line-height: $checkbox-font-line-height
-    color: $checkbox-color
-    input
-      display: inline-block
-      margin-right: $checkbox-margin
+    label
+      @extend %unselectable
+      display: block
+      font-family: $checkbox-font-family
+      font-weight: $checkbox-font-weight
+      font-size: $checkbox-font-size
+      line-height: $checkbox-font-line-height
+      color: $checkbox-color
+      & + label
+        margin-top: $checkbox-label-margin
+      input
+        display: inline-block
+        margin-right: $checkbox-margin
+    &.is-inline
+      label
+        display: inline-block
+        margin-right: $checkbox-margin-inline
+        & + label
+          margin-top: 0
   .radio
     @extend %unselectable
     display: block
@@ -163,7 +175,13 @@ $input-disabled-background-color: #cccccc
     label
       display: block
       & + label
-      margin-top: $radio-label-margin
-    input
-      display: inline-block
-      margin-right: $radio-margin
+        margin-top: $radio-label-margin
+      input
+        display: inline-block
+        margin-right: $radio-margin
+    &.is-inline
+      label
+        display: inline-block
+        margin-right: $radio-margin-inline
+        & + label
+          margin-top: 0

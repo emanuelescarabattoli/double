@@ -102,7 +102,7 @@ th {
   .header .header-content .header-actions fieldset[disabled] .header-action {
     cursor: not-allowed; }
 
-.button, .header .header-content .header-actions .header-action, .field .checkbox, .field .radio {
+.button, .header .header-content .header-actions .header-action, .field .checkbox label, .field .radio {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1193,7 +1193,7 @@ table th {
   font-weight: 600;
   font-size: 0.9em;
   line-height: 1;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   color: #111111; }
 
 .field .help {
@@ -1210,7 +1210,7 @@ table th {
     color: #cc0000; }
 
 .field:not(:last-child) {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.5rem; }
 
 .field .input {
   width: 100%;
@@ -1249,16 +1249,24 @@ table th {
 .field select.input {
   padding: 0 0.2rem; }
 
-.field .checkbox {
+.field .checkbox label {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1;
   color: #111111; }
-  .field .checkbox input {
+  .field .checkbox label + label {
+    margin-top: 0.8rem; }
+  .field .checkbox label input {
     display: inline-block;
     margin-right: 0.2rem; }
+
+.field .checkbox.is-inline label {
+  display: inline-block;
+  margin-right: 0.8rem; }
+  .field .checkbox.is-inline label + label {
+    margin-top: 0; }
 
 .field .radio {
   display: block;
@@ -1268,8 +1276,14 @@ table th {
   line-height: 1;
   color: #111111; }
   .field .radio label {
-    display: block;
-    margin-top: 0.8rem; }
-  .field .radio input {
+    display: block; }
+    .field .radio label + label {
+      margin-top: 0.8rem; }
+    .field .radio label input {
+      display: inline-block;
+      margin-right: 0.2rem; }
+  .field .radio.is-inline label {
     display: inline-block;
-    margin-right: 0.2rem; }
+    margin-right: 0.8rem; }
+    .field .radio.is-inline label + label {
+      margin-top: 0; }
