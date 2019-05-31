@@ -1289,22 +1289,26 @@ table th {
       margin-top: 0; }
 
 .navbar {
-  padding: 0 1rem;
-  background-color: transparent;
-  border-bottom: solid 2px #e9e9e9; }
+  white-space: nowrap;
+  background-color: transparent; }
   @media screen and (min-width: 1000px) {
     .navbar {
-      white-space: nowrap;
-      line-height: 0; } }
+      border-bottom: solid 2px #e5e5e5; } }
   .navbar .navbar-left {
     width: 100%;
     display: block; }
+    @media screen and (max-width: 1000px) {
+      .navbar .navbar-left {
+        border-bottom: solid 2px #e5e5e5; } }
     @media screen and (min-width: 1000px) {
       .navbar .navbar-left {
         width: 50%;
         display: inline-flex;
         align-items: center;
         justify-content: left; } }
+    @media screen and (max-width: 1000px) {
+      .navbar .navbar-left .navbar-items {
+        padding-left: 0.5rem; } }
     .navbar .navbar-left .navbar-items .navbar-item {
       display: inline-block; }
       .navbar .navbar-left .navbar-items .navbar-item a {
@@ -1316,21 +1320,33 @@ table th {
         .navbar .navbar-left .navbar-items .navbar-item a:hover {
           background-color: transparent;
           color: #0066ff; }
+          @media screen and (max-width: 1000px) {
+            .navbar .navbar-left .navbar-items .navbar-item a:hover {
+              background-color: transparent; } }
     .navbar .navbar-left .navbar-logo {
-      padding: 1rem 1rem 1rem 0;
+      padding: 1rem;
       font-size: 1em;
       line-height: 1.3;
       color: #222222;
       font-weight: 600; }
+      @media screen and (max-width: 1000px) {
+        .navbar .navbar-left .navbar-logo {
+          border-bottom: solid 2px #e5e5e5; } }
   .navbar .navbar-right {
     width: 100%;
-    justify-content: right; }
+    display: block; }
+    @media screen and (max-width: 1000px) {
+      .navbar .navbar-right {
+        border-bottom: solid 2px #e5e5e5;
+        padding-left: 0.5rem; } }
     @media screen and (min-width: 1000px) {
       .navbar .navbar-right {
         width: 50%;
         display: inline-flex;
-        display: block;
-        align-items: center; } }
+        align-items: center;
+        justify-content: right; } }
+    .navbar .navbar-right .navbar-items > :last-child {
+      margin-right: 0.5rem; }
     .navbar .navbar-right .navbar-items .navbar-item {
       display: inline-block; }
       .navbar .navbar-right .navbar-items .navbar-item a {
@@ -1342,3 +1358,6 @@ table th {
         .navbar .navbar-right .navbar-items .navbar-item a:hover {
           background-color: transparent;
           color: #0066ff; }
+          @media screen and (max-width: 1000px) {
+            .navbar .navbar-right .navbar-items .navbar-item a:hover {
+              background-color: transparent; } }
