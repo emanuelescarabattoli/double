@@ -1,90 +1,22 @@
-
-// Sizes
-
-$navbar-background-color: transparent
-$navbar-border: solid 2px #e5e5e5
-
-// Logo
-
-$navbar-logo-font-size: $font-size-dafault
-$navbar-logo-font-weight: $font-weight-bold
-$navbar-logo-line-height: $line-height-large
-$navbar-logo-color: $default-color
-
-// Item
-
-$navbar-item-font-size: $font-size-dafault
-$navbar-item-line-height: $line-height-large
-$navbar-item-color: $default-color
-
-// Item hover
-
-$navbar-item-hover-color: $color-primary
-$navbar-item-hover-backround-color: transparent
-
 .navbar
-  white-space: nowrap
-  background-color: $navbar-background-color
-  @media screen and (min-width: $desktop)
-    border-bottom: $navbar-border
+  padding: 0 0.5rem
+  display: flex
+  height: 4rem
+  justify-content: space-between
+  align-items: center
+  border-bottom: solid 2px #eaeaea
   .navbar-left
-    width: 100%
-    display: block
-    @media screen and (max-width: $desktop)
-      border-bottom: $navbar-border
-    @media screen and (min-width: $desktop)
-      width: 50%
-      display: inline-flex
-      align-items: center
-      justify-content: left
-    .navbar-items
-      @media screen and (max-width: $desktop)
-        padding-left: 0.5rem
-      .navbar-item
-        display: inline-block
-        a
-          display: inline-block
-          padding: 1rem 0.5rem
-          font-size: $navbar-item-font-size
-          line-height: $navbar-item-line-height
-          color: $navbar-item-color
-          &:hover
-            @media screen and (max-width: $desktop)
-              background-color: transparent
-            background-color: $navbar-item-hover-backround-color
-            color: $navbar-item-hover-color
-    .navbar-logo
-      @media screen and (max-width: $desktop)
-        border-bottom: $navbar-border
-      padding: 1rem
-      font-size: $navbar-logo-font-size
-      line-height: $navbar-logo-line-height
-      color: $navbar-logo-color
-      font-weight: $navbar-logo-font-weight
+    flex-grow: 1
   .navbar-right
-    width: 100%
-    display: block
-    @media screen and (max-width: $desktop)
-      border-bottom: $navbar-border
-      padding-left: 0.5rem
-    @media screen and (min-width: $desktop)
-      width: 50%
-      display: inline-flex
-      align-items: center
-      justify-content: right
-    .navbar-items
-      > :last-child
-        margin-right: 0.5rem
-      .navbar-item
-        display: inline-block
-        a
-          display: inline-block
-          padding: 1rem 0.5rem
-          font-size: $navbar-item-font-size
-          line-height: $navbar-item-line-height
-          color: $navbar-item-color
-          &:hover
-            @media screen and (max-width: $desktop)
-              background-color: transparent
-            background-color: $navbar-item-hover-backround-color
-            color: $navbar-item-hover-color
+    flex-grow: 1
+    display: flex
+    justify-content: right
+  .navbar-items,
+  .navbar-logo,
+  .navbar-menu,
+  .navbar-item
+    display: inline
+  .navbar-logo,
+  .navbar-menu,
+  .navbar-item
+    padding: 0 0.5rem
