@@ -1,22 +1,54 @@
 .navbar
-  padding: 0 0.5rem
-  display: flex
-  height: 4rem
-  justify-content: space-between
-  align-items: center
-  border-bottom: solid 2px #eaeaea
-  .navbar-left
-    flex-grow: 1
-  .navbar-right
-    flex-grow: 1
+  .navbar-logo
+    font-weight: $font-weight-bold
+  .navbar-item
+    a
+      color: $color-text
+
+@media screen and (min-width: $tablet)
+  .navbar
+    padding: 1rem 0.5rem
     display: flex
-    justify-content: right
+    border-bottom: solid 2px #eaeaea
+    .navbar-left
+      flex-grow: 1
+    .navbar-right
+      flex-grow: 1
+      display: flex
+      justify-content: right
+    .navbar-items,
+    .navbar-options,
+    .navbar-logo,
+    .navbar-menu,
+    .navbar-item
+      display: inline
+    .navbar-logo,
+    .navbar-menu,
+    .navbar-item
+      padding: 0 0.5rem
+
+@media screen and (max-width: $tablet)
+  .navbar,
+  .navbar-left,
+  .navbar-right,
   .navbar-items,
   .navbar-logo,
   .navbar-menu,
   .navbar-item
-    display: inline
+    display: block
+  .navbar
+    padding: 0 0 1rem 0
+    border-bottom: solid 2px #eaeaea
+  .navbar-options
+    display: flex
+    border-bottom: solid 2px #eaeaea
+  .navbar-logo
+    flex-grow: 1
+  .navbar-menu
+    flex-grow: 1
+    display: flex
+    justify-content: right
   .navbar-logo,
   .navbar-menu,
   .navbar-item
-    padding: 0 0.5rem
+    padding: 1rem
