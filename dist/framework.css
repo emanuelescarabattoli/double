@@ -1180,7 +1180,8 @@ table th {
 .image {
   display: block;
   position: relative;
-  line-height: 0; }
+  line-height: 0;
+  margin-bottom: 1rem; }
   .image.is-rounded {
     border-radius: 100%;
     overflow: hidden; }
@@ -1293,44 +1294,45 @@ table th {
 
 .navbar .navbar-item a {
   color: #222222; }
+  .navbar .navbar-item a:hover {
+    color: #0066ff; }
 
 @media screen and (min-width: 800px) {
   .navbar {
     padding: 1rem 0.5rem;
     display: flex;
-    border-bottom: solid 2px #eaeaea; }
-    .navbar .navbar-left {
-      flex-grow: 1; }
-    .navbar .navbar-right {
-      flex-grow: 1;
-      display: flex;
-      justify-content: right; }
-    .navbar .navbar-items,
-    .navbar .navbar-options,
-    .navbar .navbar-logo,
-    .navbar .navbar-menu,
-    .navbar .navbar-item {
-      display: inline; }
-    .navbar .navbar-logo,
-    .navbar .navbar-menu,
-    .navbar .navbar-item {
-      padding: 0 0.5rem; } }
+    border-bottom: solid 2px #e4e4e4; }
+  .navbar-left {
+    flex-grow: 1; }
+  .navbar-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: right; }
+  .navbar-items,
+  .navbar-options,
+  .navbar-logo,
+  .navbar-item {
+    display: inline; }
+  .navbar-logo,
+  .navbar-item {
+    padding: 0 0.5rem; }
+  .navbar-menu {
+    display: none; } }
 
 @media screen and (max-width: 800px) {
   .navbar,
   .navbar-left,
   .navbar-right,
-  .navbar-items,
   .navbar-logo,
-  .navbar-menu,
-  .navbar-item {
+  .navbar-menu {
     display: block; }
+  .navbar-items {
+    display: none; }
   .navbar {
-    padding: 0 0 1rem 0;
-    border-bottom: solid 2px #eaeaea; }
+    padding: 0; }
   .navbar-options {
     display: flex;
-    border-bottom: solid 2px #eaeaea; }
+    border-bottom: solid 2px #e4e4e4; }
   .navbar-logo {
     flex-grow: 1; }
   .navbar-menu {
@@ -1338,6 +1340,16 @@ table th {
     display: flex;
     justify-content: right; }
   .navbar-logo,
-  .navbar-menu,
-  .navbar-item {
+  .navbar-menu {
     padding: 1rem; } }
+
+@media screen and (max-width: 800px) {
+  .navbar.show-items {
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px #e4e4e4; }
+    .navbar.show-items .navbar-items {
+      display: block; }
+    .navbar.show-items .navbar-item {
+      padding: 0.5rem 1rem; }
+    .navbar.show-items .navbar-options {
+      margin-bottom: 0.5rem; } }

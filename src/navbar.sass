@@ -4,44 +4,45 @@
   .navbar-item
     a
       color: $color-text
+      &:hover
+        color: $color-primary
 
 @media screen and (min-width: $tablet)
   .navbar
     padding: 1rem 0.5rem
     display: flex
-    border-bottom: solid 2px #eaeaea
-    .navbar-left
-      flex-grow: 1
-    .navbar-right
-      flex-grow: 1
-      display: flex
-      justify-content: right
-    .navbar-items,
-    .navbar-options,
-    .navbar-logo,
-    .navbar-menu,
-    .navbar-item
-      display: inline
-    .navbar-logo,
-    .navbar-menu,
-    .navbar-item
-      padding: 0 0.5rem
+    border-bottom: solid 2px #e4e4e4
+  .navbar-left
+    flex-grow: 1
+  .navbar-right
+    flex-grow: 1
+    display: flex
+    justify-content: right
+  .navbar-items,
+  .navbar-options,
+  .navbar-logo,
+  .navbar-item
+    display: inline
+  .navbar-logo,
+  .navbar-item
+    padding: 0 0.5rem
+  .navbar-menu
+    display: none
 
 @media screen and (max-width: $tablet)
   .navbar,
   .navbar-left,
   .navbar-right,
-  .navbar-items,
   .navbar-logo,
-  .navbar-menu,
-  .navbar-item
+  .navbar-menu
     display: block
+  .navbar-items
+    display: none
   .navbar
-    padding: 0 0 1rem 0
-    border-bottom: solid 2px #eaeaea
+    padding: 0
   .navbar-options
     display: flex
-    border-bottom: solid 2px #eaeaea
+    border-bottom: solid 2px #e4e4e4
   .navbar-logo
     flex-grow: 1
   .navbar-menu
@@ -49,6 +50,17 @@
     display: flex
     justify-content: right
   .navbar-logo,
-  .navbar-menu,
-  .navbar-item
+  .navbar-menu
     padding: 1rem
+
+@media screen and (max-width: $tablet)
+  .navbar
+    &.show-items
+      padding-bottom: 0.5rem
+      border-bottom: solid 2px #e4e4e4
+      .navbar-items
+        display: block
+      .navbar-item
+        padding: 0.5rem 1rem
+      .navbar-options
+        margin-bottom: 0.5rem
