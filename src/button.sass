@@ -244,4 +244,19 @@ $button-danger-active-color: $danger-active-color
     font-size: 1em
     width: 1em
     height: 1em
-    margin-right: 0.5em
+    &:not(:last-child)
+      margin-right: 0.5em
+
+.grouped
+  display: inline-flex
+  > .button
+    border-radius: 0
+    margin-left: -1px
+    z-index: 1
+    &:hover
+      z-index: 2
+    &:first-child
+      margin-left: 0
+      border-radius: $button-border-radius 0 0 $button-border-radius
+    &:last-child
+      border-radius: 0 $button-border-radius $button-border-radius 0

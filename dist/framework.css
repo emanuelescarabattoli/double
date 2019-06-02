@@ -901,8 +901,23 @@ table th {
   .button > .icon {
     font-size: 1em;
     width: 1em;
-    height: 1em;
-    margin-right: 0.5em; }
+    height: 1em; }
+    .button > .icon:not(:last-child) {
+      margin-right: 0.5em; }
+
+.grouped {
+  display: inline-flex; }
+  .grouped > .button {
+    border-radius: 0;
+    margin-left: -1px;
+    z-index: 1; }
+    .grouped > .button:hover {
+      z-index: 2; }
+    .grouped > .button:first-child {
+      margin-left: 0;
+      border-radius: 4px 0 0 4px; }
+    .grouped > .button:last-child {
+      border-radius: 0 4px 4px 0; }
 
 .notification {
   border-radius: 4px;
