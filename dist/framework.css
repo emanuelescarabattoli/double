@@ -899,7 +899,7 @@ table th {
   .button[disabled] {
     opacity: 0.7; }
   .button > .icon {
-    font-size: 0.8em;
+    font-size: 1em;
     width: 1em;
     height: 1em;
     margin-right: 0.5em; }
@@ -1018,7 +1018,7 @@ table th {
     padding: 0 0.65em;
     line-height: 1em; }
     .tags .tag > .icon {
-      font-size: 0.8em;
+      font-size: 0.9em;
       width: 1em;
       height: 1em;
       margin-right: 0.5em; }
