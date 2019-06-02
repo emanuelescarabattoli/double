@@ -894,20 +894,15 @@ table th {
       background-color: #dd0000;
       border: solid 1px #770000;
       color: #f0f0f0; }
-  .button.is-small {
-    border-radius: 2px;
-    padding: 0.3em 0.6em;
-    height: 1.2rem;
-    font-size: 0.6em; }
-  .button.is-large {
-    border-radius: 6px;
-    padding: 0.6em 1.2em;
-    height: 2.6rem;
-    font-size: 1.4em; }
   .button.is-rounded {
     border-radius: 1em; }
   .button[disabled] {
     opacity: 0.7; }
+  .button > .icon {
+    font-size: 0.8em;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em; }
 
 .notification {
   border-radius: 4px;
@@ -1022,6 +1017,11 @@ table th {
     justify-content: center;
     padding: 0 0.65em;
     line-height: 1em; }
+    .tags .tag > .icon {
+      font-size: 0.8em;
+      width: 1em;
+      height: 1em;
+      margin-right: 0.5em; }
     .tags .tag a {
       color: #222222;
       text-decoration: underline; }
@@ -1072,22 +1072,27 @@ table th {
   border-radius: 4px;
   box-shadow: none; }
   .card .card-header {
-    padding: 1.2rem 1.4rem;
+    padding: 1.2rem;
     background-color: #e9e9e9;
     border-bottom: solid 1px #d0d0d0;
     color: #222222;
     line-height: 1;
     font-size: 1em;
     font-weight: 600; }
+    .card .card-header > .icon {
+      font-size: 1em;
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 0.4em; }
   .card .card-body {
-    padding: 1.2rem 1.4rem;
+    padding: 1.2rem;
     background-color: #f0f0f0;
     color: #222222;
     line-height: 1.3;
     font-size: 1em;
     font-weight: 400; }
   .card .card-footer {
-    padding: 1.2rem 1.4rem;
+    padding: 1.2rem;
     background-color: #f0f0f0;
     border-top: none;
     color: #222222;
@@ -1353,3 +1358,11 @@ table th {
       padding: 0.5rem 1rem; }
     .navbar.show-items .navbar-options {
       margin-bottom: 0.5rem; } }
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1rem; }

@@ -14,16 +14,6 @@ $button-padding: $button-padding-default
 $button-height: $button-height-default
 $button-font-size: $button-font-size-default
 
-$button-small-border-radius: $border-radius-small
-$button-small-padding: $button-padding-small
-$button-small-height: $button-height-small
-$button-small-font-size: $button-font-size-small
-
-$button-large-border-radius: $border-radius-large
-$button-large-padding: $button-padding-large
-$button-large-height: $button-height-large
-$button-large-font-size: $button-font-size-large
-
 // Rounded
 
 $button-rounded-border-radius: $border-radius-rounded
@@ -246,17 +236,12 @@ $button-danger-active-color: $danger-active-color
       background-color: $button-danger-active-background-color
       border: $button-danger-active-border
       color: $button-danger-active-color
-  &.is-small
-    border-radius: $button-small-border-radius
-    padding: $button-small-padding
-    height: $button-small-height
-    font-size: $button-small-font-size
-  &.is-large
-    border-radius: $button-large-border-radius
-    padding: $button-large-padding
-    height: $button-large-height
-    font-size: $button-large-font-size
   &.is-rounded
     border-radius: $button-rounded-border-radius
   &[disabled]
     opacity:  $button-disabled-opacity
+  > .icon
+    font-size: 0.8em
+    width: 1em
+    height: 1em
+    margin-right: 0.5em
