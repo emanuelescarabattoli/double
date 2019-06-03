@@ -630,7 +630,8 @@
     <script>
 
       $(function () {
-        $("#menu").click(function () {
+        $("#menu").click(function (e) {
+          e.preventDefault();
           $("#navbar").toggleClass("show-items");
         });
       });
