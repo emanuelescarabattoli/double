@@ -17,14 +17,18 @@
 </head>
 
 <body>
-  <div class="navbar show-items">
+  <div id="navbar" class="navbar">
     <div class="navbar-left">
       <div class="navbar-options">
         <div class="navbar-logo">
           <img src="./assets/img/double.png" alt="Double.css">
         </div>
         <div class="navbar-menu">
-          <a href="#">Menu</a>
+          <a id="menu" href="#">
+            <span class="icon">
+              <i class="fas fa-bars"></i>
+            </span>
+          </a>
         </div>
       </div>
       <ul class="navbar-items">
@@ -621,6 +625,17 @@
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+
+      $(function () {
+        $("#menu").click(function () {
+          $("#navbar").toggleClass("show-items");
+        });
+      });
+
+    </script>
 </body>
 
 </html>
