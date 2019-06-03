@@ -1311,31 +1311,49 @@ table th {
 
 .navbar .navbar-logo {
   font-weight: 600; }
+  .navbar .navbar-logo img {
+    height: 1.5rem; }
 
-.navbar .navbar-item a {
+.navbar .navbar-item a,
+.navbar .navbar-menu a {
   color: #222222; }
-  .navbar .navbar-item a:hover {
+  .navbar .navbar-item a > .icon,
+  .navbar .navbar-menu a > .icon {
+    font-size: 1em;
+    width: 1em;
+    height: 1em; }
+    .navbar .navbar-item a > .icon:not(:last-child),
+    .navbar .navbar-menu a > .icon:not(:last-child) {
+      margin-right: 0.3em; }
+  .navbar .navbar-item a:hover,
+  .navbar .navbar-menu a:hover {
     color: #0066ff; }
 
 @media screen and (min-width: 800px) {
   .navbar {
-    padding: 1rem 0.5rem;
+    padding: 0 0.5rem;
     display: flex;
-    border-bottom: solid 2px #e4e4e4; }
+    align-items: center;
+    height: 3rem;
+    box-shadow: 0 0 0 2px #e4e4e4; }
   .navbar-left {
-    flex-grow: 1; }
+    flex-grow: 1;
+    display: flex;
+    align-items: center; }
   .navbar-right {
     flex-grow: 1;
     display: flex;
-    justify-content: right; }
+    align-items: center;
+    justify-content: flex-end; }
   .navbar-items,
   .navbar-options,
   .navbar-logo,
   .navbar-item {
-    display: inline; }
-  .navbar-logo,
+    display: inline-block; }
   .navbar-item {
-    padding: 0 0.5rem; }
+    padding: 0 0.8rem; }
+  .navbar-logo {
+    padding: 0 1.2rem 0 0.8rem; }
   .navbar-menu {
     display: none; } }
 
@@ -1352,21 +1370,25 @@ table th {
     padding: 0; }
   .navbar-options {
     display: flex;
-    border-bottom: solid 2px #e4e4e4; }
+    align-items: center;
+    height: 3rem;
+    box-shadow: 0 0 0 2px #e4e4e4; }
   .navbar-logo {
     flex-grow: 1; }
   .navbar-menu {
     flex-grow: 1;
     display: flex;
-    justify-content: right; }
+    justify-content: flex-end; }
   .navbar-logo,
   .navbar-menu {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .navbar-menu {
+    font-weight: bold; } }
 
 @media screen and (max-width: 800px) {
   .navbar.show-items {
     padding-bottom: 0.5rem;
-    border-bottom: solid 2px #e4e4e4; }
+    box-shadow: 0 0 0 2px #e4e4e4; }
     .navbar.show-items .navbar-items {
       display: block; }
     .navbar.show-items .navbar-item {
