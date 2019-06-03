@@ -6,18 +6,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="../dist/framework.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/css/double.css" />
 
-  <title>Framework</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+
+  <title>Double</title>
 </head>
 
 <body>
-
   <div class="navbar show-items">
     <div class="navbar-left">
       <div class="navbar-options">
         <div class="navbar-logo">
-          <img src="./double.png" alt="Double.css">
+          <img src="./assets/img/double.png" alt="Double.css">
         </div>
         <div class="navbar-menu">
           <a href="#">Menu</a>
@@ -25,25 +29,74 @@
       </div>
       <ul class="navbar-items">
         <li class="navbar-item">
-          <a href="#">Item one</a>
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-award"></i>
+            </span>
+            <span>
+              Item one
+            </span>
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="#">Item two</a>
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-bell"></i>
+            </span>
+            <span>
+              Item two
+            </span>
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="#">Item three</a>
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <span>
+              Item three
+            </span>
+          </a>
         </li>
       </ul>
     </div>
     <div class="navbar-right">
       <ul class="navbar-items">
         <li class="navbar-item">
-          <a href="#">Account</a>
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-user"></i>
+            </span>
+            <span>
+              Account
+            </span>
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="#">Logout</a>
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-sign-out-alt"></i>
+            </span>
+            <span>
+              Logout
+            </span>
+          </a>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="header is-fancy">
+    <div class="header-content">
+      <div class="header-title">
+        Super fancy title
+      </div>
+      <div class="header-subtitle">
+        Super fancy subtitle
+      </div>
+      <div class="header-actions">
+        <button class="header-action">Action</button>
+        <button class="header-action">Action</button>
+      </div>
     </div>
   </div>
   <div class="container is-fluid">
@@ -55,7 +108,7 @@
             <h4>And a subtitle</h4>
             <div class="tags">
               <span class="tag is-rounded">
-                fancy
+                <span class="icon"><i class="fas fa-user"></i></span>hello!
               </span>
               <span class="tag is-danger is-rounded">
                 cool
@@ -159,11 +212,39 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
               <div class="content">
+                <div class="tags">
+                  <span class="tag is-primary">
+                    <span class="icon"><i class="fas fa-bell"></i></span>notification
+                  </span>
+                  <span class="tag is-danger">
+                    <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>alert!!
+                  </span>
+                  <span class="tag is-warning ">
+                    <span class="icon"><i class="fas fa-info-circle"></i></span>hey
+                  </span>
+                  <span class="tag is-success ">
+                    <span class="icon"><i class="fas fa-comments"></i></span>comments
+                  </span>
+                </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, molestiae ipsam libero totam vitae
                   deserunt quam? A suscipit, sed pariatur maiores iure hic quas, voluptatum qui doloribus repellendus
                   aliquid quisquam!
                 </p>
+                <div class="tags">
+                  <span class="tag">
+                    <span class="icon">🚁</span>notification
+                  </span>
+                  <span class="tag">
+                    <span class="icon">🍩</span>alert!!
+                  </span>
+                  <span class="tag ">
+                    <span class="icon">🍭</span>hey
+                  </span>
+                  <span class="tag ">
+                    <span class="icon">🏡</span>comments
+                  </span>
+                </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, molestiae ipsam libero totam vitae
                   deserunt quam? A suscipit, sed pariatur maiores iure hic quas, voluptatum qui doloribus repellendus
@@ -178,12 +259,216 @@
             </div>
           </div>
         </div>
+        <div class="section">
+          <div class="group">
+            <button class="button is-primary">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+            <button class="button is-primary">
+              <span class="icon">
+                <i class="fas fa-ambulance"></i>
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+            <button class="button is-primary">
+              <span class="icon">
+                <i class="fas fa-ad"></i>
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+            <button class="button is-primary">
+              <span class="icon">
+                <i class="fas fa-backspace"></i>
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+          </div>
+          <div class="group">
+            <button class="button">
+              <span class="icon">
+                &#128153;
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+            <button class="button">
+              <span class="icon">
+                &#128149;
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+            <button class="button">
+              <span class="icon">
+                😀
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+            <button class="button">
+              <span class="icon">
+                🍇
+              </span>
+              <span>
+                Button
+              </span>
+            </button>
+          </div>
+          <div class="group">
+            <button class="button">
+              <span class="icon">
+                🍩
+              </span>
+            </button>
+            <button class="button">
+              <span class="icon">
+                🔒
+              </span>
+            </button>
+            <button class="button">
+              <span class="icon">
+                🍉
+              </span>
+            </button>
+            <button class="button">
+              <span class="icon">
+                🍔
+              </span>
+            </button>
+          </div>
+          <div class="group">
+            <div class="grouped">
+              <a class="button">
+                <span class="icon">
+                  🍩
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🔒
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🍉
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🍔
+                </span>
+              </a>
+            </div>
+            <div class="grouped">
+              <a class="button">
+                <span class="icon">
+                  🍩
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🔒
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🍉
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🍔
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="group">
+            <div class="grouped">
+              <a class="button">
+                <span class="icon">
+                  🍩
+                </span>
+                <span>
+                  Button
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🔒
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🍉
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  🍔
+                </span>
+              </a>
+            </div>
+            <div class="grouped">
+              <a class="button is-primary">
+                <span>
+                  Button
+                </span>
+              </a>
+              <a class="button is-primary">
+                <span>
+                  Button
+                </span>
+              </a>
+              <a class="button is-primary">
+                <span>
+                  Button
+                </span>
+              </a>
+              <a class="button is-primary">
+                <span>
+                  Button
+                </span>
+              </a>
+            </div>
+            <div class="grouped">
+              <a class="button">
+                <span class="icon">
+                  <i class="fas fa-chess-pawn"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  <i class="fas fa-chess-knight"></i>
+                </span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  <i class="fas fa-chess-rook"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div class="section">
           <div class="card">
             <div class="card-header">
-              Some title
+              <span class="icon">🍩</span>Some title
             </div>
             <div class="card-body">
               <div class="content">
@@ -220,13 +505,13 @@
                     <button class="button">With tooltip</button>
                   </div>
                 </div>
-                <button class="button is-primary">Button</button>
+                <button class="button is-primary"><span class="icon"><i class="fas fa-user"></i></span>Button</button>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header">
-              Some title
+              <span class="icon"><i class="fas fa-comments"></i></span>Some title
             </div>
             <div class="card-body">
               <div class="content">

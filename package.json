@@ -1,31 +1,33 @@
 {
-  "name": "framework",
+  "name": "double",
   "version": "0.0.1",
-  "homepage": "https://github.com/emanuelescarabattoli/framework",
+  "homepage": "https://github.com/emanuelescarabattoli/double",
   "author": {
     "name": "Emanuele Scarabattoli",
     "email": "em.scarabattoli@gmail.com",
     "url": "https://github.com/emanuelescarabattoli"
   },
   "description": "A CSS framework",
-  "main": "framework.sass",
+  "main": "double.sass",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emanuelescarabattoli/framework.git"
+    "url": "git+https://github.com/emanuelescarabattoli/double.git"
   },
   "license": "MIT",
   "keywords": [
     "css",
     "sass",
-    "framework"
+    "framework",
+    "double"
   ],
   "bugs": {
-    "url": "https://github.com/emanuelescarabattoli/framework/issues"
+    "url": "https://github.com/emanuelescarabattoli/double/issues"
   },
   "devDependencies": {
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "start": "yarn run node-sass framework.sass dist/framework.css --watch"
+    "start:dev": "yarn run node-sass double.sass dist/double.css --watch",
+    "start:docs": "yarn run node-sass double.sass docs/assets/css/double.css --watch"
   }
 }
