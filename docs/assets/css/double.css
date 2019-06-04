@@ -229,13 +229,15 @@ table th {
 .spacer {
   padding: 1rem 0 2rem 0; }
 
-.group > * {
-  margin-left: 0;
-  margin-right: 0.5rem; }
-
-.group.align-right > * {
-  margin-right: 0;
-  margin-left: 0.5rem; }
+.group {
+  margin-bottom: -0.5rem; }
+  .group > * {
+    margin-left: 0;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .group.align-right > * {
+    margin-right: 0;
+    margin-left: 0.5rem; }
 
 .container {
   margin: 0 auto;
