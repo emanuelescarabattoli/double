@@ -1,4 +1,6 @@
 
+/* Base: here we define basic variables used by all styles */
+
 // Base colors
 
 $color-white: #f0f0f0 !default
@@ -11,11 +13,11 @@ $color-gray: #e0e0e0 !default
 $color-gray-light: #e8e8e8 !default
 $color-gray-lighter: #eeeeee !default
 
-$color-blue: #0066ff
-$color-blue-light: #0088ff
-$color-green: #00cccc
-$color-yellow: #ccccff
-$color-red: #aacccc
+$color-blue: #0066ff !default
+$color-blue-light: #0088ff !default
+$color-green: #00cccc !default
+$color-yellow: #ccccff !default
+$color-red: #aacccc !default
 
 // Base fonts
 
@@ -59,7 +61,7 @@ $tablet: 800px !default
 $desktop: 1000px !default
 $hd: 1200px !default
 
-// Default colors
+// Base colors
 
 $color-primary: $color-blue !default
 $color-light: $color-white !default
@@ -80,151 +82,165 @@ $color-text-dark: $color-dark !default
 $color-link: $color-blue !default
 $color-link-hover: $color-blue-light !default
 
-// Default colors and borders
+// Base background colors and colors
 
-$light-background-color: #efefef
-$none-border: none
+$light-background-color: #efefef !default
+$none-border: none !default
 
-$default-background-color: #e5e5e5
-$default-border: solid 1px #cccccc
-$default-color: #222222
-$default-box-shadow: none
+$default-background-color: #e5e5e5 !default
+$default-border: solid 1px #cccccc !default
+$default-color: #222222 !default
+$default-box-shadow: none !default
 
-$default-hover-background-color: #f0f0f0
-$default-hover-border: solid 1px #c0c0c0
-$default-hover-color: #333333
+$default-hover-background-color: #f0f0f0 !default
+$default-hover-border: solid 1px #c0c0c0 !default
+$default-hover-color: #333333 !default
 
-$default-focus-background-color: #efefef
-$default-focus-border: solid 1px #b0b0b0
-$default-focus-box-shadow: 0 0 0 2px #65a0d955
-$default-focus-color: #333333
+$default-focus-background-color: #efefef !default
+$default-focus-border: solid 1px #b0b0b0 !default
+$default-focus-box-shadow: 0 0 0 2px #65a0d955 !default
+$default-focus-color: #333333 !default
 
-$default-active-background-color: #efefef
-$default-active-border: solid 1px #a9a9a9
-$default-active-color: #333333
+$default-active-background-color: #efefef !default
+$default-active-border: solid 1px #a9a9a9 !default
+$default-active-color: #333333 !default
 
-// Primary colors
+// Base fonts
 
-$primary-background-color: #0088ff
-$primary-border: solid 1px #004499
-$primary-color: #f0f0f0
-$primary-box-shadow: none
-
-$primary-hover-background-color: #0099ff
-$primary-hover-border: solid 1px #003aa0
-$primary-hover-color: #f0f0f0
-
-$primary-focus-background-color: #009aff
-$primary-focus-border: solid 1px #003aa0
-$primary-focus-box-shadow: 0 0 0 2px #003aa055
-$primary-focus-color: #f0f0f0
-
-$primary-active-background-color: #009fff
-$primary-active-border: solid 1px #003090
-$primary-active-color: #f0f0f0
-
-// Success colors
-
-$success-background-color: #00cc00
-$success-border: solid 1px #006600
-$success-color: #f0f0f0
-$success-box-shadow: none
-
-$success-hover-background-color: #00dd00
-$success-hover-border: solid 1px #005500
-$success-hover-color: #f0f0f0
-
-$success-focus-background-color: #00df00
-$success-focus-border: solid 1px #004400
-$success-focus-box-shadow: 0 0 0 2px #00440055
-$success-focus-color: #f0f0f0
-
-$success-active-background-color: #00ef00
-$success-active-border: solid 1px #003090
-$success-active-color: #f0f0f0
-
-// Warning colors
-
-$warning-background-color: #ff9900
-$warning-border: solid 1px #ff5500
-$warning-color: #7a4900
-$warning-box-shadow: none
-
-$warning-hover-background-color: #ffaa00
-$warning-hover-border: solid 1px #ff4400
-$warning-hover-color: #7a4900
-
-$warning-focus-background-color: #ffbb00
-$warning-focus-border: solid 1px #ff3300
-$warning-focus-box-shadow: 0 0 0 2px #ff330055
-$warning-focus-color: #7a4900
-
-$warning-active-background-color: #ffcc00
-$warning-active-border: solid 1px #ff2200
-$warning-active-color: #7a4900
-
-// Danger colors
-
-$danger-background-color: #cc0000
-$danger-border: solid 1px #990000
-$danger-color: #f0f0f0
-$danger-box-shadow: none
-
-$danger-hover-background-color: #cf0000
-$danger-hover-border: solid 1px #770000
-$danger-hover-color: #f0f0f0
-
-$danger-focus-background-color: #cf0000
-$danger-focus-border: solid 1px #990000
-$danger-focus-box-shadow: 0 0 0 2px #99000055
-$danger-focus-color: #f0f0f0
-
-$danger-active-background-color: #dd0000
-$danger-active-border: solid 1px #770000
-$danger-active-color: #f0f0f0
-
-// Fonts
-
-$font-weight-light: $font-weight-1
-$font-weight-default: $font-weight-1
-$font-weight-bold: $font-weight-2
-$font-weight-bolder: $font-weight-3
+$font-weight-light: $font-weight-1 !default
+$font-weight-default: $font-weight-1 !default
+$font-weight-bold: $font-weight-2 !default
+$font-weight-bolder: $font-weight-3 !default
 
 $font-family-default: $font-family-sans !default
 $font-family-code: $font-family-monospace !default
 $font-family-action: $font-family-secondary !default
 
-$font-size-extra-small: $font-size-0
-$font-size-small: $font-size-3
-$font-size-dafault: $font-size-4
-$font-size-large: $font-size-5
-$font-size-extra-large: $font-size-6
+$font-size-extra-small: $font-size-0 !default
+$font-size-small: $font-size-3 !default
+$font-size-dafault: $font-size-4 !default
+$font-size-large: $font-size-5 !default
+$font-size-extra-large: $font-size-6 !default
 
-// Padding
+// Base text padding
 
-$text-padding-vertical: $font-size-2
-$text-padding-horizontal: $font-size-4
-$text-padding: $font-size-5 $font-size-6
+$text-padding-vertical: $font-size-2 !default
+$text-padding-horizontal: $font-size-4 !default
+$text-padding: $font-size-5 $font-size-6 !default
 
-// Line height
+// Base line height
 
 $line-height-default: $line-height-0 !default
 $line-height-large: $line-height-1 !default
 $line-height-double: $line-height-2 !default
 
-// Spacing
+// Base spacing
 
 $spacing-in: $size-3 !default
 $spacing-in-half: $size-1 !default
 $spacing-out: $size-4 !default
 $spacing-out-half: $size-2 !default
 
-// Border radius
+// Base border radius
 
 $border-radius-default: 4px !default
 $border-radius-small: 2px !default
 $border-radius-large: 6px !default
-$border-radius-rounded: 1em
+$border-radius-rounded: 1em !default
+
+// Base opacity
+
+$opacity-disabled: 0.7 !default
+
+/* Primary: here we define styles for primary elements */
+
+// Primary colors
+
+$primary-background-color: #0088ff !default
+$primary-border: solid 1px #004499 !default
+$primary-color: #f0f0f0 !default
+$primary-box-shadow: none !default
+
+$primary-hover-background-color: #0099ff !default
+$primary-hover-border: solid 1px #003aa0 !default
+$primary-hover-color: #f0f0f0 !default
+
+$primary-focus-background-color: #009aff !default
+$primary-focus-border: solid 1px #003aa0 !default
+$primary-focus-box-shadow: 0 0 0 2px #003aa055 !default
+$primary-focus-color: #f0f0f0 !default
+
+$primary-active-background-color: #009fff !default
+$primary-active-border: solid 1px #003090 !default
+$primary-active-color: #f0f0f0 !default
+
+/* Success: here we define styles for success elements */
+
+// Success colors
+
+$success-background-color: #00cc00 !default
+$success-border: solid 1px #006600 !default
+$success-color: #f0f0f0 !default
+$success-box-shadow: none !default
+
+$success-hover-background-color: #00dd00 !default
+$success-hover-border: solid 1px #005500 !default
+$success-hover-color: #f0f0f0 !default
+
+$success-focus-background-color: #00df00 !default
+$success-focus-border: solid 1px #004400 !default
+$success-focus-box-shadow: 0 0 0 2px #00440055 !default
+$success-focus-color: #f0f0f0 !default
+
+$success-active-background-color: #00ef00 !default
+$success-active-border: solid 1px #003090 !default
+$success-active-color: #f0f0f0 !default
+
+/* Warning: here we define styles for warning elements */
+
+// Warning colors
+
+$warning-background-color: #ff9900 !default
+$warning-border: solid 1px #ff5500 !default
+$warning-color: #7a4900 !default
+$warning-box-shadow: none !default
+
+$warning-hover-background-color: #ffaa00 !default
+$warning-hover-border: solid 1px #ff4400 !default
+$warning-hover-color: #7a4900 !default
+
+$warning-focus-background-color: #ffbb00 !default
+$warning-focus-border: solid 1px #ff3300 !default
+$warning-focus-box-shadow: 0 0 0 2px #ff330055 !default
+$warning-focus-color: #7a4900 !default
+
+$warning-active-background-color: #ffcc00 !default
+$warning-active-border: solid 1px #ff2200 !default
+$warning-active-color: #7a4900 !default
+
+/* Danger: here we define styles for danger elements */
+
+// Danger colors
+
+$danger-background-color: #cc0000 !default
+$danger-border: solid 1px #990000 !default
+$danger-color: #f0f0f0 !default
+$danger-box-shadow: none !default
+
+$danger-hover-background-color: #cf0000 !default
+$danger-hover-border: solid 1px #770000 !default
+$danger-hover-color: #f0f0f0 !default
+
+$danger-focus-background-color: #cf0000 !default
+$danger-focus-border: solid 1px #990000 !default
+$danger-focus-box-shadow: 0 0 0 2px #99000055 !default
+$danger-focus-color: #f0f0f0 !default
+
+$danger-active-background-color: #dd0000 !default
+$danger-active-border: solid 1px #770000 !default
+$danger-active-color: #f0f0f0 !default
+
+/* Button: here we define some style related to buttons */
 
 // Button sizes
 
@@ -240,6 +256,486 @@ $button-font-size-default: 1em !default
 $button-font-size-small: 0.6em !default
 $button-font-size-large: 1.4em !default
 
-// Opacity
+// Button fonts
 
-$opacity-disabled: 0.7
+$button-font-family: $font-family-action !default
+
+// Button disabled
+
+$button-disabled-opacity: $opacity-disabled !default
+
+// Button sizes
+
+$button-border-radius: $border-radius-default !default
+$button-padding: $button-padding-default !default
+$button-height: $button-height-default !default
+$button-font-size: $button-font-size-default !default
+
+// Button rounded
+
+$button-rounded-border-radius: $border-radius-rounded !default
+
+// button default colors
+
+$button-background-color: $light-background-color !default
+$button-border: $default-border !default
+$button-color: $default-color !default
+$button-box-shadow: $default-box-shadow !default
+
+$button-hover-background-color: $default-hover-background-color !default
+$button-hover-border: $default-hover-border !default
+$button-hover-color: $default-hover-color !default
+
+$button-focus-background-color: $default-focus-background-color !default
+$button-focus-border: $default-focus-border !default
+$button-focus-box-shadow: $default-focus-box-shadow !default
+$button-focus-color: $default-focus-color !default
+
+$button-active-background-color: $default-active-background-color !default
+$button-active-border: $default-active-border !default
+$button-active-color: $default-active-color !default
+
+// Button primary colors
+
+$button-primary-background-color: $primary-background-color !default
+$button-primary-border: $primary-border !default
+$button-primary-color: $primary-color !default
+$button-primary-box-shadow: $primary-box-shadow !default
+
+$button-primary-hover-background-color: $primary-hover-background-color !default
+$button-primary-hover-border: $primary-hover-border !default
+$button-primary-hover-color: $primary-hover-color !default
+
+$button-primary-focus-background-color: $primary-focus-background-color !default
+$button-primary-focus-border: $primary-focus-border !default
+$button-primary-focus-box-shadow: $primary-focus-box-shadow !default
+$button-primary-focus-color: $primary-focus-color !default
+
+$button-primary-active-background-color: $primary-active-background-color !default
+$button-primary-active-border: $primary-active-border !default
+$button-primary-active-color: $primary-active-color !default
+
+// Button success colors
+
+$button-success-background-color: $success-background-color !default
+$button-success-border: $success-border !default
+$button-success-color: $success-color !default
+$button-success-box-shadow: $success-box-shadow !default
+
+$button-success-hover-background-color: $success-hover-background-color !default
+$button-success-hover-border: $success-hover-border !default
+$button-success-hover-color: $success-hover-color !default
+
+$button-success-focus-background-color: $success-focus-background-color !default
+$button-success-focus-border: $success-focus-border !default
+$button-success-focus-box-shadow: $success-focus-box-shadow !default
+$button-success-focus-color: $success-focus-color !default
+
+$button-success-active-background-color: $success-active-background-color !default
+$button-success-active-border: $success-active-border !default
+$button-success-active-color: $success-active-color !default
+
+// Button warning colors
+
+$button-warning-background-color: $warning-background-color !default
+$button-warning-border: $warning-border !default
+$button-warning-color: $warning-color !default
+$button-warning-box-shadow: $warning-box-shadow !default
+
+$button-warning-hover-background-color: $warning-hover-background-color !default
+$button-warning-hover-border: $warning-hover-border !default
+$button-warning-hover-color: $warning-hover-color !default
+
+$button-warning-focus-background-color: $warning-focus-background-color !default
+$button-warning-focus-border: $warning-focus-border !default
+$button-warning-focus-box-shadow: $warning-focus-box-shadow !default
+$button-warning-focus-color: $warning-focus-color !default
+
+$button-warning-active-background-color: $warning-active-background-color !default
+$button-warning-active-border: $warning-active-border !default
+$button-warning-active-color: $warning-active-color !default
+
+// Button danger colors
+
+$button-danger-background-color: $danger-background-color !default
+$button-danger-border: $danger-border !default
+$button-danger-color: $danger-color !default
+$button-danger-box-shadow: $danger-box-shadow !default
+
+$button-danger-hover-background-color: $danger-hover-background-color !default
+$button-danger-hover-border: $danger-hover-border !default
+$button-danger-hover-color: $danger-hover-color !default
+
+$button-danger-focus-background-color: $danger-focus-background-color !default
+$button-danger-focus-border: $danger-focus-border !default
+$button-danger-focus-box-shadow: $danger-focus-box-shadow !default
+$button-danger-focus-color: $danger-focus-color !default
+
+$button-danger-active-background-color: $danger-active-background-color !default
+$button-danger-active-border: $danger-active-border !default
+$button-danger-active-color: $danger-active-color !default
+
+/* Card: styles related to card */
+
+// Card fonts
+
+$card-font-family: $font-family-default !default
+
+// Card box and borders
+
+$card-border: solid 1px #d0d0d0 !default
+$card-border-radius: $border-radius-default !default
+$card-box-shadow: none !default
+
+// Card header
+
+$card-header-padding: 1.2rem !default
+$card-header-background-color: #e9e9e9 !default
+$card-header-border: solid 1px #d0d0d0 !default
+$card-header-color: $default-color !default
+$card-header-line-height: $line-height-default !default
+$card-header-font-size: $font-size-dafault !default
+$card-header-font-weight: $font-weight-bold !default
+
+// Card body
+
+$card-body-padding: 1.2rem !default
+$card-body-background-color: $color-background !default
+$card-body-color: $default-color !default
+$card-body-line-height: $line-height-large !default
+$card-body-font-size: $font-size-dafault !default
+$card-body-font-weight: $font-weight-default !default
+
+// Card footer
+
+$card-footer-padding: 1.2rem !default
+$card-footer-background-color: $color-background !default
+$card-footer-border: $none-border !default
+$card-footer-color: $default-color !default
+$card-footer-line-height: $line-height-default !default
+$card-footer-font-size: $font-size-dafault !default
+$card-footer-font-weight: $font-weight-bold !default
+
+/* Field: here we define properties related to inputs */
+
+// Field margin
+
+$field-margin: 1.5rem !default
+
+// Field label
+
+$label-font-family: $font-family-default !default
+$label-font-weight: $font-weight-bold !default
+$label-font-size: 0.9em !default
+$label-font-line-height: $line-height-default !default
+$label-margin: 0.8rem !default
+$label-color: $color-text-dark !default
+
+// Field help default
+
+$help-font-family: $font-family-default !default
+$help-font-weight: $font-weight-default !default
+$help-font-size: 0.8em !default
+$help-font-line-height: 0.7em !default
+$help-margin: 0.8rem !default
+$help-color: $color-text !default
+
+// Field help success
+
+$help-success-color: $success-background-color !default
+
+// Field help error
+
+$help-danger-color: $danger-background-color !default
+
+/* Checkbox: here we define properties related to inputs */
+
+// Checkbox
+
+$checkbox-font-family: $font-family-default !default
+$checkbox-font-weight: $font-weight-default !default
+$checkbox-font-size: $font-size-dafault !default
+$checkbox-font-line-height: $line-height-default !default
+$checkbox-margin: 0.2rem !default
+$checkbox-label-margin: 0.8rem !default
+$checkbox-margin-inline: 0.8rem !default
+$checkbox-color: $color-text-dark !default
+
+/* Radio: here we define properties related to inputs */
+
+// Radio
+
+$radio-font-family: $font-family-default !default
+$radio-font-weight: $font-weight-default !default
+$radio-font-size: $font-size-dafault !default
+$radio-font-line-height: $line-height-default !default
+$radio-margin: 0.2rem !default
+$radio-label-margin: 0.8rem !default
+$radio-margin-inline: 0.8rem !default
+$radio-color: $color-text-dark !default
+
+/* Input: here we define properties related to inputs */
+
+// Input default
+
+$input-padding: 0.5rem !default
+$input-font-family: $font-family-default !default
+$input-font-weight: $font-weight-default !default
+$input-font-size: $font-size-dafault !default
+$input-font-line-height: $line-height-default !default
+$input-color: $color-text-dark !default
+$input-height: 2.25rem !default
+$input-border: $default-border !default
+$input-border-radius: 4px !default
+$input-background-color: #ffffff !default
+
+// Input hover
+
+$input-hover-border: solid 1px #0066ff !default
+$input-hover-background-color: #ffffff !default
+
+// Input focused
+
+$input-focused-border: solid 1px #0066ff !default
+$input-focused-background-color: #ffffff !default
+$input-focused-box-shadow: 0 0 0 2px #0066ff55 !default
+
+// Input active
+
+$input-active-border: solid 1px #003aa0 !default
+$input-active-background-color: #ffffff !default
+$input-active-box-shadow: 0 0 0 2px #0066ff55 !default
+
+// Input disabled
+
+$input-disabled-border: $default-border !default
+$input-disabled-background-color: #cccccc !default
+
+/* Grid: variables used by responsive grid */
+
+// Grid sizes
+
+$gutter-width: 2rem !default
+$gutter-compensation: -1rem !default
+$half-gutter-width: 1rem !default
+
+$col-size-1: 8.33333333% !default
+$col-size-2: 16.66666667% !default
+$col-size-3: 25% !default
+$col-size-4: 33.33333333% !default
+$col-size-5: 41.66666667% !default
+$col-size-6: 50% !default
+$col-size-7: 58.33333333% !default
+$col-size-8: 66.66666667% !default
+$col-size-9: 75% !default
+$col-size-10: 83.33333333% !default
+$col-size-11: 91.66666667% !default
+$col-size-12: 100% !default
+
+/* Header: variables used by page header */
+
+// Header sizes and colors
+
+$header-padding: 0.75rem 1rem !default
+$header-background-color: $color-primary !default
+$header-color: $color-white !default
+$header-height: 50vh !default
+
+// Header title
+
+$header-title-line-height: 1em !default
+$header-title-font-size: 2.5em !default
+$header-title-font-weight: $font-weight-bold !default
+$header-title-font-family: "Ubuntu" !default
+
+// Header subtitle
+
+$header-subtitle-margin: 0.8rem !default
+$header-subtitle-line-height: 1em !default
+$header-subtitle-font-size: 1.5em !default
+$header-subtitle-font-weight: $font-weight-default !default
+$header-subtitle-font-family: "Ubuntu" !default
+
+// Header action
+
+$header-actions-margin: 2rem 0.4rem 0 0.4rem !default
+
+$action-border-radius: $border-radius-rounded !default
+$action-padding: $button-padding-default !default
+$action-height: $button-height-default !default
+$action-font-size: $button-font-size-default !default
+$action-font-family: "Ubuntu" !default
+$action-font-weight: $font-weight-default !default
+
+$action-background-color: transparent !default
+$action-border: solid 1px $color-white !default
+$action-color: $color-white !default
+
+$action-hover-background-color: #ffffff11 !default
+$action-hover-border: solid 1px $color-white !default
+$action-hover-color: $color-white !default
+
+$action-focus-background-color: #ffffff11 !default
+$action-focus-border: solid 1px $color-white !default
+$action-focus-color: $color-white !default
+
+$action-active-background-color: #ffffff11 !default
+$action-active-border: solid 1px $color-white !default
+$action-active-color: $color-white !default
+
+/* Icon: variables for the icon component */
+
+// Icon sizes
+
+$icon-size: 1.2rem !default
+$icon-font-size: 1rem !default
+
+/* Notification: variables for the notification component */
+
+// Notification fonts
+
+$notification-font-family: $font-family-default !default
+
+// Notification sizes
+
+$notification-border-radius: $border-radius-default !default
+$notification-padding: $text-padding !default
+$notification-font-size: $font-size-dafault !default
+$notification-line-height: $line-height-large !default
+
+// Notification default colors
+
+$notification-background-color: $default-background-color !default
+$notification-border: $none-border !default
+$notification-color: $default-color !default
+
+// Notification primary colors
+
+$notification-primary-background-color: $primary-background-color !default
+$notification-primary-border: $none-border !default
+$notification-primary-color: $primary-color !default
+
+
+// Notification success colors
+
+$notification-success-background-color: $success-background-color !default
+$notification-success-border: $none-border !default
+$notification-success-color: $success-color !default
+
+// Notification warning colors
+
+$notification-warning-background-color: $warning-background-color !default
+$notification-warning-border: $none-border !default
+$notification-warning-color: $warning-color !default
+
+// Notification danger colors
+
+$notification-danger-background-color: $danger-background-color !default
+$notification-danger-border: $none-border !default
+$notification-danger-color: $danger-color !default
+
+/* Table: table, columns and rows */
+
+// Table sizes and colors
+
+$table-background-color: $color-background !default
+$table-color: $color-text !default
+$table-border: $none-border !default
+
+// Table header
+
+$table-header-background-color: $color-background !default
+$table-header-color: $color-text-dark !default
+$table-header-font-weight: $font-weight-bold !default
+$table-header-border: $default-border !default
+$table-header-padding: 0.6rem 0.75rem !default
+$table-header-font-size: 0.9em !default
+
+// Table row
+
+$table-row-background-color: $color-background !default
+$table-row-color: $color-text !default
+$table-row-font-weight: $font-weight-default !default
+$table-row-border: $default-border !default
+$table-row-padding: 0.6rem 0.75rem !default
+$table-row-font-size: 1em !default
+
+// Table footer
+
+$table-footer-background-color: $color-background !default
+$table-footer-color: $color-text-dark !default
+$table-footer-font-weight: $font-weight-bold !default
+$table-footer-border: $default-border !default
+$table-footer-padding: 0.6rem 0.75rem !default
+$table-footer-font-size: 0.9em !default
+
+// Table stripped
+
+$table-stripped-background-color: $color-background-semi-dark !default
+
+// Table bordered
+
+$table-bordered-border: $default-border !default
+
+/* Tag: properties of tag element */
+
+// Tag fonts
+
+$tag-font-family: $font-family-action !default
+
+// Tag sizes
+
+$tag-border-radius: 4px !default
+$tag-border-radius-rounded: $border-radius-rounded !default
+$tag-padding: 0 0.65em !default
+$tag-font-size: 0.70em !default
+$tag-height: 1.4rem !default
+$tag-line-height: 1em !default
+
+// Tag default colors
+
+$tag-background-color: $default-background-color !default
+$tag-border: $none-border !default
+$tag-color: $default-color !default
+
+// Tag primary colors
+
+$tag-primary-background-color: $primary-background-color !default
+$tag-primary-border: $none-border !default
+$tag-primary-color: $primary-color !default
+
+
+// Tag success colors
+
+$tag-success-background-color: $success-background-color !default
+$tag-success-border: $none-border !default
+$tag-success-color: $success-color !default
+
+// Tag warning colors
+
+$tag-warning-background-color: $warning-background-color !default
+$tag-warning-border: $none-border !default
+$tag-warning-color: $warning-color !default
+
+// Tag danger colors
+
+$tag-danger-background-color: $danger-background-color !default
+$tag-danger-border: $none-border !default
+$tag-danger-color: $danger-color !default
+
+/* Tooltip: properties for tooltip element */
+
+// Tooltip fonts
+
+$tooltip-font-family: $font-family-default !default
+
+// Tooltip sizes, colors and font
+
+$tooltip-top: -2.5em !default
+$tooltip-padding: 0.5em !default
+$tooltip-font-size: 0.9em !default
+$tooltip-line-height: 1em !default
+$tooltip-background-color: #222222 !default
+$tooltip-color: #ffffff !default
+$tooltip-border-radius: 4px !default
+$tooltip-font-weight: 400 !default

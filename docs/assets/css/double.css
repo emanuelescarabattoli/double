@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap");
+/* Base: here we define basic variables used by all styles */
+/* Primary: here we define styles for primary elements */
+/* Success: here we define styles for success elements */
+/* Warning: here we define styles for warning elements */
+/* Danger: here we define styles for danger elements */
+/* Button: here we define some style related to buttons */
+/* Card: styles related to card */
+/* Field: here we define properties related to inputs */
+/* Checkbox: here we define properties related to inputs */
+/* Radio: here we define properties related to inputs */
+/* Input: here we define properties related to inputs */
+/* Grid: variables used by responsive grid */
+/* Header: variables used by page header */
+/* Icon: variables for the icon component */
+/* Notification: variables for the notification component */
+/* Table: table, columns and rows */
+/* Tag: properties of tag element */
+/* Tooltip: properties for tooltip element */
 html,
 body,
 p,
@@ -1203,7 +1221,7 @@ table th {
   display: block;
   position: relative;
   line-height: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
   .image.is-rounded {
     border-radius: 100%;
     overflow: hidden; }
