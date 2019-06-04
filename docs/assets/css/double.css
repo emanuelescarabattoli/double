@@ -825,7 +825,6 @@ table th {
   font-family: "Roboto";
   background-color: #efefef;
   border: solid 1px #cccccc;
-  box-shadow: none;
   color: #222222; }
   .button:hover, .button.is-hovered {
     border: solid 1px #c0c0c0;
