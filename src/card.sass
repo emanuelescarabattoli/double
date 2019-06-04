@@ -3,7 +3,6 @@
   position: relative
   border: $card-border
   border-radius: $card-border-radius
-  box-shadow: $card-box-shadow
   .card-header
     padding: $card-header-padding
     background-color: $card-header-background-color
@@ -27,8 +26,21 @@
   .card-footer
     padding: $card-footer-padding
     background-color: $card-footer-background-color
-    border-top: $card-footer-border
     color: $card-footer-color
     line-height: $card-footer-line-height
     font-size: $card-footer-font-size
     font-weight: $card-footer-font-weight
+
+.dark-mode
+  .card
+    border: $dark-card-border
+    .card-header
+      background-color: $dark-card-header-background-color
+      border-bottom: $dark-card-header-border
+      color: $dark-card-header-color
+    .card-body
+      background-color: $dark-card-body-background-color
+      color: $dark-card-body-color
+    .card-footer
+      background-color: $dark-card-footer-background-color
+      color: $dark-card-footer-color

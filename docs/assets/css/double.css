@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap");
 /* Base: here we define basic variables used by all styles */
+/* Default: here we define styles for primary elements */
 /* Primary: here we define styles for primary elements */
 /* Success: here we define styles for success elements */
 /* Warning: here we define styles for warning elements */
@@ -231,6 +232,25 @@ table th {
 
 table th {
   color: #111111; }
+
+.dark-mode {
+  background-color: #111111;
+  min-height: 100vh;
+  color: #c0c0c0; }
+  .dark-mode a {
+    color: #c0c0c0; }
+    .dark-mode a:hover {
+      color: #0088ff; }
+  .dark-mode code {
+    background-color: #333333;
+    color: #be28eb; }
+  .dark-mode hr {
+    background-color: #333333; }
+  .dark-mode strong {
+    color: #f0f0f0; }
+  .dark-mode pre {
+    background-color: #181818;
+    color: #c0c0c0; }
 
 @keyframes rotateFull {
   from {
@@ -813,6 +833,19 @@ table th {
 .content sub {
   font-size: 75%; }
 
+.dark-mode .content h1,
+.dark-mode .content h2,
+.dark-mode .content h3,
+.dark-mode .content h4,
+.dark-mode .content h5,
+.dark-mode .content h6 {
+  color: #c0c0c0; }
+
+.dark-mode .content blockquote {
+  color: #c0c0c0;
+  background-color: #181818;
+  border-left: solid 5px #0066ff; }
+
 .button {
   border-radius: 4px;
   padding: 0.4em 0.8em;
@@ -924,6 +957,87 @@ table th {
     .button > .icon:not(:last-child) {
       margin-right: 0.5em; }
 
+.dark-mode .button {
+  background-color: #111111;
+  border: solid 1px #222222;
+  color: #c0c0c0; }
+  .dark-mode .button:hover, .dark-mode .button.is-hovered {
+    border: solid 1px #333333;
+    color: #c0c0c0; }
+  .dark-mode .button:focus, .dark-mode .button.is-focused {
+    border: solid 1px #333333;
+    color: #c0c0c0; }
+  .dark-mode .button:active, .dark-mode .button.is-active {
+    border: solid 1px #444444;
+    color: #c0c0c0; }
+  .dark-mode .button.is-primary {
+    background-color: #111111;
+    border: solid 1px #004499;
+    color: #c0c0c0; }
+    .dark-mode .button.is-primary:hover, .dark-mode .button.is-primary.is-hovered {
+      background-color: #111111;
+      border: solid 1px #003aa0;
+      color: #f0f0f0; }
+    .dark-mode .button.is-primary:focus, .dark-mode .button.is-primary.is-focused {
+      background-color: #111111;
+      border: solid 1px #003aa0;
+      color: #f0f0f0; }
+    .dark-mode .button.is-primary:active, .dark-mode .button.is-primary.is-active {
+      background-color: #111111;
+      border: solid 1px #003090;
+      color: #f0f0f0; }
+  .dark-mode .button.is-success {
+    background-color: #111111;
+    border: solid 1px #006600;
+    box-shadow: none;
+    color: #c0c0c0; }
+    .dark-mode .button.is-success:hover, .dark-mode .button.is-success.is-hovered {
+      background-color: #111111;
+      border: solid 1px #005500;
+      color: #c0c0c0; }
+    .dark-mode .button.is-success:focus, .dark-mode .button.is-success.is-focused {
+      background-color: #111111;
+      border: solid 1px #004400;
+      color: #c0c0c0; }
+    .dark-mode .button.is-success:active, .dark-mode .button.is-success.is-active {
+      background-color: #111111;
+      border: solid 1px #003090;
+      color: #c0c0c0; }
+  .dark-mode .button.is-warning {
+    background-color: #111111;
+    border: solid 1px #ff5500;
+    box-shadow: none;
+    color: #c0c0c0; }
+    .dark-mode .button.is-warning:hover, .dark-mode .button.is-warning.is-hovered {
+      background-color: #111111;
+      border: solid 1px #ff4400;
+      color: #c0c0c0; }
+    .dark-mode .button.is-warning:focus, .dark-mode .button.is-warning.is-focused {
+      background-color: #111111;
+      border: solid 1px #ff3300;
+      color: #c0c0c0; }
+    .dark-mode .button.is-warning:active, .dark-mode .button.is-warning.is-active {
+      background-color: #111111;
+      border: solid 1px #ff2200;
+      color: #c0c0c0; }
+  .dark-mode .button.is-danger {
+    background-color: #111111;
+    border: solid 1px #990000;
+    box-shadow: none;
+    color: #c0c0c0; }
+    .dark-mode .button.is-danger:hover, .dark-mode .button.is-danger.is-hovered {
+      background-color: #111111;
+      border: solid 1px #770000;
+      color: #c0c0c0; }
+    .dark-mode .button.is-danger:focus, .dark-mode .button.is-danger.is-focused {
+      background-color: #111111;
+      border: solid 1px #990000;
+      color: #c0c0c0; }
+    .dark-mode .button.is-danger:active, .dark-mode .button.is-danger.is-active {
+      background-color: #111111;
+      border: solid 1px #770000;
+      color: #c0c0c0; }
+
 .grouped {
   display: inline-flex; }
   .grouped > .button {
@@ -1021,7 +1135,7 @@ table th {
     padding: 0.6rem 0.75rem;
     font-size: 0.9em; }
   .table.is-striped tr:nth-child(even) td {
-    background-color: #e8e8e8; }
+    background-color: #333333; }
   .table.is-bordered {
     border: solid 1px #cccccc; }
 
@@ -1103,8 +1217,7 @@ table th {
 .card {
   position: relative;
   border: solid 1px #d0d0d0;
-  border-radius: 4px;
-  box-shadow: none; }
+  border-radius: 4px; }
   .card .card-header {
     padding: 1.2rem;
     background-color: #e9e9e9;
@@ -1128,11 +1241,23 @@ table th {
   .card .card-footer {
     padding: 1.2rem;
     background-color: #f0f0f0;
-    border-top: none;
     color: #222222;
     line-height: 1;
     font-size: 1em;
     font-weight: 600; }
+
+.dark-mode .card {
+  border: solid 1px #222222; }
+  .dark-mode .card .card-header {
+    background-color: #181818;
+    border-bottom: solid 1px #222222;
+    color: #c0c0c0; }
+  .dark-mode .card .card-body {
+    background-color: #111111;
+    color: #c0c0c0; }
+  .dark-mode .card .card-footer {
+    background-color: #111111;
+    color: #c0c0c0; }
 
 .header {
   position: relative;
@@ -1184,6 +1309,28 @@ table th {
         border: solid 1px #f0f0f0;
         color: #f0f0f0; }
       .header .header-content .header-actions .header-action:active, .header .header-content .header-actions .header-action.is-active {
+        background-color: #ffffff11;
+        border: solid 1px #f0f0f0;
+        color: #f0f0f0; }
+
+.dark-mode .header {
+  background-color: #000000;
+  color: #f0f0f0; }
+  .dark-mode .header .header-content {
+    text-align: center; }
+    .dark-mode .header .header-content .header-actions .header-action {
+      background-color: transparent;
+      border: solid 1px #f0f0f0;
+      color: #f0f0f0; }
+      .dark-mode .header .header-content .header-actions .header-action:hover, .dark-mode .header .header-content .header-actions .header-action.is-hovered {
+        background-color: #ffffff11;
+        border: solid 1px #f0f0f0;
+        color: #f0f0f0; }
+      .dark-mode .header .header-content .header-actions .header-action:focus, .dark-mode .header .header-content .header-actions .header-action.is-focused {
+        background-color: #ffffff11;
+        border: solid 1px #f0f0f0;
+        color: #f0f0f0; }
+      .dark-mode .header .header-content .header-actions .header-action:active, .dark-mode .header .header-content .header-actions .header-action.is-active {
         background-color: #ffffff11;
         border: solid 1px #f0f0f0;
         color: #f0f0f0; }
@@ -1328,6 +1475,39 @@ table th {
     .field .radio.is-inline label + label {
       margin-top: 0; }
 
+.dark-mode .field .label {
+  color: #c0c0c0; }
+
+.dark-mode .field .help {
+  color: #c0c0c0; }
+  .dark-mode .field .help.is-success {
+    color: #00cc00; }
+  .dark-mode .field .help.is-danger {
+    color: #cc0000; }
+
+.dark-mode .field .input {
+  color: #c0c0c0;
+  border: solid 1px #222222;
+  background-color: #000000; }
+  .dark-mode .field .input:hover:not(:active) {
+    border: solid 1px #0066ff;
+    background-color: #000000; }
+  .dark-mode .field .input:focus {
+    border: solid 1px #0066ff;
+    background-color: #000000; }
+  .dark-mode .field .input:active {
+    border: solid 1px #003aa0;
+    background-color: #000000; }
+  .dark-mode .field .input[disabled] {
+    border: solid 1px #222222;
+    background-color: #333333; }
+
+.dark-mode .field .checkbox label {
+  color: #c0c0c0; }
+
+.dark-mode .field .radio {
+  color: #c0c0c0; }
+
 .navbar .navbar-logo {
   font-weight: 600; }
   .navbar .navbar-logo img {
@@ -1414,6 +1594,13 @@ table th {
       padding: 0.5rem 1rem; }
     .navbar.show-items .navbar-options {
       margin-bottom: 0.5rem; } }
+
+.dark-mode .navbar .navbar-item a,
+.dark-mode .navbar .navbar-menu a {
+  color: #c0c0c0; }
+  .dark-mode .navbar .navbar-item a:hover,
+  .dark-mode .navbar .navbar-menu a:hover {
+    color: #0066ff; }
 
 .icon {
   display: inline-flex;

@@ -97,3 +97,36 @@
         margin-right: $radio-margin-inline
         & + label
           margin-top: 0
+
+.dark-mode
+  .field
+    .label
+      color: $dark-label-color
+    .help
+      color: $dark-help-color
+      &.is-success
+        color: $help-success-color
+      &.is-danger
+        color: $help-danger-color
+    .input
+      color: $dark-input-color
+      border: $dark-input-border
+      background-color: $dark-input-background-color
+      &:hover
+        &:not(:active)
+          border: $dark-input-hover-border
+          background-color: $dark-input-hover-background-color
+      &:focus
+        border: $dark-input-focused-border
+        background-color: $dark-input-focused-background-color
+      &:active
+        border: $dark-input-active-border
+        background-color: $dark-input-active-background-color
+      &[disabled]
+        border: $dark-input-disabled-border
+        background-color: $dark-input-disabled-background-color
+    .checkbox
+      label
+        color: $dark-checkbox-color
+    .radio
+      color: $dark-radio-color

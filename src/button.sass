@@ -1,4 +1,3 @@
-
 .button
   @extend %button
   @extend %unselectable
@@ -126,6 +125,103 @@
     height: 1em
     &:not(:last-child)
       margin-right: 0.5em
+
+.dark-mode
+  .button
+    background-color: $dark-button-background-color
+    border: $dark-button-border
+    color: $dark-button-color
+    &:hover,
+    &.is-hovered
+      border: $dark-button-hover-border
+      color: $dark-button-hover-color
+    &:focus,
+    &.is-focused
+      border: $dark-button-focus-border
+      color: $dark-button-focus-color
+    &:active,
+    &.is-active
+      border: $dark-button-active-border
+      color: $dark-button-active-color
+    &.is-primary
+      background-color: $dark-button-primary-background-color
+      border: $dark-button-primary-border
+      color: $dark-button-primary-color
+      &:hover,
+      &.is-hovered
+        background-color: $dark-button-primary-hover-background-color
+        border: $dark-button-primary-hover-border
+        color: $dark-button-primary-hover-color
+      &:focus,
+      &.is-focused
+        background-color: $dark-button-primary-focus-background-color
+        border: $dark-button-primary-focus-border
+        color: $dark-button-primary-focus-color
+      &:active,
+      &.is-active
+        background-color: $dark-button-primary-active-background-color
+        border: $dark-button-primary-active-border
+        color: $dark-button-primary-active-color
+    &.is-success
+      background-color: $dark-button-success-background-color
+      border: $dark-button-success-border
+      box-shadow: $dark-button-success-box-shadow
+      color: $dark-button-success-color
+      &:hover,
+      &.is-hovered
+        background-color: $dark-button-success-hover-background-color
+        border: $dark-button-success-hover-border
+        color: $dark-button-success-hover-color
+      &:focus,
+      &.is-focused
+        background-color: $dark-button-success-focus-background-color
+        border: $dark-button-success-focus-border
+        color: $dark-button-success-focus-color
+      &:active,
+      &.is-active
+        background-color: $dark-button-success-active-background-color
+        border: $dark-button-success-active-border
+        color: $dark-button-success-active-color
+    &.is-warning
+      background-color: $dark-button-warning-background-color
+      border: $dark-button-warning-border
+      box-shadow: $dark-button-warning-box-shadow
+      color: $dark-button-warning-color
+      &:hover,
+      &.is-hovered
+        background-color: $dark-button-warning-hover-background-color
+        border: $dark-button-warning-hover-border
+        color: $dark-button-warning-hover-color
+      &:focus,
+      &.is-focused
+        background-color: $dark-button-warning-focus-background-color
+        border: $dark-button-warning-focus-border
+        color: $dark-button-warning-focus-color
+      &:active,
+      &.is-active
+        background-color: $dark-button-warning-active-background-color
+        border: $dark-button-warning-active-border
+        color: $dark-button-warning-active-color
+    &.is-danger
+      background-color: $dark-button-danger-background-color
+      border: $dark-button-danger-border
+      box-shadow: $dark-button-danger-box-shadow
+      color: $dark-button-danger-color
+      &:hover,
+      &.is-hovered
+        background-color: $dark-button-danger-hover-background-color
+        border: $dark-button-danger-hover-border
+        color: $dark-button-danger-hover-color
+      &:focus,
+      &.is-focused
+        background-color: $dark-button-danger-focus-background-color
+        border: $dark-button-danger-focus-border
+        color: $dark-button-danger-focus-color
+      &:active,
+      &.is-active
+        background-color: $dark-button-danger-active-background-color
+        border: $dark-button-danger-active-border
+        color: $dark-button-danger-active-color
 
 .grouped
   display: inline-flex

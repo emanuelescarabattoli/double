@@ -1,14 +1,12 @@
 html
   background-color: $color-background
-  font-size: $font-size-dafault
+  font-size: $font-size-default
   overflow-x: hidden
   overflow-y: scroll
   text-size-adjust: 100%
   min-height: 100vh
-
 body
   min-height: 100vh
-
 article,
 aside,
 figure,
@@ -17,68 +15,55 @@ header,
 hgroup,
 section
   display: block
-
 body,
 button,
 input,
 select,
 textarea
   font-family: $font-family-default
-
 code,
 pre
   font-family: $font-family-code
-
 body
   color: $color-text
-  font-size: $font-size-dafault
+  font-size: $font-size-default
   font-weight: $font-weight-default
   line-height: $line-height-default
-
 a
   color: $color-link
   cursor: pointer
   text-decoration: none
   &:hover
     color: $color-link-hover
-
 code
   background-color: $color-background-semi-light
   color: #be28eb
-  font-size: $font-size-dafault
+  font-size: $font-size-default
   font-weight: $font-weight-default
   padding: 0.25em 0.5em
   border-radius: 4px
-
 hr
   background-color: $color-background-semi-light
   border: none
   display: block
   height: 2px
   margin: $spacing-out 0
-
 img
   height: auto
   max-width: 100%
-
 input[type="checkbox"],
 input[type="radio"]
   vertical-align: baseline
-
 small
   font-size: $font-size-small
-
 span
   font-style: inherit
   font-weight: inherit
-
 strong
   color: $color-text-dark
   font-weight: $font-weight-bold
-
 fieldset
   border: none
-
 pre
   background-color: $color-background
   color: $color-text
@@ -90,9 +75,8 @@ pre
   code
     background-color: transparent
     color: currentColor
-    font-size: $font-size-dafault
+    font-size: $font-size-default
     padding: 0
-
 table
   td,
   th
@@ -101,3 +85,22 @@ table
       text-align: left
   th
     color: $color-text-dark
+
+.dark-mode
+  background-color: $dark-background-color
+  min-height: 100vh
+  color: $dark-color-text
+  a
+    color: $dark-color-link
+    &:hover
+      color: $dark-color-link-hover
+  code
+    background-color: $color-background-semi-dark
+    color: #be28eb
+  hr
+    background-color: $color-background-semi-dark
+  strong
+    color: $color-text-light
+  pre
+    background-color: $dark-color-background
+    color: $dark-color-text

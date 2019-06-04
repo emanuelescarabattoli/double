@@ -57,3 +57,30 @@
           background-color: $action-active-background-color
           border: $action-active-border
           color: $action-active-color
+
+.dark-mode
+  .header
+    background-color: $dark-header-background-color
+    color: $dark-header-color
+    .header-content
+      text-align: center
+      .header-actions
+        .header-action
+          background-color: $dark-action-background-color
+          border: $dark-action-border
+          color: $dark-action-color
+          &:hover,
+          &.is-hovered
+            background-color: $dark-action-hover-background-color
+            border: $dark-action-hover-border
+            color: $dark-action-hover-color
+          &:focus,
+          &.is-focused
+            background-color: $dark-action-focus-background-color
+            border: $dark-action-focus-border
+            color: $dark-action-focus-color
+          &:active,
+          &.is-active
+            background-color: $dark-action-active-background-color
+            border: $dark-action-active-border
+            color: $dark-action-active-color
