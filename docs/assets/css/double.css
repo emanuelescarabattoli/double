@@ -1104,6 +1104,47 @@ table th {
     .notification.is-danger strong {
       color: #f0f0f0; }
 
+.dark-mode .notification {
+  background-color: #181818;
+  border: none;
+  color: #c0c0c0; }
+  .dark-mode .notification a {
+    color: #c0c0c0; }
+  .dark-mode .notification strong {
+    color: #c0c0c0; }
+  .dark-mode .notification.is-primary {
+    background-color: #002244;
+    border: none;
+    color: #c0c0c0; }
+    .dark-mode .notification.is-primary a {
+      color: #c0c0c0; }
+    .dark-mode .notification.is-primary strong {
+      color: #c0c0c0; }
+  .dark-mode .notification.is-success {
+    background-color: #003300;
+    border: none;
+    color: #c0c0c0; }
+    .dark-mode .notification.is-success a {
+      color: #c0c0c0; }
+    .dark-mode .notification.is-success strong {
+      color: #c0c0c0; }
+  .dark-mode .notification.is-warning {
+    background-color: #883300;
+    border: none;
+    color: #c0c0c0; }
+    .dark-mode .notification.is-warning a {
+      color: #c0c0c0; }
+    .dark-mode .notification.is-warning strong {
+      color: #c0c0c0; }
+  .dark-mode .notification.is-danger {
+    background-color: #440000;
+    border: none;
+    color: #c0c0c0; }
+    .dark-mode .notification.is-danger a {
+      color: #c0c0c0; }
+    .dark-mode .notification.is-danger strong {
+      color: #c0c0c0; }
+
 .table {
   background-color: #f0f0f0;
   color: #222222;
