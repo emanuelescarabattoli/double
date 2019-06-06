@@ -784,7 +784,7 @@ table th {
   margin-bottom: 1em; }
 
 .content blockquote {
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
   border-left: solid 5px #0066ff;
   padding: 1.25em 1.5em; }
 
@@ -954,17 +954,17 @@ table th {
       margin-right: 0.5em; }
 
 .dark-mode .button {
-  background-color: #181818;
-  border: solid 1px #222222;
+  background-color: #111111;
+  border: solid 1px #444444;
   color: #c0c0c0; }
   .dark-mode .button:hover, .dark-mode .button.is-hovered {
-    border: solid 1px #333333;
+    border: solid 1px #555555;
     color: #c0c0c0; }
   .dark-mode .button:focus, .dark-mode .button.is-focused {
-    border: solid 1px #333333;
+    border: solid 1px #777777;
     color: #c0c0c0; }
   .dark-mode .button:active, .dark-mode .button.is-active {
-    border: solid 1px #444444;
+    border: solid 1px #888888;
     color: #c0c0c0; }
   .dark-mode .button.is-primary {
     background-color: #111111;
@@ -1093,35 +1093,35 @@ table th {
       color: #f0f0f0; }
 
 .dark-mode .notification {
-  background-color: #181818;
+  background-color: #222222;
   color: #c0c0c0; }
   .dark-mode .notification a {
     color: #c0c0c0; }
   .dark-mode .notification strong {
     color: #c0c0c0; }
   .dark-mode .notification.is-primary {
-    background-color: #002244;
+    background-color: #004499;
     color: #c0c0c0; }
     .dark-mode .notification.is-primary a {
       color: #c0c0c0; }
     .dark-mode .notification.is-primary strong {
       color: #c0c0c0; }
   .dark-mode .notification.is-success {
-    background-color: #003300;
+    background-color: #005500;
     color: #c0c0c0; }
     .dark-mode .notification.is-success a {
       color: #c0c0c0; }
     .dark-mode .notification.is-success strong {
       color: #c0c0c0; }
   .dark-mode .notification.is-warning {
-    background-color: #883300;
+    background-color: #aa4400;
     color: #c0c0c0; }
     .dark-mode .notification.is-warning a {
       color: #c0c0c0; }
     .dark-mode .notification.is-warning strong {
       color: #c0c0c0; }
   .dark-mode .notification.is-danger {
-    background-color: #440000;
+    background-color: #770000;
     color: #c0c0c0; }
     .dark-mode .notification.is-danger a {
       color: #c0c0c0; }
@@ -1159,9 +1159,35 @@ table th {
     padding: 0.6rem 0.75rem;
     font-size: 0.9em; }
   .table.is-striped tr:nth-child(even) td {
-    background-color: #333333; }
+    background-color: #e9e9e9; }
   .table.is-bordered {
     border: solid 1px #cccccc; }
+
+.dark-mode .table {
+  background-color: #181818;
+  color: #c0c0c0;
+  border: none; }
+  .dark-mode .table thead tr {
+    border-bottom: solid 1px #333333; }
+  .dark-mode .table thead th {
+    background-color: #181818;
+    color: #c0c0c0; }
+  .dark-mode .table tbody tr {
+    border-bottom: solid 1px #333333; }
+  .dark-mode .table tbody tr:last-child {
+    border-bottom: none; }
+  .dark-mode .table tbody td {
+    background-color: #181818;
+    color: #c0c0c0; }
+  .dark-mode .table tfoot tr {
+    border-top: solid 1px #333333; }
+  .dark-mode .table tfoot td {
+    background-color: #181818;
+    color: #c0c0c0; }
+  .dark-mode .table.is-striped tr:nth-child(even) td {
+    background-color: #131313; }
+  .dark-mode .table.is-bordered {
+    border: solid 1px #333333; }
 
 .tags {
   display: flex;
@@ -1234,35 +1260,35 @@ table th {
       border-radius: 1em; }
 
 .dark-mode .tags .tag {
-  background-color: #181818;
+  background-color: #222222;
   color: #c0c0c0; }
   .dark-mode .tags .tag a {
     color: #c0c0c0; }
   .dark-mode .tags .tag strong {
     color: #c0c0c0; }
   .dark-mode .tags .tag.is-primary {
-    background-color: #002244;
+    background-color: #004499;
     color: #c0c0c0; }
     .dark-mode .tags .tag.is-primary a {
       color: #c0c0c0; }
     .dark-mode .tags .tag.is-primary strong {
       color: #c0c0c0; }
   .dark-mode .tags .tag.is-success {
-    background-color: #003300;
+    background-color: #005500;
     color: #c0c0c0; }
     .dark-mode .tags .tag.is-success a {
       color: #c0c0c0; }
     .dark-mode .tags .tag.is-success strong {
       color: #c0c0c0; }
   .dark-mode .tags .tag.is-warning {
-    background-color: #883300;
+    background-color: #aa4400;
     color: #c0c0c0; }
     .dark-mode .tags .tag.is-warning a {
       color: #c0c0c0; }
     .dark-mode .tags .tag.is-warning strong {
       color: #c0c0c0; }
   .dark-mode .tags .tag.is-danger {
-    background-color: #440000;
+    background-color: #770000;
     color: #c0c0c0; }
     .dark-mode .tags .tag.is-danger a {
       color: #c0c0c0; }
@@ -1542,7 +1568,7 @@ table th {
 
 .dark-mode .field .input {
   color: #c0c0c0;
-  border: solid 1px #222222;
+  border: solid 1px #333333;
   background-color: #000000; }
   .dark-mode .field .input:hover:not(:active) {
     border: solid 1px #0066ff;
@@ -1554,7 +1580,7 @@ table th {
     border: solid 1px #003aa0;
     background-color: #000000; }
   .dark-mode .field .input[disabled] {
-    border: solid 1px #222222;
+    border: solid 1px #333333;
     background-color: #333333; }
 
 .dark-mode .field .checkbox label {

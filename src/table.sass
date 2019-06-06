@@ -37,3 +37,34 @@
       background-color: $table-stripped-background-color
   &.is-bordered
       border: $table-bordered-border
+
+.dark-mode
+  .table
+    background-color: $dark-table-background-color
+    color: $dark-table-color
+    border: $dark-table-border
+    thead
+      tr
+        border-bottom: $dark-table-header-border
+      th
+        background-color: $dark-table-header-background-color
+        color: $dark-table-header-color
+    tbody
+      tr
+        border-bottom: $dark-table-row-border
+      tr:last-child
+        border-bottom: none
+      td
+        background-color: $dark-table-row-background-color
+        color: $dark-table-row-color
+    tfoot
+      tr
+        border-top: $dark-table-footer-border
+      td
+        background-color: $dark-table-footer-background-color
+        color: $dark-table-footer-color
+    &.is-striped
+      tr:nth-child(even) td
+        background-color: $dark-table-stripped-background-color
+    &.is-bordered
+        border: $dark-table-bordered-border
