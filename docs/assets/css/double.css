@@ -856,7 +856,7 @@ table th {
   text-align: center;
   white-space: nowrap;
   font-family: "Roboto";
-  background-color: #efefef;
+  background-color: #e5e5e5;
   border: solid 1px #cccccc;
   color: #222222; }
   .button:hover, .button.is-hovered {
@@ -873,7 +873,6 @@ table th {
   .button.is-primary {
     background-color: #0088ff;
     border: solid 1px #004499;
-    box-shadow: none;
     color: #f0f0f0; }
     .button.is-primary:hover, .button.is-primary.is-hovered {
       background-color: #0099ff;
@@ -892,7 +891,6 @@ table th {
   .button.is-success {
     background-color: #00cc00;
     border: solid 1px #006600;
-    box-shadow: none;
     color: #f0f0f0; }
     .button.is-success:hover, .button.is-success.is-hovered {
       background-color: #00dd00;
@@ -911,7 +909,6 @@ table th {
   .button.is-warning {
     background-color: #ff9900;
     border: solid 1px #ff5500;
-    box-shadow: none;
     color: #7a4900; }
     .button.is-warning:hover, .button.is-warning.is-hovered {
       background-color: #ffaa00;
@@ -930,7 +927,6 @@ table th {
   .button.is-danger {
     background-color: #cc0000;
     border: solid 1px #990000;
-    box-shadow: none;
     color: #f0f0f0; }
     .button.is-danger:hover, .button.is-danger.is-hovered {
       background-color: #cf0000;
@@ -958,7 +954,7 @@ table th {
       margin-right: 0.5em; }
 
 .dark-mode .button {
-  background-color: #111111;
+  background-color: #181818;
   border: solid 1px #222222;
   color: #c0c0c0; }
   .dark-mode .button:hover, .dark-mode .button.is-hovered {
@@ -989,7 +985,6 @@ table th {
   .dark-mode .button.is-success {
     background-color: #111111;
     border: solid 1px #006600;
-    box-shadow: none;
     color: #c0c0c0; }
     .dark-mode .button.is-success:hover, .dark-mode .button.is-success.is-hovered {
       background-color: #111111;
@@ -1006,7 +1001,6 @@ table th {
   .dark-mode .button.is-warning {
     background-color: #111111;
     border: solid 1px #ff5500;
-    box-shadow: none;
     color: #c0c0c0; }
     .dark-mode .button.is-warning:hover, .dark-mode .button.is-warning.is-hovered {
       background-color: #111111;
@@ -1023,7 +1017,6 @@ table th {
   .dark-mode .button.is-danger {
     background-color: #111111;
     border: solid 1px #990000;
-    box-shadow: none;
     color: #c0c0c0; }
     .dark-mode .button.is-danger:hover, .dark-mode .button.is-danger.is-hovered {
       background-color: #111111;
@@ -1059,7 +1052,6 @@ table th {
   position: relative;
   font-family: "Open Sans", sans-serif;
   background-color: #e5e5e5;
-  border: none;
   color: #222222;
   line-height: 1.3; }
   .notification a {
@@ -1069,7 +1061,6 @@ table th {
     color: #222222; }
   .notification.is-primary {
     background-color: #0088ff;
-    border: none;
     color: #f0f0f0; }
     .notification.is-primary a {
       color: #f0f0f0;
@@ -1078,7 +1069,6 @@ table th {
       color: #f0f0f0; }
   .notification.is-success {
     background-color: #00cc00;
-    border: none;
     color: #f0f0f0; }
     .notification.is-success a {
       color: #f0f0f0;
@@ -1087,7 +1077,6 @@ table th {
       color: #f0f0f0; }
   .notification.is-warning {
     background-color: #ff9900;
-    border: none;
     color: #7a4900; }
     .notification.is-warning a {
       color: #7a4900;
@@ -1096,7 +1085,6 @@ table th {
       color: #7a4900; }
   .notification.is-danger {
     background-color: #cc0000;
-    border: none;
     color: #f0f0f0; }
     .notification.is-danger a {
       color: #f0f0f0;
@@ -1106,7 +1094,6 @@ table th {
 
 .dark-mode .notification {
   background-color: #181818;
-  border: none;
   color: #c0c0c0; }
   .dark-mode .notification a {
     color: #c0c0c0; }
@@ -1114,7 +1101,6 @@ table th {
     color: #c0c0c0; }
   .dark-mode .notification.is-primary {
     background-color: #002244;
-    border: none;
     color: #c0c0c0; }
     .dark-mode .notification.is-primary a {
       color: #c0c0c0; }
@@ -1122,7 +1108,6 @@ table th {
       color: #c0c0c0; }
   .dark-mode .notification.is-success {
     background-color: #003300;
-    border: none;
     color: #c0c0c0; }
     .dark-mode .notification.is-success a {
       color: #c0c0c0; }
@@ -1130,7 +1115,6 @@ table th {
       color: #c0c0c0; }
   .dark-mode .notification.is-warning {
     background-color: #883300;
-    border: none;
     color: #c0c0c0; }
     .dark-mode .notification.is-warning a {
       color: #c0c0c0; }
@@ -1138,7 +1122,6 @@ table th {
       color: #c0c0c0; }
   .dark-mode .notification.is-danger {
     background-color: #440000;
-    border: none;
     color: #c0c0c0; }
     .dark-mode .notification.is-danger a {
       color: #c0c0c0; }
@@ -1199,7 +1182,6 @@ table th {
     font-size: 0.7em;
     font-family: "Roboto";
     background-color: #e5e5e5;
-    border: none;
     color: #222222;
     height: 1.4rem;
     align-items: center;
@@ -1218,7 +1200,6 @@ table th {
       color: #222222; }
     .tags .tag.is-primary {
       background-color: #0088ff;
-      border: none;
       color: #f0f0f0; }
       .tags .tag.is-primary a {
         color: #f0f0f0;
@@ -1227,7 +1208,6 @@ table th {
         color: #f0f0f0; }
     .tags .tag.is-success {
       background-color: #00cc00;
-      border: none;
       color: #f0f0f0; }
       .tags .tag.is-success a {
         color: #f0f0f0;
@@ -1236,7 +1216,6 @@ table th {
         color: #f0f0f0; }
     .tags .tag.is-warning {
       background-color: #ff9900;
-      border: none;
       color: #7a4900; }
       .tags .tag.is-warning a {
         color: #7a4900;
@@ -1245,7 +1224,6 @@ table th {
         color: #7a4900; }
     .tags .tag.is-danger {
       background-color: #cc0000;
-      border: none;
       color: #f0f0f0; }
       .tags .tag.is-danger a {
         color: #f0f0f0;
@@ -1254,6 +1232,42 @@ table th {
         color: #f0f0f0; }
     .tags .tag.is-rounded {
       border-radius: 1em; }
+
+.dark-mode .tags .tag {
+  background-color: #181818;
+  color: #c0c0c0; }
+  .dark-mode .tags .tag a {
+    color: #c0c0c0; }
+  .dark-mode .tags .tag strong {
+    color: #c0c0c0; }
+  .dark-mode .tags .tag.is-primary {
+    background-color: #002244;
+    color: #c0c0c0; }
+    .dark-mode .tags .tag.is-primary a {
+      color: #c0c0c0; }
+    .dark-mode .tags .tag.is-primary strong {
+      color: #c0c0c0; }
+  .dark-mode .tags .tag.is-success {
+    background-color: #003300;
+    color: #c0c0c0; }
+    .dark-mode .tags .tag.is-success a {
+      color: #c0c0c0; }
+    .dark-mode .tags .tag.is-success strong {
+      color: #c0c0c0; }
+  .dark-mode .tags .tag.is-warning {
+    background-color: #883300;
+    color: #c0c0c0; }
+    .dark-mode .tags .tag.is-warning a {
+      color: #c0c0c0; }
+    .dark-mode .tags .tag.is-warning strong {
+      color: #c0c0c0; }
+  .dark-mode .tags .tag.is-danger {
+    background-color: #440000;
+    color: #c0c0c0; }
+    .dark-mode .tags .tag.is-danger a {
+      color: #c0c0c0; }
+    .dark-mode .tags .tag.is-danger strong {
+      color: #c0c0c0; }
 
 .card {
   position: relative;

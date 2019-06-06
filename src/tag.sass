@@ -17,7 +17,6 @@
     font-size: $tag-font-size
     font-family: $tag-font-family
     background-color: $tag-background-color
-    border: $tag-border
     color: $tag-color
     height: $tag-height
     align-items: center
@@ -36,7 +35,6 @@
       color: $tag-color
     &.is-primary
       background-color: $tag-primary-background-color
-      border: $tag-primary-border
       color: $tag-primary-color
       a
         color: $tag-primary-color
@@ -45,7 +43,6 @@
         color: $tag-primary-color
     &.is-success
       background-color: $tag-success-background-color
-      border: $tag-success-border
       color: $tag-success-color
       a
         color: $tag-success-color
@@ -54,7 +51,6 @@
         color: $tag-success-color
     &.is-warning
       background-color: $tag-warning-background-color
-      border: $tag-warning-border
       color: $tag-warning-color
       a
         color: $tag-warning-color
@@ -63,7 +59,6 @@
         color: $tag-warning-color
     &.is-danger
       background-color: $tag-danger-background-color
-      border: $tag-danger-border
       color: $tag-danger-color
       a
         color: $tag-danger-color
@@ -72,3 +67,46 @@
         color: $tag-danger-color
     &.is-rounded
       border-radius: $tag-border-radius-rounded
+
+
+
+
+
+
+.dark-mode
+  .tags
+    .tag
+      background-color: $dark-tag-background-color
+      color: $dark-tag-color
+      a
+        color: $dark-tag-color
+      strong
+        color: $dark-tag-color
+      &.is-primary
+        background-color: $dark-tag-primary-background-color
+        color: $dark-tag-primary-color
+        a
+          color: $dark-tag-primary-color
+        strong
+          color: $dark-tag-primary-color
+      &.is-success
+        background-color: $dark-tag-success-background-color
+        color: $dark-tag-success-color
+        a
+          color: $dark-tag-success-color
+        strong
+          color: $dark-tag-success-color
+      &.is-warning
+        background-color: $dark-tag-warning-background-color
+        color: $dark-tag-warning-color
+        a
+          color: $dark-tag-warning-color
+        strong
+          color: $dark-tag-warning-color
+      &.is-danger
+        background-color: $dark-tag-danger-background-color
+        color: $dark-tag-danger-color
+        a
+          color: $dark-tag-danger-color
+        strong
+          color: $dark-tag-danger-color
