@@ -27,7 +27,10 @@
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "start:dev": "yarn run node-sass double.sass dist/double.css --watch",
-    "start:docs": "yarn run node-sass double.sass docs/assets/css/double.css --watch"
+    "start:dcs": "yarn run node-sass double.sass docs/assets/css/double.css --watch",
+    "build:dcs": "yarn run node-sass double.sass docs/assets/css/double.css",
+    "build:ext": "yarn run node-sass double.sass dist/double.css",
+    "build:min": "yarn run node-sass double.sass dist/double.min.css --output-style compressed",
+    "build:all": "yarn run build:dcs && yarn run build:ext && yarn run build:min"
   }
 }
