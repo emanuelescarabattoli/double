@@ -144,7 +144,7 @@ body {
   color: #222222;
   font-size: 1em;
   font-weight: 400;
-  line-height: 1; }
+  line-height: 1.5; }
 
 a {
   color: #0066ff;
@@ -198,7 +198,7 @@ pre {
   padding: 1rem;
   white-space: pre;
   word-wrap: normal;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 0.08em;
   border-radius: 4px; }
   pre code {
@@ -235,6 +235,9 @@ table th {
   .dark-mode pre {
     background-color: #181818;
     color: #c0c0c0; }
+    .dark-mode pre code {
+      background-color: transparent;
+      color: currentColor; }
 
 @keyframes rotateFull {
   from {
@@ -633,7 +636,7 @@ table th {
 
 .content p {
   padding: 0.5rem 0;
-  line-height: 1.3; }
+  line-height: 1.5; }
 
 .content h1,
 .content h2,
@@ -643,7 +646,7 @@ table th {
 .content h6 {
   color: #111111;
   font-weight: 600;
-  line-height: 1.3; }
+  line-height: 1.5; }
 
 .content h1 {
   font-size: 2em;
@@ -945,7 +948,7 @@ table th {
   font-family: "Open Sans", sans-serif;
   background-color: #e5e5e5;
   color: #222222;
-  line-height: 1.3; }
+  line-height: 1.5; }
   .notification a {
     color: #222222;
     text-decoration: underline; }
@@ -1208,7 +1211,7 @@ table th {
     padding: 1.2rem;
     background-color: #f0f0f0;
     color: #222222;
-    line-height: 1.3;
+    line-height: 1.5;
     font-size: 1em;
     font-weight: 400; }
   .card .card-footer {
@@ -1217,7 +1220,7 @@ table th {
     color: #222222;
     line-height: 1;
     font-size: 1em;
-    font-weight: 600; }
+    font-weight: 400; }
 
 .dark-mode .card {
   border: solid 1px #222222; }
