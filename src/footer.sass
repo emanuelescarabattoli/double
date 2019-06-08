@@ -1,0 +1,38 @@
+.footer
+  margin-top: $footer-margin
+  padding: $footer-padding
+  color: $footer-color
+  background-color: $footer-background-color
+  .footer-title
+    display: block
+    font-size: $footer-title-font-size
+    font-weight: $footer-title-font-weight
+    margin-bottom: $footer-title-margin
+    color: $footer-title-color
+  .footer-items
+    margin: 0
+    padding: 0
+    list-style-type: none
+    .footer-item
+      margin-bottom: $footer-item-margin
+    a
+      color: $footer-item-color
+      > .icon
+        font-size: 1em
+        width: 1em
+        height: 1em
+        &:not(:last-child)
+          margin-right: 0.3em
+      &:hover
+        color: $color-primary
+
+.dark-mode
+  .footer
+    color: $dark-footer-color
+    background-color: $dark-footer-background-color
+    .footer-title
+      color: $dark-footer-title-color
+    .footer-items
+      .footer-item
+        a
+          color: $dark-footer-item-color
