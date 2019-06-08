@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
+
+  <link rel="stylesheet" href="./assets/css/double.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+
+  <title>Double</title>
+
+</head>
+
+<body>
+
+  <div id="dark-mode">
+    <div id="navbar" class="navbar">
+      <div class="navbar-left">
+        <div class="navbar-options">
+          <div class="navbar-logo">
+            <img id="logo" src="./assets/img/double.png" alt="Double">
+          </div>
+          <div class="navbar-menu">
+            <a id="menu" href="#">
+              <span class="icon">
+                <i class="fas fa-bars"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <span>
+                Docs
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>
+                Github
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="col-mobile-12 col-tablet-12 col-desktop-3">
+          <div class="section">
+            <div class="box">
+              <div class="menu">
+                <span class="menu-title">
+                  <span class="icon">
+                    <i class="fas fa-eye"></i>
+                  </span>
+                  <span>
+                    Overview
+                  </span>
+                </span>
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="#">
+                      Setup and Dark Mode
+                    </a>
+                  </li>
+                </ul>
+                <span class="menu-title">
+                  <span class="icon">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span>
+                    Basic
+                  </span>
+                </span>
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="#">
+                      Elements
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Layout
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Grid
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Content
+                    </a>
+                  </li>
+                </ul>
+                <span class="menu-title">
+                  <span class="icon">
+                    <i class="fas fa-layer-group"></i>
+                  </span>
+                  <span>
+                    Page
+                  </span>
+                </span>
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="#">
+                      Navbar
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Header
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Menu
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Footer
+                    </a>
+                  </li>
+                </ul>
+                <span class="menu-title">
+                  <span class="icon">
+                    <i class="fas fa-puzzle-piece"></i>
+                  </span>
+                  <span>
+                    Components
+                  </span>
+                </span>
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="#">
+                      Box
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Notification
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Card
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Table
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Button
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Form
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Tag
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Tooltip
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Image
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Icon
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <div class="content">
+              <h1>Setup and Dark Mode</h1>
+              <p>
+                Here you can find the documentation of <strong>Double</strong> use the side menu to explore all
+                components.
+              </p>
+              <h2>Install Double</h2>
+              <p>
+                To get started add the following style to your page
+              </p>
+              <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;</code></pre>
+              <h2>Basic template</h2>
+              <p>
+                To get started you can use the following template. <strong>Font Awesome</strong> is optional: if you
+                don't want to use icons you can ignore the <code>link</code> in the <code>head</code>.
+                Don't forget to add tags for the <strong>title, metadata and icons</strong> to improve the user
+                experience
+              </p>
+              <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!--Your HTML code here--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              <h2>Dark mode</h2>
+              <p>
+                <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
+                the class <code>dark-mode</code> in the main container of a page, just like the following example
+              </p>
+              <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/double.min.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;!--Your HTML code here--&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="columns">
+        <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+          <span class="footer-title">
+            Double
+          </span>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a href="#">
+                <span class="icon">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                <span>
+                  Docs
+                </span>
+              </a>
+            </li>
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>
+                Github
+              </span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/lib/prism/prism.js"></script>
+
+    <script>
+
+      $(function () {
+        $("#menu").click(function (e) {
+          e.preventDefault();
+          $("#navbar").toggleClass("show-items");
+        });
+        $("#dark-mode-toggle").click(function (e) {
+          e.preventDefault();
+          $("#dark-mode").toggleClass("dark-mode");
+          if ($("#logo").attr("src") === "./assets/img/double.png") {
+            $("#logo").attr("src", "./assets/img/double-dark.png");
+          } else {
+            $("#logo").attr("src", "./assets/img/double.png");
+          }
+        });
+      });
+
+    </script>
+
+</body>
+
+</html>

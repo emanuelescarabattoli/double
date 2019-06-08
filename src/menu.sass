@@ -1,0 +1,40 @@
+.menu
+  color: $menu-color
+  .menu-title
+    display: block
+    font-size: $menu-title-font-size
+    font-weight: $menu-title-font-weight
+    margin-bottom: $menu-title-margin
+    color: $menu-title-color
+    > .icon
+      font-size: 1em
+      width: 1em
+      height: 1em
+      &:not(:last-child)
+        margin-right: 0.1em
+  .menu-items
+    margin: 0 0 $menu-items-margin 0
+    padding: 0
+    list-style-type: none
+    .menu-item
+      margin-bottom: $menu-item-margin
+    a
+      color: $menu-item-color
+      > .icon
+        font-size: 1em
+        width: 1em
+        height: 1em
+        &:not(:last-child)
+          margin-right: 0.3em
+      &:hover
+        color: $color-primary
+
+.dark-mode
+  .menu
+    color: $dark-menu-color
+    .menu-title
+      color: $dark-menu-title-color
+    .menu-items
+      .menu-item
+        a
+          color: $dark-menu-item-color
