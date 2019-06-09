@@ -1,81 +1,13 @@
 <!doctype html>
 <html>
 
-<head>
-
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
-
-  <link rel="stylesheet" href="./assets/css/double.css" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
-
-  <title>Double</title>
-
-</head>
+{{ head }}
 
 <body>
 
   <div id="dark-mode">
 
-    <div id="navbar" class="navbar">
-      <div class="navbar-left">
-        <div class="navbar-options">
-          <div class="navbar-logo">
-            <img id="logo" src="./assets/img/double.png" alt="Double">
-          </div>
-          <div class="navbar-menu">
-            <a id="menu" href="#">
-              <span class="icon">
-                <i class="fas fa-bars"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <ul class="navbar-items">
-          <li class="navbar-item">
-            <a href="#">
-              <span class="icon">
-                <i class="fas fa-play"></i>
-              </span>
-              <span>
-                Get started
-              </span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#">
-              <span class="icon">
-                <i class="fas fa-file-alt"></i>
-              </span>
-              <span>
-                Docs
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="navbar-right">
-        <ul class="navbar-items">
-          <li class="navbar-item">
-            <a href="#">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>
-                Github
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    {{ navbar }}
 
     <div class="header is-fancy">
       <div class="header-content">
@@ -165,69 +97,11 @@
       </div>
     </div>
 
-    <div class="footer">
-      <div class="columns">
-        <div class="col-mobile-12 col-tablet-12 col-desktop-4">
-          <span class="footer-title">
-            Double
-          </span>
-          <ul class="footer-items">
-            <li class="footer-item">
-              <a href="#">
-                <span class="icon">
-                  <i class="fas fa-play"></i>
-                </span>
-                <span>
-                  Get started
-                </span>
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#">
-                <span class="icon">
-                  <i class="fas fa-file-alt"></i>
-                </span>
-                <span>
-                  Docs
-                </span>
-              </a>
-            </li>
-            <a href="#">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>
-                Github
-              </span>
-            </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    {{ footer }}
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./assets/lib/prism/prism.js"></script>
+  </div>
 
-    <script>
-
-      $(function () {
-        $("#menu").click(function (e) {
-          e.preventDefault();
-          $("#navbar").toggleClass("show-items");
-        });
-        $("#dark-mode-toggle").click(function (e) {
-          e.preventDefault();
-          $("#dark-mode").toggleClass("dark-mode");
-          if ($("#logo").attr("src") === "./assets/img/double.png") {
-            $("#logo").attr("src", "./assets/img/double-dark.png");
-          } else {
-            $("#logo").attr("src", "./assets/img/double.png");
-          }
-        });
-      });
-
-    </script>
+  {{ scripts }}
 
 </body>
 

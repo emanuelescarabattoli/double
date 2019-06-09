@@ -25,57 +25,49 @@
   <div id="dark-mode">
 
     <div id="navbar" class="navbar">
-      <div class="navbar-left">
-        <div class="navbar-options">
-          <div class="navbar-logo">
-            <img id="logo" src="./assets/img/double.png" alt="Double">
-          </div>
-          <div class="navbar-menu">
-            <a id="menu" href="#">
-              <span class="icon">
-                <i class="fas fa-bars"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <ul class="navbar-items">
-          <li class="navbar-item">
-            <a href="#">
-              <span class="icon">
-                <i class="fas fa-play"></i>
-              </span>
-              <span>
-                Get started
-              </span>
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="#">
-              <span class="icon">
-                <i class="fas fa-file-alt"></i>
-              </span>
-              <span>
-                Docs
-              </span>
-            </a>
-          </li>
-        </ul>
+  <div class="navbar-left">
+    <div class="navbar-options">
+      <div class="navbar-logo">
+        <a href="./index.html">
+          <img id="logo" src="./assets/img/double.png" alt="Double">
+        </a>
       </div>
-      <div class="navbar-right">
-        <ul class="navbar-items">
-          <li class="navbar-item">
-            <a href="#">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>
-                Github
-              </span>
-            </a>
-          </li>
-        </ul>
+      <div class="navbar-menu">
+        <a id="menu" href="#">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </a>
       </div>
     </div>
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="./docs.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>
+            Docs
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>
+            Github
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
     <div class="header is-fancy">
       <div class="header-content">
@@ -166,68 +158,58 @@
     </div>
 
     <div class="footer">
-      <div class="columns">
-        <div class="col-mobile-12 col-tablet-12 col-desktop-4">
-          <span class="footer-title">
-            Double
+  <div class="columns">
+    <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+      <span class="footer-title">
+        Double
+      </span>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <a href="./docs.html">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>
+              Docs
+            </span>
+          </a>
+        </li>
+        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
           </span>
-          <ul class="footer-items">
-            <li class="footer-item">
-              <a href="#">
-                <span class="icon">
-                  <i class="fas fa-play"></i>
-                </span>
-                <span>
-                  Get started
-                </span>
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#">
-                <span class="icon">
-                  <i class="fas fa-file-alt"></i>
-                </span>
-                <span>
-                  Docs
-                </span>
-              </a>
-            </li>
-            <a href="#">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>
-                Github
-              </span>
-            </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+          <span>
+            Github
+          </span>
+        </a>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./assets/lib/prism/prism.js"></script>
+  </div>
 
-    <script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/lib/prism/prism.js"></script>
 
-      $(function () {
-        $("#menu").click(function (e) {
-          e.preventDefault();
-          $("#navbar").toggleClass("show-items");
-        });
-        $("#dark-mode-toggle").click(function (e) {
-          e.preventDefault();
-          $("#dark-mode").toggleClass("dark-mode");
-          if ($("#logo").attr("src") === "./assets/img/double.png") {
-            $("#logo").attr("src", "./assets/img/double-dark.png");
-          } else {
-            $("#logo").attr("src", "./assets/img/double.png");
-          }
-        });
-      });
-
-    </script>
+<script>
+  $(function () {
+    $("#menu").click(function (e) {
+      e.preventDefault();
+      $("#navbar").toggleClass("show-items");
+    });
+    $("#dark-mode-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      if ($("#logo").attr("src") === "./assets/img/double.png") {
+        $("#logo").attr("src", "./assets/img/double-dark.png");
+      } else {
+        $("#logo").attr("src", "./assets/img/double.png");
+      }
+    });
+  });
+</script>
 
 </body>
 
