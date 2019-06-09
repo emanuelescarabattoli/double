@@ -118,7 +118,7 @@ th {
 html {
   background-color: #f0f0f0;
   font-size: 1em;
-  overflow-x: hidden;
+  overflow-y: scroll;
   text-size-adjust: 100%;
   min-height: 100vh; }
 
@@ -301,8 +301,8 @@ table th {
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -2rem;
-  margin-left: -2rem; }
+  margin-right: -1rem;
+  margin-left: -1rem; }
 
 .start {
   justify-content: flex-start;
@@ -358,7 +358,7 @@ table th {
 .col-mobile-offset-12 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding: 0 2rem; }
+  padding: 0 1em; }
 
 .col-mobile {
   flex-grow: 1;
@@ -474,7 +474,7 @@ table th {
   .col-tablet-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 2rem; }
+    padding: 0 1em; }
   .col-tablet {
     flex-grow: 1;
     flex-basis: 0;
@@ -566,7 +566,7 @@ table th {
   .col-desktop-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 2rem; }
+    padding: 0 1em; }
   .col-desktop {
     flex-grow: 1;
     flex-basis: 0;
