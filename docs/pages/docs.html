@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+{{ head }}
+
+<body>
+
+  <div id="dark-mode">
+
+    {{ navbar }}
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        {{ menu }}
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <div class="content">
+              <h1>Setup and Dark Mode</h1>
+              <p>
+                Here you can find the documentation of <strong>Double</strong> use the side menu to explore all
+                components.
+              </p>
+              <h2>Install Double</h2>
+              <p>
+                To get started add the following style to your page
+              </p>
+              <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@[[ version ]]/dist/double.min.css&quot; /&gt;</code></pre>
+              <h2>Basic template</h2>
+              <p>
+                To get started you can use the following template. <strong>Font Awesome</strong> is optional: if you
+                don't want to use icons you can ignore the <code>link</code> in the <code>head</code>.
+                Don't forget to add tags for the <strong>title, metadata and icons</strong> to improve the user
+                experience
+              </p>
+              <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@[[ version ]]/dist/double.min.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!--Your HTML code here--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              <h2>Dark mode</h2>
+              <p>
+                <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
+                the class <code>dark-mode</code> in the main container of a page, just like the following example
+              </p>
+              <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/double.min.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;!--Your HTML code here--&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {{ footer }}
+
+  </div>
+
+  {{ script }}
+
+</body>
+
+</html>

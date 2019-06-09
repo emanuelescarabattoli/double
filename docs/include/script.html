@@ -1,0 +1,20 @@
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/lib/prism/prism.js"></script>
+
+<script>
+  $(function () {
+    $("#menu").click(function (e) {
+      e.preventDefault();
+      $("#navbar").toggleClass("show-items");
+    });
+    $("#dark-mode-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      if ($("#logo").attr("src") === "./assets/img/double.png") {
+        $("#logo").attr("src", "./assets/img/double-dark.png");
+      } else {
+        $("#logo").attr("src", "./assets/img/double.png");
+      }
+    });
+  });
+</script>

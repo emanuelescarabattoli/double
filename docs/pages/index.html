@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
+
+  <link rel="stylesheet" href="./assets/css/double.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+
+  <title>Double</title>
+
+</head>
+
+<body>
+
+  <div id="dark-mode">
+
+    <div id="navbar" class="navbar">
+      <div class="navbar-left">
+        <div class="navbar-options">
+          <div class="navbar-logo">
+            <img id="logo" src="./assets/img/double.png" alt="Double">
+          </div>
+          <div class="navbar-menu">
+            <a id="menu" href="#">
+              <span class="icon">
+                <i class="fas fa-bars"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-play"></i>
+              </span>
+              <span>
+                Get started
+              </span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-file-alt"></i>
+              </span>
+              <span>
+                Docs
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>
+                Github
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header is-fancy">
+      <div class="header-content">
+        <h1 class="header-title">
+          Double
+        </h1>
+        <h4 class="header-subtitle">
+          A CSS framework with dark mode
+        </h4>
+        <div class="header-actions">
+          <button id="dark-mode-toggle" class="header-action">Toggle dark mode</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-fluid">
+      <div class="columns">
+        <div class="col-mobile-12 col-tablet-12 col-desktop-12">
+          <div class="section">
+            <div class="content">
+              <h2>Get Double</h2>
+              <p>
+                Get <strong>Double</strong> framework by adding this style on your page
+              </p>
+              <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="col-mobile-12 col-tablet-12 col-desktop-8">
+          <div class="section">
+            <div class="content">
+              <h2>Why Double?</h2>
+              <p>
+                <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
+                the class <code>dark-mode</code> in the main container of a page, just like the following example
+              </p>
+              <pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/double.min.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;!--Your HTML code here--&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+          <div class="section">
+            <div class="card">
+              <div class="card-header">
+                Do you want to get started now?
+              </div>
+              <div class="card-body">
+                You can read the get started <strong>guide</strong> or take a look to the <strong>docs</strong>
+              </div>
+              <div class="card-footer align-right">
+                <div class="group align-right">
+                  <a class="button">
+                    <span class="icon">
+                      <i class="fas fa-file-alt"></i>
+                    </span>
+                    <span>
+                      Docs
+                    </span>
+                  </a>
+                  <a class="button is-success">
+                    <span class="icon">
+                      <i class="fas fa-play"></i>
+                    </span>
+                    <span>
+                      Get started
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="columns">
+        <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+          <span class="footer-title">
+            Double
+          </span>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a href="#">
+                <span class="icon">
+                  <i class="fas fa-play"></i>
+                </span>
+                <span>
+                  Get started
+                </span>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                <span class="icon">
+                  <i class="fas fa-file-alt"></i>
+                </span>
+                <span>
+                  Docs
+                </span>
+              </a>
+            </li>
+            <a href="#">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>
+                Github
+              </span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/lib/prism/prism.js"></script>
+
+    <script>
+
+      $(function () {
+        $("#menu").click(function (e) {
+          e.preventDefault();
+          $("#navbar").toggleClass("show-items");
+        });
+        $("#dark-mode-toggle").click(function (e) {
+          e.preventDefault();
+          $("#dark-mode").toggleClass("dark-mode");
+          if ($("#logo").attr("src") === "./assets/img/double.png") {
+            $("#logo").attr("src", "./assets/img/double-dark.png");
+          } else {
+            $("#logo").attr("src", "./assets/img/double.png");
+          }
+        });
+      });
+
+    </script>
+
+</body>
+
+</html>
