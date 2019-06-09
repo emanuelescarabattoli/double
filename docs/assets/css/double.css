@@ -741,26 +741,25 @@ table th {
   background-color: #181818;
   border-left: solid 5px #0066ff; }
 
-.navbar {
-  line-height: 0; }
-  .navbar .navbar-logo {
-    font-weight: 600; }
-    .navbar .navbar-logo img {
-      height: 1.5rem; }
-  .navbar .navbar-item a,
-  .navbar .navbar-menu a {
-    color: #222222; }
-    .navbar .navbar-item a > .icon,
-    .navbar .navbar-menu a > .icon {
-      font-size: 1em;
-      width: 1em;
-      height: 1em; }
-      .navbar .navbar-item a > .icon:not(:last-child),
-      .navbar .navbar-menu a > .icon:not(:last-child) {
-        margin-right: 0.3em; }
-    .navbar .navbar-item a:hover,
-    .navbar .navbar-menu a:hover {
-      color: #0066ff; }
+.navbar .navbar-logo {
+  font-weight: 600; }
+  .navbar .navbar-logo img {
+    height: 1.5rem; }
+
+.navbar .navbar-item a,
+.navbar .navbar-menu a {
+  color: #222222; }
+  .navbar .navbar-item a > .icon,
+  .navbar .navbar-menu a > .icon {
+    font-size: 1em;
+    width: 1em;
+    height: 1em; }
+    .navbar .navbar-item a > .icon:not(:last-child),
+    .navbar .navbar-menu a > .icon:not(:last-child) {
+      margin-right: 0.3em; }
+  .navbar .navbar-item a:hover,
+  .navbar .navbar-menu a:hover {
+    color: #0066ff; }
 
 @media screen and (min-width: 800px) {
   .navbar {
