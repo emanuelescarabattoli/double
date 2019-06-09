@@ -118,6 +118,7 @@ th {
 html {
   background-color: #f0f0f0;
   font-size: 1em;
+  overflow-x: hidden;
   overflow-y: scroll;
   text-size-adjust: 100%;
   min-height: 100vh; }
