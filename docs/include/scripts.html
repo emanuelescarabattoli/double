@@ -16,5 +16,14 @@
         $("#logo").attr("src", "./assets/img/double.png");
       }
     });
+    $("#dark-mode-toggle-button").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      if ($("#logo").attr("src") === "./assets/img/double.png") {
+        $("#logo").attr("src", "./assets/img/double-dark.png");
+      } else {
+        $("#logo").attr("src", "./assets/img/double.png");
+      }
+    });
   });
 </script>

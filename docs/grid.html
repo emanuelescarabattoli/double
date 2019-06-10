@@ -224,57 +224,75 @@
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
             <div class="content">
-              <h1>Setup and Dark Mode</h1>
+              <h1>Grid</h1>
               <p>
-                Here you can find the documentation of <strong>Double</strong> use the side menu to explore all
-                components
+                To create layouts you can use the <strong>flexbox</strong> grid integrated in <strong>Double</strong>
               </p>
-              <h2>Install Double</h2>
-              <p>
-                To get started add the following style to your page
-              </p>
-              <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;</code></pre>
-              <h2>Basic template</h2>
-              <p>
-                To get started you can use the following template. <strong>Font Awesome</strong> is optional: if you
-                don't want to use icons you can ignore the <code>link</code> in the <code>head</code>.
-                Don't forget to add tags for the <strong>title, metadata and icons</strong> to improve the user
-                experience
-              </p>
-              <pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;!--Your HTML code here--&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-              <h2>Dark mode</h2>
-              <p>
-                <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
-                the class <code>dark-mode</code> in the main container of a page, just like the following example
-              </p>
-              <pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/double.min.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;dark-mode&quot;&gt;
-    &lt;!--Your HTML code here--&gt;
+              <div class="box">
+                <div class="columns">
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-6">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-6">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-2">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-6">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-6&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-6&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-4&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-4&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-4&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-2&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-4&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-6&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

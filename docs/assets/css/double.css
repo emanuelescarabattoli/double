@@ -70,7 +70,7 @@ th {
   th:not([align]) {
     text-align: left; }
 
-.group:not(:last-child), .columns:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .card:not(:last-child), .table:not(:last-child) {
+.group:not(:last-child), .content:not(:last-child), .box:not(:last-child), .notification:not(:last-child), .card:not(:last-child), .table:not(:last-child) {
   margin-bottom: 1.5rem; }
 
 .content p:not(:last-child),
@@ -183,7 +183,7 @@ input[type="radio"] {
   vertical-align: baseline; }
 
 small {
-  font-size: 0.95em; }
+  font-size: 0.75em; }
 
 span {
   font-style: inherit;
@@ -292,9 +292,9 @@ table th {
     width: 100%; }
 
 .section {
-  padding: 1.75rem 0; }
+  padding: 1.75rem 0.5rem; }
   .section + .section {
-    padding: 0rem 0 1.75rem 0; }
+    padding: 0rem 0.5rem 1.75rem 0.5rem; }
 
 .columns {
   box-sizing: border-box;
@@ -359,7 +359,7 @@ table th {
 .col-mobile-offset-12 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding: 0 1em; }
+  padding: 1em; }
 
 .col-mobile {
   flex-grow: 1;
@@ -475,7 +475,7 @@ table th {
   .col-tablet-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 1em; }
+    padding: 1em; }
   .col-tablet {
     flex-grow: 1;
     flex-basis: 0;
@@ -567,7 +567,7 @@ table th {
   .col-desktop-offset-12 {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 0 1em; }
+    padding: 1em; }
   .col-desktop {
     flex-grow: 1;
     flex-basis: 0;
@@ -829,12 +829,14 @@ table th {
     .navbar.show-items .navbar-options {
       margin-bottom: 0.5rem; } }
 
-.dark-mode .navbar .navbar-item a,
-.dark-mode .navbar .navbar-menu a {
-  color: #c0c0c0; }
-  .dark-mode .navbar .navbar-item a:hover,
-  .dark-mode .navbar .navbar-menu a:hover {
-    color: #0066ff; }
+.dark-mode .navbar {
+  box-shadow: 0 0 0 2px #222222; }
+  .dark-mode .navbar .navbar-item a,
+  .dark-mode .navbar .navbar-menu a {
+    color: #c0c0c0; }
+    .dark-mode .navbar .navbar-item a:hover,
+    .dark-mode .navbar .navbar-menu a:hover {
+      color: #0066ff; }
 
 .header {
   position: relative;
@@ -1628,7 +1630,8 @@ table th {
   position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  line-height: 1; }
   .tooltip:hover .tooltip-content {
     visibility: visible;
     opacity: 1; }

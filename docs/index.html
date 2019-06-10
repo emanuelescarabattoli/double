@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
 
   <link rel="stylesheet" href="./assets/css/double.css" />
+  <link rel="stylesheet" href="./assets/css/docs.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
@@ -174,14 +175,15 @@
             </span>
           </a>
         </li>
-        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-          <span>
-            Github
-          </span>
-        </a>
+        <li class="footer-item">
+          <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>
+              Github
+            </span>
+          </a>
         </li>
       </ul>
     </div>
@@ -200,6 +202,15 @@
       $("#navbar").toggleClass("show-items");
     });
     $("#dark-mode-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      if ($("#logo").attr("src") === "./assets/img/double.png") {
+        $("#logo").attr("src", "./assets/img/double-dark.png");
+      } else {
+        $("#logo").attr("src", "./assets/img/double.png");
+      }
+    });
+    $("#dark-mode-toggle-button").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
       if ($("#logo").attr("src") === "./assets/img/double.png") {

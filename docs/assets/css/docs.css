@@ -1,0 +1,15 @@
+.dark-mode-toggle-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  border-radius: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 2px 0 #00000055;
+  cursor: pointer;
+}
