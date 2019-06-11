@@ -16,45 +16,44 @@
 
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
-            <div class="content">
-              <h1>Layout</h1>
-              <p>
-                There are classes that allow you to <strong>organize</strong> your page in a better way
-              </p>
-              <h2>Container</h2>
-              <p>Container is used to give your page a more ordered look by giving some margin on sides. A container can
-                be also used with the <code>is-fluid</code> class, as in other frameworks</p>
-              <div class="box">
-                <div class="container">
-                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                </div>
-                <div class="container is-fluid">
-                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                </div>
+            <h1>Layout</h1>
+            <p>
+              There are classes that allow you to <strong>organize</strong> your page in a better way
+            </p>
+            <h2>Container</h2>
+            <p>Container is used to give your page a more ordered look by giving some margin on sides. A container can
+              be also used with the <code>is-fluid</code> class, as in other frameworks</p>
+            <div class="box">
+              <div class="container">
+                <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
               </div>
-              <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+              <div class="container is-fluid">
+                <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
   &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;container is-fluid&quot;&gt;
   &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-              <h2>Section</h2>
-              <p>
-                A section is used to group content and separate it from other sections. A section adds some extra
-                <code>padding</code> to separate content. A section can be used inside a <strong>container</strong>, as
-                in the following example. You can also use the <code>section</code> of <code>HTML</code>
-              </p>
-              <div class="box">
-                <div class="container">
-                  <div class="section">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                  <section class="section">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </section>
+            <h2>Section</h2>
+            <p>
+              A section is used to group content and separate it from other sections. A section adds some extra
+              <code>padding</code> to separate content. A section can be used inside a <strong>container</strong>, as
+              in the following example. You can also use the <code>section</code> of <code>HTML</code>
+            </p>
+            <div class="box">
+              <div class="container">
+                <div class="section">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
                 </div>
+                <section class="section">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </section>
               </div>
-              <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;section&quot;&gt;
     &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -62,35 +61,35 @@
     &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
   &lt;/section&gt;
 &lt;/div&gt;</code></pre>
-              <h2>Spacer</h2>
-              <p>
-                The spacer is used to put some space between elements. It can be useful to separate content inside a
-                <strong>section</strong>
-              </p>
-              <div class="box">
-                <div class="container">
-                  <div class="section">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-                      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-                      blanditiis dicta recusandae delectus quisquam?
-                    </span>
-                    <div class="spacer">
-                      <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-                        repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-                        blanditiis dicta recusandae delectus quisquam?
-                      </span>
-                    </div>
+            <h2>Spacer</h2>
+            <p>
+              The spacer is used to put some space between elements. It can be useful to separate content inside a
+              <strong>section</strong>
+            </p>
+            <div class="box">
+              <div class="container">
+                <div class="section">
+                  <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+                    repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+                    blanditiis dicta recusandae delectus quisquam?
+                  </span>
+                  <div class="spacer">
                     <span>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
                       repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
                       blanditiis dicta recusandae delectus quisquam?
                     </span>
                   </div>
+                  <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+                    repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+                    blanditiis dicta recusandae delectus quisquam?
+                  </span>
                 </div>
               </div>
-              <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;section&quot;&gt;
     &lt;span&gt;
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
@@ -111,7 +110,6 @@
     &lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-            </div>
           </div>
         </div>
       </div>

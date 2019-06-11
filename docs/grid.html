@@ -120,11 +120,6 @@
               Grid
             </a>
           </li>
-          <li class="menu-item">
-            <a href="./content.html">
-              Content
-            </a>
-          </li>
         </ul>
         <span class="menu-title">
           <span class="icon">
@@ -223,44 +218,43 @@
 
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
-            <div class="content">
-              <h1>Grid</h1>
-              <p>
-                To create layouts you can use the <strong>flexbox</strong> grid integrated in <strong>Double</strong>
-              </p>
-              <div class="box">
-                <div class="columns">
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-6">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-6">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
+            <h1>Grid</h1>
+            <p>
+              To create layouts you can use the <strong>flexbox</strong> grid integrated in <strong>Double</strong>
+            </p>
+            <div class="box">
+              <div class="columns">
+                <div class="col-mobile-12 col-tablet-12 col-desktop-6">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
                 </div>
-                <div class="columns">
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                </div>
-                <div class="columns">
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-2">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
-                  <div class="col-mobile-12 col-tablet-12 col-desktop-6">
-                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                  </div>
+                <div class="col-mobile-12 col-tablet-12 col-desktop-6">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
                 </div>
               </div>
-              <pre><code class="language-html">&lt;div class=&quot;columns&quot;&gt;
+              <div class="columns">
+                <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+                <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+                <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="col-mobile-12 col-tablet-12 col-desktop-2">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+                <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+                <div class="col-mobile-12 col-tablet-12 col-desktop-6">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;columns&quot;&gt;
   &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-6&quot;&gt;
     &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -290,7 +284,6 @@
     &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-            </div>
           </div>
         </div>
       </div>
@@ -339,25 +332,30 @@
       e.preventDefault();
       $("#navbar").toggleClass("show-items");
     });
+    $("#menu-docs").click(function (e) {
+      e.preventDefault();
+      $("#navbar-docs").toggleClass("show-items");
+    });
     $("#dark-mode-toggle").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
-      if ($("#logo").attr("src") === "./assets/img/double.png") {
-        $("#logo").attr("src", "./assets/img/double-dark.png");
-      } else {
-        $("#logo").attr("src", "./assets/img/double.png");
-      }
+      changeLogo()
     });
     $("#dark-mode-toggle-button").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
-      if ($("#logo").attr("src") === "./assets/img/double.png") {
-        $("#logo").attr("src", "./assets/img/double-dark.png");
-      } else {
-        $("#logo").attr("src", "./assets/img/double.png");
-      }
+      changeLogo()
     });
   });
+  function changeLogo() {
+    if ($("#logo").attr("src") === "./assets/img/double.png") {
+      $("#logo").attr("src", "./assets/img/double-dark.png");
+      $("#logo-docs").attr("src", "./assets/img/double-dark.png");
+    } else {
+      $("#logo").attr("src", "./assets/img/double.png");
+      $("#logo-docs").attr("src", "./assets/img/double.png");
+    }
+  }
 </script>
 
 </body>

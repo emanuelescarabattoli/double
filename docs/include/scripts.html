@@ -7,23 +7,28 @@
       e.preventDefault();
       $("#navbar").toggleClass("show-items");
     });
+    $("#menu-docs").click(function (e) {
+      e.preventDefault();
+      $("#navbar-docs").toggleClass("show-items");
+    });
     $("#dark-mode-toggle").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
-      if ($("#logo").attr("src") === "./assets/img/double.png") {
-        $("#logo").attr("src", "./assets/img/double-dark.png");
-      } else {
-        $("#logo").attr("src", "./assets/img/double.png");
-      }
+      changeLogo()
     });
     $("#dark-mode-toggle-button").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
-      if ($("#logo").attr("src") === "./assets/img/double.png") {
-        $("#logo").attr("src", "./assets/img/double-dark.png");
-      } else {
-        $("#logo").attr("src", "./assets/img/double.png");
-      }
+      changeLogo()
     });
   });
+  function changeLogo() {
+    if ($("#logo").attr("src") === "./assets/img/double.png") {
+      $("#logo").attr("src", "./assets/img/double-dark.png");
+      $("#logo-docs").attr("src", "./assets/img/double-dark.png");
+    } else {
+      $("#logo").attr("src", "./assets/img/double.png");
+      $("#logo-docs").attr("src", "./assets/img/double.png");
+    }
+  }
 </script>

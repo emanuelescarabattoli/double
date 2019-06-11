@@ -218,53 +218,106 @@
 
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
-            <h1>Setup and Dark Mode</h1>
+            <h1>Navbar</h1>
             <p>
-              Here you can find the documentation of <strong>Double</strong> use the side menu to explore all
-              components
+              The <strong>responsive</strong> navbar allow you to use the same <code>HTML</code> code to render a
+              navigation bat on top of the page
             </p>
-            <h2>Install Double</h2>
-            <p>
-              To get started add the following style to your page
-            </p>
-            <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;</code></pre>
-            <h2>Basic template</h2>
-            <p>
-              To get started you can use the following template. <strong>Font Awesome</strong> is optional: if you
-              don't want to use icons you can ignore the <code>link</code> in the <code>head</code>.
-              Don't forget to add tags for the <strong>title, metadata and icons</strong> to improve the user
-              experience
-            </p>
-            <pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;!--Your HTML code here--&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            <h2>Dark mode</h2>
-            <p>
-              <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
-              the class <code>dark-mode</code> in the main container of a page, just like the following example
-            </p>
-            <pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/double.min.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;dark-mode&quot;&gt;
-    &lt;!--Your HTML code here--&gt;
+            <div class="notification is-warning">
+              <strong>Note:</strong> javascript has been used to change the logo in dark-mode and open the
+              responsive menu in small screens. Try to resize the window or click the rounded moon button
+            </div>
+            <div class="box">
+              <div id="navbar-docs" class="navbar">
+                <div class="navbar-left">
+                  <div class="navbar-options">
+                    <div class="navbar-logo">
+                      <a href="./index.html">
+                        <img id="logo-docs" src="./assets/img/double.png" alt="Double">
+                      </a>
+                    </div>
+                    <div class="navbar-menu">
+                      <a id="menu-docs" href="#">
+                        <span class="icon">
+                          <i class="fas fa-bars"></i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <ul class="navbar-items">
+                    <li class="navbar-item">
+                      <a href="./docs.html">
+                        <span class="icon">
+                          <i class="fas fa-file-alt"></i>
+                        </span>
+                        <span>
+                          Docs
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-right">
+                  <ul class="navbar-items">
+                    <li class="navbar-item">
+                      <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>
+                          Github
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div id=&quot;navbar-docs&quot; class=&quot;navbar&quot;&gt;
+    &lt;div class=&quot;navbar-left&quot;&gt;
+      &lt;div class=&quot;navbar-options&quot;&gt;
+        &lt;div class=&quot;navbar-logo&quot;&gt;
+          &lt;a href=&quot;./index.html&quot;&gt;
+            &lt;img id=&quot;logo-docs&quot; src=&quot;./assets/img/double.png&quot; alt=&quot;Double&quot;&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-menu&quot;&gt;
+          &lt;a id=&quot;menu-docs&quot; href=&quot;#&quot;&gt;
+            &lt;span class=&quot;icon&quot;&gt;
+              &lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;navbar-items&quot;&gt;
+        &lt;li class=&quot;navbar-item&quot;&gt;
+          &lt;a href=&quot;./docs.html&quot;&gt;
+            &lt;span class=&quot;icon&quot;&gt;
+              &lt;i class=&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span&gt;
+              Docs
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;navbar-right&quot;&gt;
+      &lt;ul class=&quot;navbar-items&quot;&gt;
+        &lt;li class=&quot;navbar-item&quot;&gt;
+          &lt;a href=&quot;https://github.com/emanuelescarabattoli/double&quot; target=&quot;_blank&quot;&gt;
+            &lt;span class=&quot;icon&quot;&gt;
+              &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span&gt;
+              Github
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;/div&gt;</code></pre>
           </div>
         </div>
       </div>

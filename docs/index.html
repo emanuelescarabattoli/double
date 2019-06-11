@@ -88,26 +88,23 @@
       <div class="columns">
         <div class="col-mobile-12 col-tablet-12 col-desktop-12">
           <div class="section">
-            <div class="content">
-              <h2>Get Double</h2>
-              <p>
-                Get <strong>Double</strong> framework by adding this style on your page
-              </p>
-              <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;</code></pre>
-            </div>
+            <h2>Get Double</h2>
+            <p>
+              Get <strong>Double</strong> framework by adding this style on your page
+            </p>
+            <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css&quot; /&gt;</code></pre>
           </div>
         </div>
       </div>
       <div class="columns">
         <div class="col-mobile-12 col-tablet-12 col-desktop-8">
           <div class="section">
-            <div class="content">
-              <h2>Why Double?</h2>
-              <p>
-                <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
-                the class <code>dark-mode</code> in the main container of a page, just like the following example
-              </p>
-              <pre><code class="language-html">&lt;!doctype html&gt;
+            <h2>Why Double?</h2>
+            <p>
+              <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
+              the class <code>dark-mode</code> in the main container of a page, just like the following example
+            </p>
+            <pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;utf-8&quot; /&gt;
@@ -120,7 +117,6 @@
   &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-            </div>
           </div>
         </div>
         <div class="col-mobile-12 col-tablet-12 col-desktop-4">
@@ -201,25 +197,30 @@
       e.preventDefault();
       $("#navbar").toggleClass("show-items");
     });
+    $("#menu-docs").click(function (e) {
+      e.preventDefault();
+      $("#navbar-docs").toggleClass("show-items");
+    });
     $("#dark-mode-toggle").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
-      if ($("#logo").attr("src") === "./assets/img/double.png") {
-        $("#logo").attr("src", "./assets/img/double-dark.png");
-      } else {
-        $("#logo").attr("src", "./assets/img/double.png");
-      }
+      changeLogo()
     });
     $("#dark-mode-toggle-button").click(function (e) {
       e.preventDefault();
       $("#dark-mode").toggleClass("dark-mode");
-      if ($("#logo").attr("src") === "./assets/img/double.png") {
-        $("#logo").attr("src", "./assets/img/double-dark.png");
-      } else {
-        $("#logo").attr("src", "./assets/img/double.png");
-      }
+      changeLogo()
     });
   });
+  function changeLogo() {
+    if ($("#logo").attr("src") === "./assets/img/double.png") {
+      $("#logo").attr("src", "./assets/img/double-dark.png");
+      $("#logo-docs").attr("src", "./assets/img/double-dark.png");
+    } else {
+      $("#logo").attr("src", "./assets/img/double.png");
+      $("#logo-docs").attr("src", "./assets/img/double.png");
+    }
+  }
 </script>
 
 </body>
