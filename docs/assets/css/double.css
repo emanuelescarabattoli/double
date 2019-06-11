@@ -70,7 +70,7 @@ th {
   th:not([align]) {
     text-align: left; }
 
-.group:not(:last-child), .content:not(:last-child), .box:not(:last-child), .notification:not(:last-child), .card:not(:last-child), .table:not(:last-child) {
+.group:not(:last-child), .container:not(:last-child), .content:not(:last-child), .box:not(:last-child), .notification:not(:last-child), .card:not(:last-child), .table:not(:last-child) {
   margin-bottom: 1.5rem; }
 
 .content p:not(:last-child),
@@ -995,7 +995,7 @@ table th {
   border-radius: 4px; }
 
 .dark-mode .box {
-  background-color: #111111;
+  background-color: #181818;
   color: #c0c0c0; }
 
 .notification {

@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
+
+  <link rel="stylesheet" href="./assets/css/double.css" />
+  <link rel="stylesheet" href="./assets/css/docs.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+
+  <title>Double</title>
+
+</head>
+
+<body>
+
+  <div id="dark-mode">
+
+    <div id="navbar" class="navbar">
+  <div class="navbar-left">
+    <div class="navbar-options">
+      <div class="navbar-logo">
+        <a href="./index.html">
+          <img id="logo" src="./assets/img/double.png" alt="Double">
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <a id="menu" href="#">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="./docs.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>
+            Docs
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>
+            Github
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        <div class="dark-mode-toggle-button" id="dark-mode-toggle-button">
+  <i class="fas fa-moon"></i>
+</div>
+
+<div class="col-mobile-12 col-tablet-12 col-desktop-3">
+  <div class="section">
+    <div class="box">
+      <div class="menu">
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-eye"></i>
+          </span>
+          <span>
+            Overview
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./docs.html">
+              Setup and Dark Mode
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>
+            Basic
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./elements.html">
+              Elements
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./layout.html">
+              Layout
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./grid.html">
+              Grid
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./content.html">
+              Content
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-layer-group"></i>
+          </span>
+          <span>
+            Page
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./navbar.html">
+              Navbar
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./header.html">
+              Header
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./menu.html">
+              Menu
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./footer.html">
+              Footer
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </span>
+          <span>
+            Components
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./box.html">
+              Box
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./notification.html">
+              Notification
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./card.html">
+              Card
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./table.html">
+              Table
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./button.html">
+              Button
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./form.html">
+              Form
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./tag.html">
+              Tag
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./tooltip.html">
+              Tooltip
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./image.html">
+              Image
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./icon.html">
+              Icon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <div class="content">
+              <h1>Layout</h1>
+              <p>
+                There are classes that allow you to <strong>organize</strong> your page in a better way
+              </p>
+              <h2>Container</h2>
+              <p>Container is used to give your page a more ordered look by giving some margin on sides. A container can
+                be also used with the <code>is-fluid</code> class, as in other frameworks</p>
+              <div class="box">
+                <div class="container">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+                <div class="container is-fluid">
+                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container is-fluid&quot;&gt;
+  &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <h2>Section</h2>
+              <p>
+                A section is used to group content and separate it from other sections. A section adds some extra
+                <code>padding</code> to separate content. A section can be used inside a <strong>container</strong>, as
+                in the following example. You can also use the <code>section</code> of <code>HTML</code>
+              </p>
+              <div class="box">
+                <div class="container">
+                  <div class="section">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </div>
+                  <section class="section">
+                    <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+                  </section>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;section class=&quot;section&quot;&gt;
+    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+              <h2>Spacer</h2>
+              <p>
+                The spacer is used to put some space between elements. It can be useful to separate content inside a
+                <strong>section</strong>
+              </p>
+              <div class="box">
+                <div class="container">
+                  <div class="section">
+                    <span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+                      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+                      blanditiis dicta recusandae delectus quisquam?
+                    </span>
+                    <div class="spacer">
+                      <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+                        repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+                        blanditiis dicta recusandae delectus quisquam?
+                      </span>
+                    </div>
+                    <span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+                      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+                      blanditiis dicta recusandae delectus quisquam?
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;span&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+      blanditiis dicta recusandae delectus quisquam?
+    &lt;/span&gt;
+    &lt;div class=&quot;spacer&quot;&gt;
+      &lt;span&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+        repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+        blanditiis dicta recusandae delectus quisquam?
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span&gt;
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
+      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
+      blanditiis dicta recusandae delectus quisquam?
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+  <div class="columns">
+    <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+      <span class="footer-title">
+        Double
+      </span>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <a href="./docs.html">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>
+              Docs
+            </span>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>
+              Github
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/lib/prism/prism.js"></script>
+
+<script>
+  $(function () {
+    $("#menu").click(function (e) {
+      e.preventDefault();
+      $("#navbar").toggleClass("show-items");
+    });
+    $("#dark-mode-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      if ($("#logo").attr("src") === "./assets/img/double.png") {
+        $("#logo").attr("src", "./assets/img/double-dark.png");
+      } else {
+        $("#logo").attr("src", "./assets/img/double.png");
+      }
+    });
+    $("#dark-mode-toggle-button").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      if ($("#logo").attr("src") === "./assets/img/double.png") {
+        $("#logo").attr("src", "./assets/img/double-dark.png");
+      } else {
+        $("#logo").attr("src", "./assets/img/double.png");
+      }
+    });
+  });
+</script>
+
+</body>
+
+</html>
