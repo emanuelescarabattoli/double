@@ -218,99 +218,63 @@
 
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
-            <h1>Layout</h1>
+            <h1>Notifications</h1>
             <p>
-              There are classes that allow you to <strong>organize</strong> your page in a better way
+              <strong>Notifications</strong> allow you to make an information more visible and to notify user about
+              something important. There are also modifiers to change the <strong>color</strong> of a notification
+              according to a given meaning
             </p>
-            <h2>Container</h2>
-            <p>Container is used to give your page a more ordered look by giving some margin on sides. A container can
-              be also used with the <code>is-fluid</code> class, as in other frameworks</p>
-            <div class="box">
-              <div class="container">
-                <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+            <div class="spacer">
+              <div class="notification">
+                Lorem, ipsum dolor sit <strong>test</strong> consectetur adipisicing elit. Excepturi autem eaque
+                cumque
+                praesentium commodi! Voluptas <a href="#">ex impedit inventore,</a> ipsum quas voluptatibus id
               </div>
-              <div class="container is-fluid">
-                <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
+              <div class="notification is-primary">
+                Lorem, ipsum dolor sit <strong>test</strong> consectetur adipisicing elit. Excepturi autem eaque
+                cumque
+                praesentium commodi! Voluptas <a href="#">ex impedit inventore,</a> ipsum quas voluptatibus id
+              </div>
+              <div class="notification is-success">
+                Lorem, ipsum dolor sit <strong>test</strong> consectetur adipisicing elit. Excepturi autem eaque
+                cumque
+                praesentium commodi! Voluptas <a href="#">ex impedit inventore,</a> ipsum quas voluptatibus id
+              </div>
+              <div class="notification is-danger">
+                Lorem, ipsum dolor sit <strong>test</strong> consectetur adipisicing elit. Excepturi autem eaque
+                cumque
+                praesentium commodi! Voluptas <a href="#">ex impedit inventore,</a> ipsum quas voluptatibus id
+              </div>
+              <div class="notification is-warning">
+                Lorem, ipsum dolor sit <strong>test</strong> consectetur adipisicing elit. Excepturi autem eaque
+                cumque
+                praesentium commodi! Voluptas <a href="#">ex impedit inventore,</a> ipsum quas voluptatibus id
               </div>
             </div>
-            <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
+            <pre><code class="language-html">&lt;div class=&quot;notification&quot;&gt;
+  Lorem, ipsum dolor sit &lt;strong&gt;test&lt;/strong&gt; consectetur adipisicing elit. Excepturi autem eaque
+  cumque
+  praesentium commodi! Voluptas &lt;a href=&quot;#&quot;&gt;ex impedit inventore,&lt;/a&gt; ipsum quas voluptatibus id
 &lt;/div&gt;
-&lt;div class=&quot;container is-fluid&quot;&gt;
-  &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            <h2>Section</h2>
-            <p>
-              A section is used to group content and separate it from other sections. A section adds some extra
-              <code>padding</code> to separate content. A section can be used inside a <strong>container</strong>, as
-              in the following example. You can also use the <code>section</code> of <code>HTML</code>
-            </p>
-            <div class="box">
-              <div class="container">
-                <div class="section">
-                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                </div>
-                <section class="section">
-                  <div style="height: 3rem; background-color: red; border-radius: 4px;"></div>
-                </section>
-              </div>
-            </div>
-            <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;section&quot;&gt;
-    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;section class=&quot;section&quot;&gt;
-    &lt;div style=&quot;height: 3rem; background-color: red; border-radius: 4px;&quot;&gt;&lt;/div&gt;
-  &lt;/section&gt;
-&lt;/div&gt;</code></pre>
-            <h2>Spacer</h2>
-            <p>
-              The spacer is used to put some space between elements. It can be useful to separate content inside a
-              <strong>section</strong>
-            </p>
-            <div class="box">
-              <div class="container">
-                <div class="section">
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-                    repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-                    blanditiis dicta recusandae delectus quisquam?
-                  </span>
-                  <div class="spacer">
-                    <span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-                      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-                      blanditiis dicta recusandae delectus quisquam?
-                    </span>
-                  </div>
-                  <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-                    repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-                    blanditiis dicta recusandae delectus quisquam?
-                  </span>
-                </div>
-              </div>
-            </div>
-            <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;section&quot;&gt;
-    &lt;span&gt;
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-      blanditiis dicta recusandae delectus quisquam?
-    &lt;/span&gt;
-    &lt;div class=&quot;spacer&quot;&gt;
-      &lt;span&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-        repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-        blanditiis dicta recusandae delectus quisquam?
-      &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;span&gt;
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima et dolorum
-      repellat eaque error distinctio ab suscipit, ipsa eveniet optio quibusdam itaque dolorem illum
-      blanditiis dicta recusandae delectus quisquam?
-    &lt;/span&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;notification is-primary&quot;&gt;
+  Lorem, ipsum dolor sit &lt;strong&gt;test&lt;/strong&gt; consectetur adipisicing elit. Excepturi autem eaque
+  cumque
+  praesentium commodi! Voluptas &lt;a href=&quot;#&quot;&gt;ex impedit inventore,&lt;/a&gt; ipsum quas voluptatibus id
+&lt;/div&gt;
+&lt;div class=&quot;notification is-success&quot;&gt;
+  Lorem, ipsum dolor sit &lt;strong&gt;test&lt;/strong&gt; consectetur adipisicing elit. Excepturi autem eaque
+  cumque
+  praesentium commodi! Voluptas &lt;a href=&quot;#&quot;&gt;ex impedit inventore,&lt;/a&gt; ipsum quas voluptatibus id
+&lt;/div&gt;
+&lt;div class=&quot;notification is-danger&quot;&gt;
+  Lorem, ipsum dolor sit &lt;strong&gt;test&lt;/strong&gt; consectetur adipisicing elit. Excepturi autem eaque
+  cumque
+  praesentium commodi! Voluptas &lt;a href=&quot;#&quot;&gt;ex impedit inventore,&lt;/a&gt; ipsum quas voluptatibus id
+&lt;/div&gt;
+&lt;div class=&quot;notification is-warning&quot;&gt;
+  Lorem, ipsum dolor sit &lt;strong&gt;test&lt;/strong&gt; consectetur adipisicing elit. Excepturi autem eaque
+  cumque
+  praesentium commodi! Voluptas &lt;a href=&quot;#&quot;&gt;ex impedit inventore,&lt;/a&gt; ipsum quas voluptatibus id
 &lt;/div&gt;</code></pre>
           </div>
         </div>
