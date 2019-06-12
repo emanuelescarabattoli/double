@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+{{ head }}
+
+<body>
+
+  <div id="dark-mode">
+
+    {{ navbar }}
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        {{ menu }}
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <h1>Footer</h1>
+            <p>
+              Footer is used to add links at the end of your page. It gives an extra <code>margin-top</code> and has a
+              gray <code>background-color</code>. You can use the <strong>grid</strong> to create section in the
+              <strong>footer</strong> as in the following example
+            </p>
+            <div class="spacer">
+              <div class="footer">
+                <div class="columns">
+                  <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+                    <span class="footer-title">
+                      Double
+                    </span>
+                    <ul class="footer-items">
+                      <li class="footer-item">
+                        <a href="./docs.html">
+                          <span class="icon">
+                            <i class="fas fa-file-alt"></i>
+                          </span>
+                          <span>
+                            Docs
+                          </span>
+                        </a>
+                      </li>
+                      <li class="footer-item">
+                        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+                          <span class="icon">
+                            <i class="fab fa-github"></i>
+                          </span>
+                          <span>
+                            Github
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;footer&quot;&gt;
+  &lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;col-mobile-12 col-tablet-12 col-desktop-4&quot;&gt;
+      &lt;span class=&quot;footer-title&quot;&gt;
+        Double
+      &lt;/span&gt;
+      &lt;ul class=&quot;footer-items&quot;&gt;
+        &lt;li class=&quot;footer-item&quot;&gt;
+          &lt;a href=&quot;./docs.html&quot;&gt;
+            &lt;span class=&quot;icon&quot;&gt;
+              &lt;i class=&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span&gt;
+              Docs
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer-item&quot;&gt;
+          &lt;a href=&quot;https://github.com/emanuelescarabattoli/double&quot; target=&quot;_blank&quot;&gt;
+            &lt;span class=&quot;icon&quot;&gt;
+              &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span&gt;
+              Github
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ footer }}
+
+  </div>
+
+  {{ scripts }}
+
+</body>
+
+</html>

@@ -218,104 +218,96 @@
 
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
-            <h1>Navbar</h1>
+            <h1>Menu</h1>
             <p>
-              The <strong>responsive</strong> navbar allow you to use the same <code>HTML</code> code to render a
-              navigation bat on top of the page
+              Menu is used to show a <strong>sidebar</strong> with a list of actions. You can separate actions with
+              <strong>titles</strong>
             </p>
-            <div class="notification is-warning">
-              <strong>Note:</strong> javascript has been used to change the logo in dark-mode and open the
-              responsive menu in small screens. Try to resize the window or click the rounded moon button
-            </div>
             <div class="box">
-              <div id="navbar-docs" class="navbar">
-                <div class="navbar-left">
-                  <div class="navbar-options">
-                    <div class="navbar-logo">
-                      <a href="./index.html">
-                        <img id="logo-docs" src="./assets/img/double.png" alt="Double">
-                      </a>
-                    </div>
-                    <div class="navbar-menu">
-                      <a id="menu-docs" href="#">
-                        <span class="icon">
-                          <i class="fas fa-bars"></i>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                  <ul class="navbar-items">
-                    <li class="navbar-item">
-                      <a href="./docs.html">
-                        <span class="icon">
-                          <i class="fas fa-file-alt"></i>
-                        </span>
-                        <span>
-                          Docs
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="navbar-right">
-                  <ul class="navbar-items">
-                    <li class="navbar-item">
-                      <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
-                        <span class="icon">
-                          <i class="fab fa-github"></i>
-                        </span>
-                        <span>
-                          Github
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="menu">
+                <span class="menu-title">
+                  <span class="icon">
+                    <i class="fas fa-cube"></i>
+                  </span>
+                  <span>
+                    Title one
+                  </span>
+                </span>
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="#">
+                      Item one
+                    </a>
+                  </li>
+                </ul>
+                <span class="menu-title">
+                  <span class="icon">
+                    <i class="fas fa-cubes"></i>
+                  </span>
+                  <span>
+                    Title two
+                  </span>
+                </span>
+                <ul class="menu-items">
+                  <li class="menu-item">
+                    <a href="#">
+                      Item two
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Item three
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Item four
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <pre><code class="language-html">&lt;div id=&quot;navbar-docs&quot; class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;navbar-left&quot;&gt;
-    &lt;div class=&quot;navbar-options&quot;&gt;
-      &lt;div class=&quot;navbar-logo&quot;&gt;
-        &lt;a href=&quot;./index.html&quot;&gt;
-          &lt;img id=&quot;logo-docs&quot; src=&quot;./assets/img/double.png&quot; alt=&quot;Double&quot;&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;navbar-menu&quot;&gt;
-        &lt;a id=&quot;menu-docs&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;ul class=&quot;navbar-items&quot;&gt;
-      &lt;li class=&quot;navbar-item&quot;&gt;
-        &lt;a href=&quot;./docs.html&quot;&gt;
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span&gt;
-            Docs
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;navbar-right&quot;&gt;
-    &lt;ul class=&quot;navbar-items&quot;&gt;
-      &lt;li class=&quot;navbar-item&quot;&gt;
-        &lt;a href=&quot;https://github.com/emanuelescarabattoli/double&quot; target=&quot;_blank&quot;&gt;
-          &lt;span class=&quot;icon&quot;&gt;
-            &lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span&gt;
-            Github
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
+            <pre><code class="language-html">&lt;div class=&quot;menu&quot;&gt;
+  &lt;span class=&quot;menu-title&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-cube&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Title one
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;ul class=&quot;menu-items&quot;&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        Item one
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;span class=&quot;menu-title&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-cubes&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Title two
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;ul class=&quot;menu-items&quot;&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        Item two
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        Item three
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        Item four
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;</code></pre>
           </div>
         </div>
