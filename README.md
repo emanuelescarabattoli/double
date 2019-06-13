@@ -18,7 +18,7 @@ To use double in your project use the following template
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.2/dist/double.min.css" />
 
 </head>
 
@@ -45,7 +45,7 @@ To use the dark mode just wrap your HTML around a `div` with the CSS class `dark
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.1/dist/double.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.2/dist/double.min.css" />
 
 </head>
 

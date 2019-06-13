@@ -218,53 +218,105 @@
 
         <div class="col-mobile-12 col-tablet-12 col-desktop-9">
           <div class="section">
-            <h1>Setup and Dark Mode</h1>
+            <h1>Card</h1>
             <p>
-              Here you can find the documentation of <strong>Double</strong> use the side menu to explore all
-              components
+              With card you can organize information in a box with, optionally, an <strong>header</strong> and a
+              <strong>footer</strong>. Here some examples and combinations. Note that you can use the
+              <code>align-right</code> class to align elements at right and the <code>group</code> class to add margin
+              between buttons
             </p>
-            <h2>Install Double</h2>
-            <p>
-              To get started add the following style to your page
-            </p>
-            <pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.2/dist/double.min.css&quot; /&gt;</code></pre>
-            <h2>Basic template</h2>
-            <p>
-              To get started you can use the following template. <strong>Font Awesome</strong> is optional: if you
-              don't want to use icons you can ignore the <code>link</code> in the <code>head</code>.
-              Don't forget to add tags for the <strong>title, metadata and icons</strong> to improve the user
-              experience
-            </p>
-            <pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/emanuelescarabattoli/double@0.0.2/dist/double.min.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;!--Your HTML code here--&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            <h2>Dark mode</h2>
-            <p>
-              <strong>Double</strong> allow you to implement <strong>the dark mode</strong> in you site just by adding
-              the class <code>dark-mode</code> in the main container of a page, just like the following example
-            </p>
-            <pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;utf-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/double.min.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;dark-mode&quot;&gt;
-    &lt;!--Your HTML code here--&gt;
+            <div class="box">
+              <div class="card">
+                <div class="card-header">
+                  <span class="icon">🍩</span>Some title
+                </div>
+                <div class="card-body">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odit ratione mollitia illo dicta quas
+                    exercitationem consectetur excepturi minima eveniet hic laborum sapiente voluptates, eos quibusdam,
+                    aspernatur ipsam nisi a!
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="group align-right">
+                    <button class="button">Button</button>
+                    <button class="button is-success">Button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odit ratione mollitia illo dicta quas
+                    exercitationem consectetur excepturi minima eveniet hic laborum sapiente voluptates, eos quibusdam,
+                    aspernatur ipsam nisi a!
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="group align-right">
+                    <button class="button">Button</button>
+                    <button class="button is-success">Button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  Some title
+                </div>
+                <div class="card-body">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odit ratione mollitia illo dicta quas
+                    exercitationem consectetur excepturi minima eveniet hic laborum sapiente voluptates, eos quibusdam,
+                    aspernatur ipsam nisi a!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;🍩&lt;/span&gt;Some title
   &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odit ratione mollitia illo dicta quas
+      exercitationem consectetur excepturi minima eveniet hic laborum sapiente voluptates, eos quibusdam,
+      aspernatur ipsam nisi a!
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-footer&quot;&gt;
+    &lt;div class=&quot;group align-right&quot;&gt;
+      &lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+      &lt;button class=&quot;button is-success&quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odit ratione mollitia illo dicta quas
+      exercitationem consectetur excepturi minima eveniet hic laborum sapiente voluptates, eos quibusdam,
+      aspernatur ipsam nisi a!
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-footer&quot;&gt;
+    &lt;div class=&quot;group align-right&quot;&gt;
+      &lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+      &lt;button class=&quot;button is-success&quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    Some title
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste odit ratione mollitia illo dicta quas
+      exercitationem consectetur excepturi minima eveniet hic laborum sapiente voluptates, eos quibusdam,
+      aspernatur ipsam nisi a!
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
         </div>
       </div>
