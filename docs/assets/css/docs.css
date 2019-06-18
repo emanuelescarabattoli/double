@@ -12,4 +12,5 @@
   justify-content: center;
   box-shadow: 0 2px 2px 0 #00000055;
   cursor: pointer;
+  z-index: 999;
 }

@@ -1,0 +1,728 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
+
+  <link rel="stylesheet" href="./assets/css/double.css" />
+  <link rel="stylesheet" href="./assets/css/docs.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+
+  <title>Double</title>
+
+</head>
+
+<body>
+
+  <div id="dark-mode">
+
+    <div id="navbar" class="navbar">
+  <div class="navbar-left">
+    <div class="navbar-options">
+      <div class="navbar-logo">
+        <a href="./index.html">
+          <img id="logo" src="./assets/img/double.png" alt="Double">
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <a id="menu" href="#">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="./docs.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>
+            Docs
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>
+            Github
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        <div class="dark-mode-toggle-button" id="dark-mode-toggle-button">
+  <i class="fas fa-moon"></i>
+</div>
+
+<div class="col-mobile-12 col-tablet-12 col-desktop-3">
+  <div class="section">
+    <div class="box">
+      <div class="menu">
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-eye"></i>
+          </span>
+          <span>
+            Overview
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./docs.html">
+              Setup and Dark Mode
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>
+            Basic
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./elements.html">
+              Elements
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./layout.html">
+              Layout
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./grid.html">
+              Grid
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-layer-group"></i>
+          </span>
+          <span>
+            Page
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./navbar.html">
+              Navbar
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./header.html">
+              Header
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./menu.html">
+              Menu
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./footer.html">
+              Footer
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </span>
+          <span>
+            Components
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./box.html">
+              Box
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./notifications.html">
+              Notifications
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./card.html">
+              Card
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./table.html">
+              Table
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./buttons.html">
+              Buttons
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./form.html">
+              Form
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./tags.html">
+              Tags
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./tooltip.html">
+              Tooltip
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./image.html">
+              Image
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./icon.html">
+              Icon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <h1>Buttons</h1>
+            <p>
+              There are some styles available for <strong>buttons</strong> and you can use both <code>a</code> and
+              <code>button</code> tags. Buttons can be grouped using a container with the <code>grouped</code> class.
+              If you need to align buttons on <strong>right</strong> you can also use the class
+              <code>align-right</code>. To separate buttons you can wrap them in a container with <code>group</code>
+              class. You can also add icons from <strong>Font Awesome</strong> or
+              use <code>UTF-8</code> emoticons. Here some <strong>examples</strong>
+            </p>
+            <div class="box">
+              <div class="group">
+                <button class="button">
+                  <span class="icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button is-warning">
+                  <span class="icon">
+                    <i class="fas fa-ambulance"></i>
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button is-success">
+                  <span class="icon">
+                    <i class="fas fa-ambulance"></i>
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button is-danger">
+                  <span class="icon">
+                    <i class="fas fa-ad"></i>
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button is-primary">
+                  <span class="icon">
+                    <i class="fas fa-backspace"></i>
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+              </div>
+              <div class="group">
+                <button class="button">
+                  <span class="icon">
+                    &#128153;
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button">
+                  <span class="icon">
+                    &#128149;
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button">
+                  <span class="icon">
+                    😀
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+                <button class="button">
+                  <span class="icon">
+                    🍇
+                  </span>
+                  <span>
+                    Button
+                  </span>
+                </button>
+              </div>
+              <div class="group">
+                <button class="button">
+                  <span class="icon">
+                    🍩
+                  </span>
+                </button>
+                <button class="button">
+                  <span class="icon">
+                    🔒
+                  </span>
+                </button>
+                <button class="button">
+                  <span class="icon">
+                    🍉
+                  </span>
+                </button>
+                <button class="button">
+                  <span class="icon">
+                    🍔
+                  </span>
+                </button>
+              </div>
+              <div class="group">
+                <div class="grouped">
+                  <a class="button">
+                    <span class="icon">
+                      🍩
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🔒
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🍉
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🍔
+                    </span>
+                  </a>
+                </div>
+                <div class="grouped">
+                  <a class="button">
+                    <span class="icon">
+                      🍩
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🔒
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🍉
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🍔
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="group">
+                <div class="grouped">
+                  <a class="button">
+                    <span class="icon">
+                      🍩
+                    </span>
+                    <span>
+                      Button
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🔒
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🍉
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      🍔
+                    </span>
+                  </a>
+                </div>
+                <div class="grouped">
+                  <a class="button is-primary">
+                    <span>
+                      Button
+                    </span>
+                  </a>
+                  <a class="button is-primary">
+                    <span>
+                      Button
+                    </span>
+                  </a>
+                  <a class="button is-primary">
+                    <span>
+                      Button
+                    </span>
+                  </a>
+                  <a class="button is-primary">
+                    <span>
+                      Button
+                    </span>
+                  </a>
+                </div>
+                <div class="grouped">
+                  <a class="button">
+                    <span class="icon">
+                      <i class="fas fa-chess-pawn"></i>
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      <i class="fas fa-chess-knight"></i>
+                    </span>
+                  </a>
+                  <a class="button">
+                    <span class="icon">
+                      <i class="fas fa-chess-rook"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;group&quot;&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button is-warning&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-ambulance&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button is-success&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-ambulance&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button is-danger&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-ad&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button is-primary&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-backspace&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;group&quot;&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &#128153;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &#128149;
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      😀
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      🍇
+    &lt;/span&gt;
+    &lt;span&gt;
+      Button
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;group&quot;&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      🍩
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      🔒
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      🍉
+    &lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button class=&quot;button&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      🍔
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;group&quot;&gt;
+  &lt;div class=&quot;grouped&quot;&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍩
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🔒
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍉
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍔
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grouped&quot;&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍩
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🔒
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍉
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍔
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;group&quot;&gt;
+  &lt;div class=&quot;grouped&quot;&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍩
+      &lt;/span&gt;
+      &lt;span&gt;
+        Button
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🔒
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍉
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        🍔
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grouped&quot;&gt;
+    &lt;a class=&quot;button is-primary&quot;&gt;
+      &lt;span&gt;
+        Button
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button is-primary&quot;&gt;
+      &lt;span&gt;
+        Button
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button is-primary&quot;&gt;
+      &lt;span&gt;
+        Button
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button is-primary&quot;&gt;
+      &lt;span&gt;
+        Button
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grouped&quot;&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        &lt;i class=&quot;fas fa-chess-pawn&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        &lt;i class=&quot;fas fa-chess-knight&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;button&quot;&gt;
+      &lt;span class=&quot;icon&quot;&gt;
+        &lt;i class=&quot;fas fa-chess-rook&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+  <div class="columns">
+    <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+      <span class="footer-title">
+        Double
+      </span>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <a href="./docs.html">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>
+              Docs
+            </span>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>
+              Github
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/lib/prism/prism.js"></script>
+
+<script>
+  $(function () {
+    $("#menu").click(function (e) {
+      e.preventDefault();
+      $("#navbar").toggleClass("show-items");
+    });
+    $("#menu-docs").click(function (e) {
+      e.preventDefault();
+      $("#navbar-docs").toggleClass("show-items");
+    });
+    $("#dark-mode-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      changeLogo()
+    });
+    $("#dark-mode-toggle-button").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      changeLogo()
+    });
+  });
+  function changeLogo() {
+    if ($("#logo").attr("src") === "./assets/img/double.png") {
+      $("#logo").attr("src", "./assets/img/double-dark.png");
+      $("#logo-docs").attr("src", "./assets/img/double-dark.png");
+    } else {
+      $("#logo").attr("src", "./assets/img/double.png");
+      $("#logo-docs").attr("src", "./assets/img/double.png");
+    }
+  }
+</script>
+
+</body>
+
+</html>
