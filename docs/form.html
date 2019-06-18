@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/lib/prism/prism.css" />
+
+  <link rel="stylesheet" href="./assets/css/double.css" />
+  <link rel="stylesheet" href="./assets/css/docs.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+
+  <title>Double</title>
+
+</head>
+
+<body>
+
+  <div id="dark-mode">
+
+    <div id="navbar" class="navbar">
+  <div class="navbar-left">
+    <div class="navbar-options">
+      <div class="navbar-logo">
+        <a href="./index.html">
+          <img id="logo" src="./assets/img/double.png" alt="Double">
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <a id="menu" href="#">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="./docs.html">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>
+            Docs
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <ul class="navbar-items">
+      <li class="navbar-item">
+        <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>
+            Github
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        <div class="dark-mode-toggle-button" id="dark-mode-toggle-button">
+  <i class="fas fa-moon"></i>
+</div>
+
+<div class="col-mobile-12 col-tablet-12 col-desktop-3">
+  <div class="section">
+    <div class="box">
+      <div class="menu">
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-eye"></i>
+          </span>
+          <span>
+            Overview
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./docs.html">
+              Setup and Dark Mode
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>
+            Basic
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./elements.html">
+              Elements
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./layout.html">
+              Layout
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./grid.html">
+              Grid
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-layer-group"></i>
+          </span>
+          <span>
+            Page
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./navbar.html">
+              Navbar
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./header.html">
+              Header
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./menu.html">
+              Menu
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./footer.html">
+              Footer
+            </a>
+          </li>
+        </ul>
+        <span class="menu-title">
+          <span class="icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </span>
+          <span>
+            Components
+          </span>
+        </span>
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="./box.html">
+              Box
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./notifications.html">
+              Notifications
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./card.html">
+              Card
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./table.html">
+              Table
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./buttons.html">
+              Buttons
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./form.html">
+              Form
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./tags.html">
+              Tags
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./tooltip.html">
+              Tooltip
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./image.html">
+              Image
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="./icon.html">
+              Icon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <h1>Form</h1>
+            <p>
+              Here some examples on how to use <strong>forms</strong>. You can use the <strong>grid</strong> to manage
+              columns of content thanks to classes <code>columns</code> and <code>col-*</code> as in the following
+              examples. Each control and label is wrapped around a <code>div</code> with class <code>field</code> to
+              dispose form elements correctly
+            </p>
+            <div class="box">
+              <div class="field">
+                <label class="label">Label</label>
+                <input class="input" placeholder="Placeholder" type="text" />
+                <small class="help is-success">Put something here</small>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <select class="input" placeholder="Placeholder">
+                  <option>Test abc</option>
+                  <option>Test def</option>
+                </select>
+                <small class="help is-success">Put something here</small>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <input class="input" placeholder="Placeholder" type="text" />
+                <small class="help is-danger">Put something here</small>
+              </div>
+              <div class="columns">
+                <div class="col-mobile-12 col-tablet-6 col-desktop-6">
+                  <div class="field">
+                    <label class="label">Label</label>
+                    <input class="input" placeholder="Placeholder" type="text" />
+                  </div>
+                </div>
+                <div class="col-mobile-12 col-tablet-6 col-desktop-6">
+                  <div class="field">
+                    <label class="label">Label</label>
+                    <input class="input" placeholder="Placeholder" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <input class="input" placeholder="Placeholder" type="text" />
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <textarea class="input"></textarea>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" />
+                    This is a checkbox
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    This is a checkbox
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    This is a checkbox
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radio" />
+                    This is a radio
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" />
+                    This is a radio
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" />
+                    This is a radio
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="checkbox is-inline">
+                  <label>
+                    <input type="checkbox" />
+                    One
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Two
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Three
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="radio is-inline">
+                  <label>
+                    <input type="radio" name="radio1" />
+                    Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="radio1" />
+                    No
+                  </label>
+                  <label>
+                    <input type="radio" name="radio1" />
+                    Maybe
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+  &lt;small class=&quot;help is-success&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;select class=&quot;input&quot; placeholder=&quot;Placeholder&quot;&gt;
+    &lt;option&gt;Test abc&lt;/option&gt;
+    &lt;option&gt;Test def&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;small class=&quot;help is-success&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+  &lt;small class=&quot;help is-danger&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-6 col-desktop-6&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+      &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-6 col-desktop-6&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+      &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;textarea class=&quot;input&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      This is a checkbox
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      This is a checkbox
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      This is a checkbox
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt;
+      This is a radio
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt;
+      This is a radio
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt;
+      This is a radio
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;checkbox is-inline&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      One
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      Two
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      Three
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;radio is-inline&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt;
+      Yes
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt;
+      No
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt;
+      Maybe
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+  <div class="columns">
+    <div class="col-mobile-12 col-tablet-12 col-desktop-4">
+      <span class="footer-title">
+        Double
+      </span>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <a href="./docs.html">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>
+              Docs
+            </span>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://github.com/emanuelescarabattoli/double" target="_blank">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>
+              Github
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./assets/lib/prism/prism.js"></script>
+
+<script>
+  $(function () {
+    $("#menu").click(function (e) {
+      e.preventDefault();
+      $("#navbar").toggleClass("show-items");
+    });
+    $("#menu-docs").click(function (e) {
+      e.preventDefault();
+      $("#navbar-docs").toggleClass("show-items");
+    });
+    $("#dark-mode-toggle").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      changeLogo()
+    });
+    $("#dark-mode-toggle-button").click(function (e) {
+      e.preventDefault();
+      $("#dark-mode").toggleClass("dark-mode");
+      changeLogo()
+    });
+  });
+  function changeLogo() {
+    if ($("#logo").attr("src") === "./assets/img/double.png") {
+      $("#logo").attr("src", "./assets/img/double-dark.png");
+      $("#logo-docs").attr("src", "./assets/img/double-dark.png");
+    } else {
+      $("#logo").attr("src", "./assets/img/double.png");
+      $("#logo-docs").attr("src", "./assets/img/double.png");
+    }
+  }
+</script>
+
+</body>
+
+</html>

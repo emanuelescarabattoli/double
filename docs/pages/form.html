@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+{{ head }}
+
+<body>
+
+  <div id="dark-mode">
+
+    {{ navbar }}
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        {{ menu }}
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <h1>Form</h1>
+            <p>
+              Here some examples on how to use <strong>forms</strong>. You can use the <strong>grid</strong> to manage
+              columns of content thanks to classes <code>columns</code> and <code>col-*</code> as in the following
+              examples. Each control and label is wrapped around a <code>div</code> with class <code>field</code> to
+              dispose form elements correctly
+            </p>
+            <div class="box">
+              <div class="field">
+                <label class="label">Label</label>
+                <input class="input" placeholder="Placeholder" type="text" />
+                <small class="help is-success">Put something here</small>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <select class="input" placeholder="Placeholder">
+                  <option>Test abc</option>
+                  <option>Test def</option>
+                </select>
+                <small class="help is-success">Put something here</small>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <input class="input" placeholder="Placeholder" type="text" />
+                <small class="help is-danger">Put something here</small>
+              </div>
+              <div class="columns">
+                <div class="col-mobile-12 col-tablet-6 col-desktop-6">
+                  <div class="field">
+                    <label class="label">Label</label>
+                    <input class="input" placeholder="Placeholder" type="text" />
+                  </div>
+                </div>
+                <div class="col-mobile-12 col-tablet-6 col-desktop-6">
+                  <div class="field">
+                    <label class="label">Label</label>
+                    <input class="input" placeholder="Placeholder" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <input class="input" placeholder="Placeholder" type="text" />
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <label class="label">Label</label>
+                <textarea class="input"></textarea>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" />
+                    This is a checkbox
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    This is a checkbox
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    This is a checkbox
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="radio" />
+                    This is a radio
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" />
+                    This is a radio
+                  </label>
+                  <label>
+                    <input type="radio" name="radio" />
+                    This is a radio
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="checkbox is-inline">
+                  <label>
+                    <input type="checkbox" />
+                    One
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Two
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    Three
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+              <div class="field">
+                <span class="label">Label</span>
+                <div class="radio is-inline">
+                  <label>
+                    <input type="radio" name="radio1" />
+                    Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="radio1" />
+                    No
+                  </label>
+                  <label>
+                    <input type="radio" name="radio1" />
+                    Maybe
+                  </label>
+                </div>
+                <small class="help">Put something here</small>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+  &lt;small class=&quot;help is-success&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;select class=&quot;input&quot; placeholder=&quot;Placeholder&quot;&gt;
+    &lt;option&gt;Test abc&lt;/option&gt;
+    &lt;option&gt;Test def&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;small class=&quot;help is-success&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+  &lt;small class=&quot;help is-danger&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-6 col-desktop-6&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+      &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-6 col-desktop-6&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+      &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+      &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;input class=&quot;input&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;label class=&quot;label&quot;&gt;Label&lt;/label&gt;
+  &lt;textarea class=&quot;input&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      This is a checkbox
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      This is a checkbox
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      This is a checkbox
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt;
+      This is a radio
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt;
+      This is a radio
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot; /&gt;
+      This is a radio
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;checkbox is-inline&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      One
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      Two
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; /&gt;
+      Three
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Label&lt;/span&gt;
+  &lt;div class=&quot;radio is-inline&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt;
+      Yes
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt;
+      No
+    &lt;/label&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; /&gt;
+      Maybe
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;small class=&quot;help&quot;&gt;Put something here&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ footer }}
+
+  </div>
+
+  {{ scripts }}
+
+</body>
+
+</html>
