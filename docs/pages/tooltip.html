@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+{{ head }}
+
+<body>
+
+  <div id="dark-mode">
+
+    {{ navbar }}
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        {{ menu }}
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <h1>Tooltip</h1>
+            <p>
+              Tooltip adds to an element an additional information displayed on <code>hover</code>
+            </p>
+            <div class="box">
+              <div class="spacer">
+                <div class="tooltip">
+                  <span class="tooltip-content">
+                    This is a fancy tooltip!!!!
+                  </span>
+                  <div class="tooltip-parent">
+                    <button class="button">Hover me!!</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tags">
+                <span class="tooltip">
+                  <span class="tooltip-content">
+                    This is a fancy tooltip!!!!
+                  </span>
+                  <span class="tooltip-parent">
+                    <span class="tag is-success is-rounded">
+                      Hover me!!
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;spacer&quot;&gt;
+  &lt;div class=&quot;tooltip&quot;&gt;
+    &lt;span class=&quot;tooltip-content&quot;&gt;
+      This is a fancy tooltip!!!!
+    &lt;/span&gt;
+    &lt;div class=&quot;tooltip-parent&quot;&gt;
+      &lt;button class=&quot;button&quot;&gt;Hover me!!&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tags&quot;&gt;
+  &lt;span class=&quot;tooltip&quot;&gt;
+    &lt;span class=&quot;tooltip-content&quot;&gt;
+      This is a fancy tooltip!!!!
+    &lt;/span&gt;
+    &lt;span class=&quot;tooltip-parent&quot;&gt;
+      &lt;span class=&quot;tag is-success is-rounded&quot;&gt;
+        Hover me!!
+      &lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ footer }}
+
+  </div>
+
+  {{ scripts }}
+
+</body>
+
+</html>

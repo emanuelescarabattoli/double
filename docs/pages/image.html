@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+{{ head }}
+
+<body>
+
+  <div id="dark-mode">
+
+    {{ navbar }}
+
+    <div class="container is-fluid">
+      <div class="columns">
+
+        {{ menu }}
+
+        <div class="col-mobile-12 col-tablet-12 col-desktop-9">
+          <div class="section">
+            <h1>Image</h1>
+            <p>
+              Images can be wrapper into a <code>image</code> wrapper to make them responsive
+            </p>
+            <div class="box">
+              <div class="columns">
+                <div class="col-mobile-12 col-tablet-4 col-desktop-4">
+                  <figure class="image">
+                    <img src="https://dummyimage.com/300x300/cccccc/444444" alt="an image" />
+                  </figure>
+                </div>
+                <div class="col-mobile-12 col-tablet-4 col-desktop-4">
+                  <figure class="image">
+                    <img src="https://dummyimage.com/300x300/cccccc/444444" alt="an image" />
+                  </figure>
+                </div>
+                <div class="col-mobile-12 col-tablet-4 col-desktop-4">
+                  <figure class="image">
+                    <img src="https://dummyimage.com/300x300/cccccc/444444" alt="an image" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <pre><code class="language-html">&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-4 col-desktop-4&quot;&gt;
+    &lt;figure class=&quot;image&quot;&gt;
+      &lt;img src=&quot;https://dummyimage.com/300x300/cccccc/444444&quot; alt=&quot;an image&quot; /&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-4 col-desktop-4&quot;&gt;
+    &lt;figure class=&quot;image&quot;&gt;
+      &lt;img src=&quot;https://dummyimage.com/300x300/cccccc/444444&quot; alt=&quot;an image&quot; /&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-mobile-12 col-tablet-4 col-desktop-4&quot;&gt;
+    &lt;figure class=&quot;image&quot;&gt;
+      &lt;img src=&quot;https://dummyimage.com/300x300/cccccc/444444&quot; alt=&quot;an image&quot; /&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ footer }}
+
+  </div>
+
+  {{ scripts }}
+
+</body>
+
+</html>
