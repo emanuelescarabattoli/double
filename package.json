@@ -24,7 +24,7 @@
     "url": "https://github.com/emanuelescarabattoli/double/issues"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "start:dcs": "yarn run node-sass double.sass docs/assets/css/double.css --watch",
